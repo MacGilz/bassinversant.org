@@ -863,6 +863,13 @@ li#menu-item-281 .mega_dropdown > li > a{
 }
 
 
+/***FOOTER*/
+
+.widget_nav_menu a{color:#FFF}
+
+.widget_nav_menu a:hover,.widget_nav_menu a:focus{color:#2A3867}
+
+
 /*-----------------------------------------------
 ## buttons & Icons
 ------------------------------------------------*/
@@ -892,7 +899,6 @@ li#menu-item-281 .mega_dropdown > li > a{
 }
 
 a.button-archives-actus{background-color: #2A3867;color: #FFF;padding:4px 8px;margin-bottom: 25px }
-
 
 
 #toTop {
@@ -1304,7 +1310,6 @@ a.tag-cloud-link:focus{
     border: thin
     
 }
-
 
 /*--------------------------------------------------------------
 # Content
