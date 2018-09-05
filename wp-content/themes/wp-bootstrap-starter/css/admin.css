@@ -1,0 +1,107 @@
+/* CSS Document */
+
+
+
+/*
+fonds:
+hsla(49,10%,58%,1.00);
+
+*/
+
+/*
+----------------------------------------------------------------
+ELEMENTS DE BASE SYSTEME
+----------------------------------------------------------------
+
+*/
+
+#login > h1 > a {width:100% !important}
+/* Sidebar etiquettes*/
+#tagsdiv-post_tag h2{
+background-color:hsla(49,10%,58%,1.00);
+    Color:#FFF
+}
+#tagsdiv-post_tag .tagchecklist li{ color:hsla(49,10%,58%,1.00) }
+
+/* Sidebar taxonomie catégories ressources*/
+#tagsdiv-categories_ressources h2{
+    background-color:hsla(187,19%,56%,1.00);
+    Color:#FFF
+}
+#tagsdiv-categories_ressources .tagchecklist li{color:hsla(187,19%,56%,1.00) }
+/* habillage termes selectionnés*/
+#tagsdiv-post_tag .tagchecklist li,
+#tagsdiv-categories_ressources .tagchecklist li{ font-weight: 600;font-size: 1rem;line-height: 1.2rem}
+
+.separator{
+    border-bottom: 2px dotted #CDCDCD;
+}
+/*
+----------------------------------------------------------------
+ACF SELECT RUBRIQUES( ANEB, EPTB...)
+----------------------------------------------------------------
+*/
+#acf-group_5b461f176745a label {color:hsla(37,25%,55%,1.00);}
+
+#acf-group_5b461f176745a .select2-container--default .select2-selection--multiple
+{
+    border-color:hsla(37,25%,55%,1.00);
+}
+#acf-group_5b461f176745a .select2-container--default.-acf .select2-selection--multiple .select2-selection__choice{
+    background-color: hsla(37,25%,55%,1.00);
+    color: #fff
+}
+
+
+/*select thématiques*/
+.acf-field-5b5efdcca526d div.acf-input div.acf-taxonomy-field span.select2.select2-container.select2-container--default.-acf span.selection span.select2-selection.select2-selection--multiple ul.select2-selection__rendered.ui-sortable li.select2-selection__choice.ui-sortable-handle{
+    background-color: hsla(37,11%,56%,1.00);
+    color: #fff;
+    padding: 1px 6px 2px
+}
+
+.acf-field-5b5efdcca526d .select2-container--default .select2-selection--multiple .select2-selection__choice__remove{ color: #fff}
+
+
+/*select rubrique*/
+
+#acf-group_5b461f176745a .select2-container--default.-acf .select2-selection--multiple .select2-selection__choice[title="ANEB"]{
+     background-color: #00ACE9;
+}
+#acf-group_5b461f176745a .select2-container--default.-acf .select2-selection--multiple .select2-selection__choice[title="Les EPTB"]{
+     background-color: #218610;
+}
+#acf-group_5b461f176745a .select2-container--default.-acf .select2-selection--multiple .select2-selection__choice[title="REZ'EAU"]{
+     background-color: #F7CD00;
+}
+#acf-group_5b461f176745a .select2-container--default.-acf .select2-selection--multiple .select2-selection__choice[title="EPAGE"]{
+     background-color: #B73764;
+}
+
+/* croix remove*/
+#acf-group_5b461f176745a .select2-container--default .select2-selection--multiple .select2-selection__choice__remove{ color: #fff}
+
+.acf-postbox h2.hndle.ui-sortable-handle{
+    
+    color: #00B0F0 !important;
+    font-size: 1.4rem !important;
+    
+}
+
+/*
+----------------------------------------------------------------
+MENU
+----------------------------------------------------------------
+*/
+.menu-icon-ressource .wp-menu-name,
+.menu-icon-ressource  .dashicons-before::before,
+.menu-icon-post .wp-menu-name,
+.menu-icon-post .dashicons-before::before
+{color:hsla(37,76%,55%,1.00) !important}
+.menu-icon-page .wp-menu-name,
+.menu-icon-page .dashicons-before::before{color:hsla(42,33%,55%,1.00) !important}
+/*.taxonomies-menu-item .wp-menu-name,.taxonomies-menu-item .dashicons-before::before {color:hsla(37,76%,55%,1.00) !important}
+*/.toplevel_page_simpledocumentation .wp-menu-name,.toplevel_page_simpledocumentation .dashicons-before::before {color:#00B0F0 !important}
+
+
+.taxonomies-menu-item .wp-menu-name, .taxonomies-menu-item .dashicons-before::before {color:#009492 !important}

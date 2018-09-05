@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="basic.test" server="bv.kingbee.ovh" local="131760657233511336" remote="131763949200000000" Dst="2" />
+<file name="block_expr.test" server="bv.kingbee.ovh" local="131760657233720775" remote="131763949200000000" Dst="2" />
+<file name="block_expr2.test" server="bv.kingbee.ovh" local="131760657233880352" remote="131763949200000000" Dst="2" />
+<file name="conditional.test" server="bv.kingbee.ovh" local="131760657234019989" remote="131763949200000000" Dst="2" />
+<file name="dynamic.test" server="bv.kingbee.ovh" local="131760657234468774" remote="131763949200000000" Dst="2" />
+<file name="empty.test" server="bv.kingbee.ovh" local="131760657234578474" remote="131763949200000000" Dst="2" />
+<file name="extends_as_array.test" server="bv.kingbee.ovh" local="131760657234768250" remote="131763949200000000" Dst="2" />
+<file name="multiple.test" server="bv.kingbee.ovh" local="131760657235047228" remote="131763949200000000" Dst="2" />
+<file name="multiple_dynamic.test" server="bv.kingbee.ovh" local="131760657235196832" remote="131763949200000000" Dst="2" />
+<file name="nested_blocks.test" server="bv.kingbee.ovh" local="131760657235366375" remote="131763949200000000" Dst="2" />
+<file name="nested_blocks_parent_only.test" server="bv.kingbee.ovh" local="131760657235585792" remote="131763949200000000" Dst="2" />
+<file name="nested_inheritance.test" server="bv.kingbee.ovh" local="131760657235745361" remote="131763949200000000" Dst="2" />
+<file name="parent.test" server="bv.kingbee.ovh" local="131760657235894961" remote="131763949200000000" Dst="2" />
+<file name="parent_change.test" server="bv.kingbee.ovh" local="131760657236174216" remote="131763949200000000" Dst="2" />
+<file name="parent_in_a_block.test" server="bv.kingbee.ovh" local="131760657236283936" remote="131763949200000000" Dst="2" />
+<file name="parent_isolation.test" server="bv.kingbee.ovh" local="131760657236463449" remote="131763949200000000" Dst="2" />
+<file name="parent_nested.test" server="bv.kingbee.ovh" local="131760657236802529" remote="131763949200000000" Dst="2" />
+<file name="parent_without_extends.test" server="bv.kingbee.ovh" local="131760657236962114" remote="131763949200000000" Dst="2" />
+<file name="parent_without_extends_but_traits.test" server="bv.kingbee.ovh" local="131760657237151598" remote="131763949200000000" Dst="2" />
+<file name="template_instance.test" server="bv.kingbee.ovh" local="131760657237321145" remote="131763949200000000" Dst="2" />
+<file name="use.test" server="bv.kingbee.ovh" local="131760657237470752" remote="131763949200000000" Dst="2" />
+</dwsync>

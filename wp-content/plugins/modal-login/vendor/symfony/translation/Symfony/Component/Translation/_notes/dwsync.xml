@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="CHANGELOG.md" server="bv.kingbee.ovh" local="131760657092787476" remote="131763948600000000" Dst="2" />
+<file name="IdentityTranslator.php" server="bv.kingbee.ovh" local="131760657098442353" remote="131763948600000000" Dst="2" />
+<file name="Interval.php" server="bv.kingbee.ovh" local="131760657098721627" remote="131763948600000000" Dst="2" />
+<file name="LICENSE" server="bv.kingbee.ovh" local="131760657098990901" remote="131763948600000000" Dst="2" />
+<file name="LoggingTranslator.php" server="bv.kingbee.ovh" local="131760657103927694" remote="131763948600000000" Dst="2" />
+<file name="MessageCatalogue.php" server="bv.kingbee.ovh" local="131760657104236882" remote="131763948600000000" Dst="2" />
+<file name="MessageCatalogueInterface.php" server="bv.kingbee.ovh" local="131760657104585928" remote="131763948600000000" Dst="2" />
+<file name="MessageSelector.php" server="bv.kingbee.ovh" local="131760657104785408" remote="131763948600000000" Dst="2" />
+<file name="MetadataAwareInterface.php" server="bv.kingbee.ovh" local="131760657104994847" remote="131763948600000000" Dst="2" />
+<file name="PluralizationRules.php" server="bv.kingbee.ovh" local="131760657105254147" remote="131763948600000000" Dst="2" />
+<file name="README.md" server="bv.kingbee.ovh" local="131760657105493518" remote="131763948600000000" Dst="2" />
+<file name="Translator.php" server="bv.kingbee.ovh" local="131760657123984102" remote="131763948600000000" Dst="2" />
+<file name="TranslatorBagInterface.php" server="bv.kingbee.ovh" local="131760657124183556" remote="131763948600000000" Dst="2" />
+<file name="TranslatorInterface.php" server="bv.kingbee.ovh" local="131760657124462815" remote="131763948600000000" Dst="2" />
+<file name="composer.json" server="bv.kingbee.ovh" local="131760657125001371" remote="131763948600000000" Dst="2" />
+<file name="phpunit.xml.dist" server="bv.kingbee.ovh" local="131760657125170914" remote="131763948600000000" Dst="2" />
+</dwsync>

@@ -1,0 +1,753 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Advanced Access Manager\n"
+"POT-Creation-Date: 2018-07-14 17:37+0200\n"
+"PO-Revision-Date: 2018-07-16 11:25+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.9\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: aam.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: Application/Api/Manager.php:138
+msgid "Access denied"
+msgstr "Accès non autorisé"
+
+#: Application/Backend/Feature/Extension/Manager.php:59
+msgid "You may try to install extension manually."
+msgstr ""
+
+#: Application/Backend/Feature/Extension/Manager.php:108
+msgid "Enter license key to update extension."
+msgstr ""
+
+#: Application/Backend/Feature/Main/404Redirect.php:53
+msgid "404 Redirect"
+msgstr "Redirection 404"
+
+#: Application/Backend/Feature/Main/Capability.php:98
+msgid "Capability already exists"
+msgstr "La capacité existe déjà"
+
+#: Application/Backend/Feature/Main/Capability.php:127
+msgid "Can not remove the capability"
+msgstr "Impossible de supprimer la capacité"
+
+#: Application/Backend/Feature/Main/Capability.php:216
+#: Application/Backend/Feature/Main/Capability.php:257
+msgid "System"
+msgstr "Système"
+
+#: Application/Backend/Feature/Main/Capability.php:217
+#: Application/Backend/Feature/Main/Capability.php:259
+msgid "Posts & Pages"
+msgstr "Articles et pages"
+
+#: Application/Backend/Feature/Main/Capability.php:218
+#: Application/Backend/Feature/Main/Capability.php:261
+msgid "Backend"
+msgstr "Back Office"
+
+#: Application/Backend/Feature/Main/Capability.php:219
+#: Application/Backend/Feature/Main/Capability.php:263
+msgid "AAM Interface"
+msgstr ""
+
+#: Application/Backend/Feature/Main/Capability.php:220
+#: Application/Backend/Feature/Main/Capability.php:265
+msgid "Miscellaneous"
+msgstr "Divers"
+
+#: Application/Backend/Feature/Main/Capability.php:297
+msgid "Capabilities"
+msgstr "Capacités"
+
+#: Application/Backend/Feature/Main/LoginRedirect.php:73
+msgid "Login Redirect"
+msgstr "Adresse de redirection à la connexion"
+
+#: Application/Backend/Feature/Main/LogoutRedirect.php:73
+msgid "Logout Redirect"
+msgstr "Adresse de redirection à la déconnexion"
+
+#: Application/Backend/Feature/Main/Menu.php:197
+msgid "Backend Menu"
+msgstr "Menu du back office"
+
+#: Application/Backend/Feature/Main/Metabox.php:237
+msgid "Metaboxes & Widgets"
+msgstr "Metaboxes & Widgets"
+
+#: Application/Backend/Feature/Main/Post.php:443
+msgid "Existing Page"
+msgstr "Page existante"
+
+#: Application/Backend/Feature/Main/Post.php:445
+msgid "Valid URL"
+msgstr "URL valide"
+
+#: Application/Backend/Feature/Main/Post.php:447
+msgid "Custom Callback"
+msgstr "Callback personnalisé"
+
+#: Application/Backend/Feature/Main/Post.php:607
+msgid "Posts & Terms"
+msgstr "Articles & taxonomies"
+
+#: Application/Backend/Feature/Main/Redirect.php:83
+msgid "Access Denied Redirect"
+msgstr "Accès Refusé Redirection"
+
+#: Application/Backend/Feature/Main/Route.php:107
+msgid "API Routes"
+msgstr ""
+
+#: Application/Backend/Feature/Settings/ConfigPress.php:53
+msgid "ConfigPress"
+msgstr "ConfigPress"
+
+#: Application/Backend/Feature/Settings/Content.php:32
+msgid "Media Files Access Control"
+msgstr ""
+
+#: Application/Backend/Feature/Settings/Content.php:37
+msgid "Check Post Visibility"
+msgstr "Vérifier la visibilité de l'article"
+
+#: Application/Backend/Feature/Settings/Content.php:38
+msgid ""
+"For performance reasons, keep this option disabled if do not use LIST or "
+"LIST TO OTHERS access options on Posts & Terms tab. When it is checked, AAM "
+"will filter list of posts that are hidden for a user on frontend, backend "
+"and API calls."
+msgstr ""
+"Pour des raisons de performances, ne cochez pas cette option si vous "
+"n'utilisez pas les options d'accès LISTE ou LISTE AUX AUTRES dans l'onglet "
+"Messages et pages. Quand elle est cochée, AAM filtrera la liste des messages "
+"cachés pour un utilisateur à la fois sur le frontend et le backend."
+
+#: Application/Backend/Feature/Settings/Content.php:42
+msgid "Manage Hidden Post Types"
+msgstr "Gérer les types de post cachés"
+
+#: Application/Backend/Feature/Settings/Content.php:43
+msgid ""
+"By default AAM allows you to manage access only to public post types on "
+"Posts & Terms tab. By enabling this feature, you also will be able to manage "
+"access to hidden post types like revisions, navigation menus or any other "
+"custom post types that are not registered as public."
+msgstr ""
+"Par défaut AAM vous permet de gérer l’accès uniquement aux types de postes "
+"publics sur l’onglet messages & termes. En activant cette fonctionnalité, "
+"vous aussi serez en mesure de gérer l’accès aux types de message caché comme "
+"les révisions, les menus de navigation ou tout autre type de message "
+"personnalisé qui n’est pas inscrits comme public."
+
+#: Application/Backend/Feature/Settings/Content.php:62
+msgid "Content Settings"
+msgstr "Paramètres de contenu"
+
+#: Application/Backend/Feature/Settings/Core.php:32
+msgid "Edit/Delete Capabilities"
+msgstr "Autorisation de Modification/ suppression"
+
+#: Application/Backend/Feature/Settings/Core.php:37
+msgid "Backend Access Control"
+msgstr "Contrôle d'accès back office"
+
+#: Application/Backend/Feature/Settings/Core.php:38
+msgid ""
+"Allow AAM to manage access to the backend. Note! Keep this option disabled "
+"if there is no needs to restrict backend features for other users."
+msgstr ""
+"Autoriser AAM à gérer l'accès au backend. Gardez cette option désactivée "
+"s'il n'y a pas besoin de restreindre les fonctionnalités backend pour les "
+"autres utilisateurs. Cette option peut réduire les performances de votre "
+"site Web."
+
+#: Application/Backend/Feature/Settings/Core.php:42
+msgid "Frontend Access Control"
+msgstr "Contrôle d'accès Frontend"
+
+#: Application/Backend/Feature/Settings/Core.php:43
+msgid ""
+"Allow AAM to manage access to the frontend. Note! Keep this option disabled "
+"if there is no needs to restrict frontend resources for users and visitors."
+msgstr ""
+"Autoriser AAM à gérer l'accès au backend. Gardez cette option désactivée "
+"s'il n'y a pas besoin de restreindre les fonctionnalités frontend pour les "
+"autres utilisateurs. Cette option peut réduire les performances de votre "
+"site Web."
+
+#: Application/Backend/Feature/Settings/Core.php:47
+msgid "API Access Control"
+msgstr ""
+
+#: Application/Backend/Feature/Settings/Core.php:48
+msgid ""
+"Allow AAM to manage access to the website resources that are invoked with "
+"WordPress core APIs (currently only for RESTful API). Note! Keep this option "
+"disabled if there is no needs to restrict API access."
+msgstr ""
+"Permettre l’AAM de gérer l’accès aux ressources Web qui sont invoqués avec "
+"WordPress core API (actuellement uniquement pour les API RESTful). "
+"Remarque ! Garder cette option est désactivée s’il n’y a aucun besoin de "
+"limiter l’accès de l’API."
+
+#: Application/Backend/Feature/Settings/Core.php:52
+msgid "Render Access Manager Metabox"
+msgstr ""
+
+#: Application/Backend/Feature/Settings/Core.php:53
+msgid ""
+"Render Access Manager metabox on all post and term edit pages. Access "
+"Manager metabox is the quick way to manage access to any post or term "
+"without leaving an edit page."
+msgstr ""
+
+#: Application/Backend/Feature/Settings/Core.php:57
+msgid "Render Access Link"
+msgstr ""
+
+#: Application/Backend/Feature/Settings/Core.php:58
+msgid ""
+"Render Access shortcut link under any post, page, custom post type, "
+"category, custom taxonomy title or user name."
+msgstr ""
+
+#: Application/Backend/Feature/Settings/Core.php:62
+msgid "Secure Login"
+msgstr "Connexion sécurisée"
+
+#: Application/Backend/Feature/Settings/Core.php:63
+msgid ""
+"AAM comes with its own user login handler. With this feature you can add "
+"AJAX login widget to your frontend page that significantly enhance your "
+"website security."
+msgstr ""
+
+#: Application/Backend/Feature/Settings/Core.php:67
+msgid "XML-RPC WordPress API"
+msgstr ""
+
+#: Application/Backend/Feature/Settings/Core.php:72
+msgid "RESTful WordPress API"
+msgstr ""
+
+#: Application/Backend/Feature/Settings/Core.php:77
+msgid "JWT Authentication"
+msgstr ""
+
+#: Application/Backend/Feature/Settings/Core.php:97
+msgid "Core Settings"
+msgstr ""
+
+#: Application/Backend/Feature/Settings/Tools.php:104
+msgid "Tools"
+msgstr "Outils"
+
+#: Application/Backend/Feature/Subject/User.php:63
+msgid "Operation is not permitted"
+msgstr "L'opération n'est pas autorisée"
+
+#: Application/Backend/Feature/Subject/User.php:78
+msgid "You cannot set expiration to yourself"
+msgstr ""
+
+#: Application/Backend/Manager.php:378
+msgid "Access Manager"
+msgstr "Rôle Gestionnaire d'accès"
+
+#: Application/Backend/Manager.php:466 Application/Backend/Manager.php:484
+#: Application/Backend/Manager.php:507
+msgid "Access"
+msgstr ""
+
+#: Application/Backend/Manager.php:658 Application/Backend/Manager.php:681
+#: Application/Core/API.php:294
+msgid "Access Denied"
+msgstr "Accès non autorisé"
+
+#: Application/Backend/View/Localization.php:26
+msgid "Search Capability"
+msgstr "Capacité de recherche"
+
+#: Application/Backend/View/Localization.php:27
+msgid "_TOTAL_ capability(s)"
+msgstr ""
+
+#: Application/Backend/View/Localization.php:28
+msgid "Saving..."
+msgstr "Enregistrement en cours..."
+
+#: Application/Backend/View/Localization.php:29
+msgid "Failed to add new capability"
+msgstr ""
+
+#: Application/Backend/View/Localization.php:30
+msgid "Application error"
+msgstr "Erreur de l'application"
+
+#: Application/Backend/View/Localization.php:31
+msgid "Add Capability"
+msgstr ""
+
+#: Application/Backend/View/Localization.php:32
+msgid "Show Menu"
+msgstr "Afficher le menu"
+
+#: Application/Backend/View/Localization.php:33
+msgid "Restrict Menu"
+msgstr "Restreindre le menu"
+
+#: Application/Backend/View/Localization.php:34
+msgid "Failed to retrieve mataboxes"
+msgstr "Impossible de récupérer les métabox"
+
+#: Application/Backend/View/Localization.php:35
+msgid "Search"
+msgstr "Recherche"
+
+#: Application/Backend/View/Localization.php:36
+msgid "_TOTAL_ object(s)"
+msgstr ""
+
+#: Application/Backend/View/Localization.php:37
+msgid "Failed"
+msgstr "Echec"
+
+#: Application/Backend/View/Localization.php:38
+msgid "Loading..."
+msgstr "Chargement…"
+
+#: Application/Backend/View/Localization.php:39
+msgid "No Role"
+msgstr "Aucun rôle"
+
+#: Application/Backend/View/Localization.php:40
+msgid "Search Role"
+msgstr "Chercher un rôle"
+
+#: Application/Backend/View/Localization.php:41
+msgid "_TOTAL_ role(s)"
+msgstr ""
+
+#: Application/Backend/View/Localization.php:42
+msgid "Create"
+msgstr "Créer"
+
+#: Application/Backend/View/Localization.php:43
+msgid "Users"
+msgstr "Utilisateurs"
+
+#: Application/Backend/View/Localization.php:44
+msgid "Failed to add new role"
+msgstr "Impossible d'ajouter un nouveau rôle"
+
+#: Application/Backend/View/Localization.php:45
+msgid "Add Role"
+msgstr "Ajouter rôle"
+
+#: Application/Backend/View/Localization.php:46
+msgid "Failed to update role"
+msgstr "Impossible de mettre à jour le rôle"
+
+#: Application/Backend/View/Localization.php:47
+#: Application/Backend/View/PostOptionList.php:160
+msgid "Update"
+msgstr "Actualiser"
+
+#: Application/Backend/View/Localization.php:48
+msgid "Deleting..."
+msgstr "Suppression en cours..."
+
+#: Application/Backend/View/Localization.php:49
+msgid "Failed to delete role"
+msgstr ""
+
+#: Application/Backend/View/Localization.php:50
+#: Application/Backend/View/Localization.php:62
+msgid "Delete Role"
+msgstr "Supprimer rôle"
+
+#: Application/Backend/View/Localization.php:51
+msgid "Failed to block user"
+msgstr "Impossible de bloquer l'utilisateur"
+
+#: Application/Backend/View/Localization.php:52
+msgid "Search User"
+msgstr ""
+
+#: Application/Backend/View/Localization.php:53
+msgid "_TOTAL_ user(s)"
+msgstr ""
+
+#: Application/Backend/View/Localization.php:54
+msgid "Role"
+msgstr "Rôle"
+
+#: Application/Backend/View/Localization.php:55
+#: Application/Core/Subject/Visitor.php:79
+msgid "Anonymous"
+msgstr "Anonyme"
+
+#: Application/Backend/View/Localization.php:56
+msgid "Current user"
+msgstr "Utilisateur actuel"
+
+#: Application/Backend/View/Localization.php:57
+msgid "Current role"
+msgstr "Rôle actuel"
+
+#: Application/Backend/View/Localization.php:58
+msgid "Manage Access"
+msgstr "Gérer les droits d’accès"
+
+#: Application/Backend/View/Localization.php:59
+#: Application/Backend/View/PostOptionList.php:97
+msgid "Edit"
+msgstr "Modifier"
+
+#: Application/Backend/View/Localization.php:60
+msgid "Manage Role"
+msgstr ""
+
+#: Application/Backend/View/Localization.php:61
+msgid "Edit Role"
+msgstr "Modifier le rôle"
+
+#: Application/Backend/View/Localization.php:63
+msgid "Manage User"
+msgstr "Gérer l'utilisateur"
+
+#: Application/Backend/View/Localization.php:64
+msgid "Edit User"
+msgstr "Modifier utilisateur"
+
+#: Application/Backend/View/Localization.php:65
+msgid "Lock User"
+msgstr "Bloquer l'utilisateur"
+
+#: Application/Backend/View/Localization.php:66
+msgid "Unlock User"
+msgstr "Débloquer l'utilisateur"
+
+#: Application/Backend/View/Localization.php:67
+msgid "Failed to grand capability - WordPress policy"
+msgstr ""
+
+#: Application/Backend/View/PostOptionList.php:26
+#: Application/Backend/View/PostOptionList.php:91
+#: Application/Backend/View/PostOptionList.php:114
+msgid "List"
+msgstr "Liste"
+
+#: Application/Backend/View/PostOptionList.php:27
+#: Application/Backend/View/PostOptionList.php:93
+#, php-format
+msgid "Hide %s however still allow access with direct URL."
+msgstr ""
+
+#: Application/Backend/View/PostOptionList.php:27
+#: Application/Backend/View/PostOptionList.php:32
+#, php-format
+msgid " %sSee in action.%s"
+msgstr ""
+
+#: Application/Backend/View/PostOptionList.php:31
+#: Application/Backend/View/PostOptionList.php:119
+msgid "Read"
+msgstr "Lire"
+
+#: Application/Backend/View/PostOptionList.php:32
+#, php-format
+msgid ""
+"Restrict access to view, read or download %s. Any attempts to open %s will "
+"be denied and redirected based on the Access Denied Redirect rule."
+msgstr ""
+
+#: Application/Backend/View/PostOptionList.php:35
+#: Application/Backend/View/PostOptionList.php:123
+msgid "Limit"
+msgstr "Limite"
+
+#: Application/Backend/View/PostOptionList.php:36
+#: Application/Backend/View/PostOptionList.php:124
+msgid "Teaser message"
+msgstr ""
+
+#: Application/Backend/View/PostOptionList.php:40
+#: Application/Backend/View/PostOptionList.php:128
+#, php-format
+msgid "Replace %s content with defined teaser message."
+msgstr ""
+
+#: Application/Backend/View/PostOptionList.php:43
+#: Application/Backend/View/PostOptionList.php:131
+msgid "Read Counter"
+msgstr "Lire le compteur"
+
+#: Application/Backend/View/PostOptionList.php:44
+#: Application/Backend/View/PostOptionList.php:132
+msgid "Threshold"
+msgstr "Seuil"
+
+#: Application/Backend/View/PostOptionList.php:49
+#, php-format
+msgid ""
+"Define how many times %s can be read, viewed or download. After number of "
+"times exceeds the specified threshold, access will be denied and redirected "
+"based on the Access Denied Redirect rule."
+msgstr ""
+
+#: Application/Backend/View/PostOptionList.php:52
+#: Application/Backend/View/PostOptionList.php:140
+msgid "Comment"
+msgstr "Commentaire"
+
+#: Application/Backend/View/PostOptionList.php:53
+#, php-format
+msgid "Restrict access to comment on %s if commenting is allowed."
+msgstr ""
+
+#: Application/Backend/View/PostOptionList.php:56
+msgid "Redirect"
+msgstr "Rediriger"
+
+#: Application/Backend/View/PostOptionList.php:57
+msgid "Redirect Rule"
+msgstr "Règle de redirection"
+
+#: Application/Backend/View/PostOptionList.php:61
+#, php-format
+msgid ""
+"Redirect user based on the defined redirect rule when user tries to read the "
+"%s. The REDIRECT option will be ignored if READ option is checked."
+msgstr ""
+"Rediriger l'utilisateur en fonction de la règle de redirection définie "
+"lorsque l'utilisateur essaie de lire le%s. L'option REDIRECT sera ignorée si "
+"l'option READ est cochée."
+
+#: Application/Backend/View/PostOptionList.php:64
+#: Application/Backend/View/PostOptionList.php:144
+msgid "Password Protected"
+msgstr "Protégé par mot de passe"
+
+#: Application/Backend/View/PostOptionList.php:65
+#: Application/Backend/View/PostOptionList.php:145
+msgid "Password"
+msgstr "Mot de passe"
+
+#: Application/Backend/View/PostOptionList.php:69
+#, php-format
+msgid ""
+"Protect access to %s with password. Available with WordPress 4.7.0 or higher."
+msgstr ""
+
+#: Application/Backend/View/PostOptionList.php:72
+#: Application/Backend/View/PostOptionList.php:152
+msgid "Access Expiration"
+msgstr "Expiration de l’accès"
+
+#: Application/Backend/View/PostOptionList.php:73
+#: Application/Backend/View/PostOptionList.php:153
+msgid "Expires"
+msgstr "Expire"
+
+#: Application/Backend/View/PostOptionList.php:77
+#, php-format
+msgid "Define when access will expire for %s."
+msgstr ""
+
+#: Application/Backend/View/PostOptionList.php:77
+#, php-format
+msgid ""
+"After expiration, the access to %s will be denied and redirected based on "
+"the Access Denied Redirect rule. For more information %scheck this article%s "
+"or "
+msgstr ""
+
+#: Application/Backend/View/PostOptionList.php:77
+#, php-format
+msgid " %ssee in action.%s"
+msgstr ""
+
+#: Application/Backend/View/PostOptionList.php:80
+msgid "Monetized Access"
+msgstr ""
+
+#: Application/Backend/View/PostOptionList.php:81
+msgid "E-Product"
+msgstr ""
+
+#: Application/Backend/View/PostOptionList.php:99
+#, php-format
+msgid ""
+"Restrict access to edit %s. Any attempts to edit %s will result in "
+"redirecting user based on the Access Denied Redirect rule."
+msgstr ""
+
+#: Application/Backend/View/PostOptionList.php:102
+#: Application/Backend/View/PostOptionList.php:165
+msgid "Delete"
+msgstr "Supprimer"
+
+#: Application/Backend/View/PostOptionList.php:104
+#: Application/Backend/View/PostOptionList.php:167
+#, php-format
+msgid "Restrict access to trash or permanently delete %s."
+msgstr "Restreindre l'accès à la corbeille ou supprimer définitivement %s."
+
+#: Application/Backend/View/PostOptionList.php:107
+msgid "Publish"
+msgstr "Publier"
+
+#: Application/Backend/View/PostOptionList.php:109
+#, php-format
+msgid ""
+"Restrict access to publish %s. User will be allowed only to submit %s for "
+"review."
+msgstr ""
+
+#: Application/Backend/View/PostOptionList.php:115
+#, php-format
+msgid "Hide %s however still allow access to retrieve %s."
+msgstr ""
+
+#: Application/Backend/View/PostOptionList.php:120
+#, php-format
+msgid ""
+"Restrict access to retrieve %s. Any attempts to retrieve %s will be denied."
+msgstr ""
+
+#: Application/Backend/View/PostOptionList.php:137
+#, php-format
+msgid ""
+"Define how many times %s can be retrieved. After number of time exceeds the "
+"defined threshold, the access will be denied to %s."
+msgstr ""
+
+#: Application/Backend/View/PostOptionList.php:141
+#, php-format
+msgid "Restrict access to comment on %s if commenting feature is enabled."
+msgstr ""
+
+#: Application/Backend/View/PostOptionList.php:149
+#, php-format
+msgid "Protected %s with password. Available with WordPress 4.7.0 or higher."
+msgstr ""
+
+#: Application/Backend/View/PostOptionList.php:157
+#, php-format
+msgid "Define when access expires to %s."
+msgstr "Définir quand l'accès expire pour %s."
+
+#: Application/Backend/View/PostOptionList.php:157
+#, php-format
+msgid ""
+"After expiration, the access to %s will be denied. For more information "
+"%scheck this article%s or "
+msgstr ""
+
+#: Application/Backend/View/PostOptionList.php:162
+#, php-format
+msgid "Restrict access to update %s. Any attempts to update %s will be denied."
+msgstr ""
+
+#: Application/Backend/Widget/Login.php:19
+msgid "AAM Secure Login Widget"
+msgstr ""
+
+#: Application/Backend/Widget/Login.php:98
+msgid "Login"
+msgstr "S'identifier"
+
+#: Application/Backend/Widget/Login.php:102
+#: Application/Shortcode/Strategy/Login.php:54
+msgid "Howdy, %username%"
+msgstr "Bonjour, %nom d'utilisateur%"
+
+#: Application/Core/JwtAuth.php:56
+msgid "Valid username."
+msgstr "Nom d'utilisateur valide."
+
+#: Application/Core/JwtAuth.php:60
+msgid "Valid password."
+msgstr "Mot de passe valide"
+
+#: Application/Core/JwtAuth.php:111
+msgid "JWT Authentication is enabled but secret key is not defined"
+msgstr ""
+
+#: Application/Core/Login.php:161
+msgid "Access denied. Please login to get access."
+msgstr "Accès refusé. Veuillez vous connecter pour avoir accès."
+
+#: Application/Core/Subject/Default.php:78
+msgid "All Users, Roles and Visitor"
+msgstr "Tous les utilisateurs, rôles et visiteurs"
+
+#: Application/Extension/Repository.php:129
+#, php-format
+msgid ""
+"The [%s] file is missing. Update extension to the latest version. %sRead "
+"more.%s"
+msgstr ""
+
+#: Application/Extension/Repository.php:365
+#, php-format
+msgid "Failed to create %s"
+msgstr ""
+
+#: Application/Extension/Repository.php:369
+#, php-format
+msgid "Directory %s is not writable"
+msgstr ""
+
+#: Application/Shared/Manager.php:231
+msgid "RESTful API is disabled"
+msgstr ""
+
+#: Application/Shared/Manager.php:339
+msgid "[No teaser message provided]"
+msgstr ""
+
+#: Application/Shortcode/Factory.php:52
+msgid "No valid strategy found for the given context"
+msgstr ""
+
+#: aam.php:216
+msgid "PHP 5.3.0 or higher is required."
+msgstr ""
+
+#: aam.php:218
+msgid "WP 4.0 or higher is required."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Advanced Access Manager"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "All you need to manage access to your WordPress website"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Vasyl Martyniuk <vasyl@vasyltech.com>"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://vasyltech.com"
+msgstr ""

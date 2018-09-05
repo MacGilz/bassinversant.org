@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="abs.test" server="bv.kingbee.ovh" local="131760657201606614" remote="131763949200000000" Dst="2" />
+<file name="batch.test" server="bv.kingbee.ovh" local="131760657201816053" remote="131763949200000000" Dst="2" />
+<file name="batch_float.test" server="bv.kingbee.ovh" local="131760657202115256" remote="131763949200000000" Dst="2" />
+<file name="batch_with_empty_fill.test" server="bv.kingbee.ovh" local="131760657202314718" remote="131763949200000000" Dst="2" />
+<file name="batch_with_exact_elements.test" server="bv.kingbee.ovh" local="131760657202574029" remote="131763949200000000" Dst="2" />
+<file name="batch_with_fill.test" server="bv.kingbee.ovh" local="131760657202783468" remote="131763949200000000" Dst="2" />
+<file name="convert_encoding.test" server="bv.kingbee.ovh" local="131760657203002891" remote="131763949200000000" Dst="2" />
+<file name="date.test" server="bv.kingbee.ovh" local="131760657203242237" remote="131763949200000000" Dst="2" />
+<file name="date_default_format.test" server="bv.kingbee.ovh" local="131760657203471623" remote="131763949200000000" Dst="2" />
+<file name="date_default_format_interval.test" server="bv.kingbee.ovh" local="131760657203730931" remote="131763949200000000" Dst="2" />
+<file name="date_immutable.test" server="bv.kingbee.ovh" local="131760657203980276" remote="131763949200000000" Dst="2" />
+<file name="date_interval.test" server="bv.kingbee.ovh" local="131760657204229603" remote="131763949200000000" Dst="2" />
+<file name="date_modify.test" server="bv.kingbee.ovh" local="131760657204558731" remote="131763949200000000" Dst="2" />
+<file name="date_namedargs.test" server="bv.kingbee.ovh" local="131760657204818039" remote="131763949200000000" Dst="2" />
+<file name="default.test" server="bv.kingbee.ovh" local="131760657205117245" remote="131763949200000000" Dst="2" />
+<file name="dynamic_filter.test" server="bv.kingbee.ovh" local="131760657205376539" remote="131763949200000000" Dst="2" />
+<file name="escape.test" server="bv.kingbee.ovh" local="131760657205605925" remote="131763949200000000" Dst="2" />
+<file name="escape_html_attr.test" server="bv.kingbee.ovh" local="131760657205855259" remote="131763949200000000" Dst="2" />
+<file name="escape_non_supported_charset.test" server="bv.kingbee.ovh" local="131760657206114603" remote="131763949200000000" Dst="2" />
+<file name="first.test" server="bv.kingbee.ovh" local="131760657206333983" remote="131763949200000000" Dst="2" />
+<file name="force_escape.test" server="bv.kingbee.ovh" local="131760657206583314" remote="131763949200000000" Dst="2" />
+<file name="format.test" server="bv.kingbee.ovh" local="131760657206822677" remote="131763949200000000" Dst="2" />
+<file name="join.test" server="bv.kingbee.ovh" local="131760657207072019" remote="131763949200000000" Dst="2" />
+<file name="json_encode.test" server="bv.kingbee.ovh" local="131760657207261506" remote="131763949200000000" Dst="2" />
+<file name="last.test" server="bv.kingbee.ovh" local="131760657207580650" remote="131763949200000000" Dst="2" />
+<file name="length.test" server="bv.kingbee.ovh" local="131760657207869875" remote="131763949200000000" Dst="2" />
+<file name="length_utf8.test" server="bv.kingbee.ovh" local="131760657208189022" remote="131763949200000000" Dst="2" />
+<file name="merge.test" server="bv.kingbee.ovh" local="131760657208528131" remote="131763949200000000" Dst="2" />
+<file name="nl2br.test" server="bv.kingbee.ovh" local="131760657208777939" remote="131763949200000000" Dst="2" />
+<file name="number_format.test" server="bv.kingbee.ovh" local="131760657209026796" remote="131763949200000000" Dst="2" />
+<file name="number_format_default.test" server="bv.kingbee.ovh" local="131760657209266134" remote="131763949200000000" Dst="2" />
+<file name="replace.test" server="bv.kingbee.ovh" local="131760657209475577" remote="131763949200000000" Dst="2" />
+<file name="reverse.test" server="bv.kingbee.ovh" local="131760657209734892" remote="131763949200000000" Dst="2" />
+<file name="round.test" server="bv.kingbee.ovh" local="131760657209974241" remote="131763949200000000" Dst="2" />
+<file name="slice.test" server="bv.kingbee.ovh" local="131760657210213608" remote="131763949200000000" Dst="2" />
+<file name="sort.test" server="bv.kingbee.ovh" local="131760657210433025" remote="131763949200000000" Dst="2" />
+<file name="special_chars.test" server="bv.kingbee.ovh" local="131760657210642467" remote="131763949200000000" Dst="2" />
+<file name="split.test" server="bv.kingbee.ovh" local="131760657210851899" remote="131763949200000000" Dst="2" />
+<file name="split_utf8.test" server="bv.kingbee.ovh" local="131760657211081281" remote="131763949200000000" Dst="2" />
+<file name="trim.test" server="bv.kingbee.ovh" local="131760657211310668" remote="131763949200000000" Dst="2" />
+<file name="urlencode.test" server="bv.kingbee.ovh" local="131760657211540062" remote="131763949200000000" Dst="2" />
+<file name="urlencode_deprecated.test" server="bv.kingbee.ovh" local="131760657211819313" remote="131763949200000000" Dst="2" />
+</dwsync>

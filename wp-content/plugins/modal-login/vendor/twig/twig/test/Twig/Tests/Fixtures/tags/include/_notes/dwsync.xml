@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="basic.test" server="bv.kingbee.ovh" local="131760657231865740" remote="131763949200000000" Dst="2" />
+<file name="expression.test" server="bv.kingbee.ovh" local="131760657232075179" remote="131763949200000000" Dst="2" />
+<file name="ignore_missing.test" server="bv.kingbee.ovh" local="131760657232334490" remote="131763949200000000" Dst="2" />
+<file name="missing.test" server="bv.kingbee.ovh" local="131760657232504026" remote="131763949200000000" Dst="2" />
+<file name="missing_nested.test" server="bv.kingbee.ovh" local="131760657232673574" remote="131763949200000000" Dst="2" />
+<file name="only.test" server="bv.kingbee.ovh" local="131760657232873039" remote="131763949200000000" Dst="2" />
+<file name="template_instance.test" server="bv.kingbee.ovh" local="131760657233032612" remote="131763949200000000" Dst="2" />
+<file name="templates_as_array.test" server="bv.kingbee.ovh" local="131760657233232081" remote="131763949200000000" Dst="2" />
+<file name="with_variables.test" server="bv.kingbee.ovh" local="131760657233371714" remote="131763949200000000" Dst="2" />
+</dwsync>

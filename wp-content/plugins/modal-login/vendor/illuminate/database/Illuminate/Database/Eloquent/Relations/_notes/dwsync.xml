@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="BelongsTo.php" server="bv.kingbee.ovh" local="131760657009665392" remote="131763948600000000" Dst="2" />
+<file name="BelongsToMany.php" server="bv.kingbee.ovh" local="131760657009844910" remote="131763948600000000" Dst="2" />
+<file name="HasMany.php" server="bv.kingbee.ovh" local="131760657010473230" remote="131763948600000000" Dst="2" />
+<file name="HasManyThrough.php" server="bv.kingbee.ovh" local="131760657010632811" remote="131763948600000000" Dst="2" />
+<file name="HasOne.php" server="bv.kingbee.ovh" local="131760657011271105" remote="131763948600000000" Dst="2" />
+<file name="HasOneOrMany.php" server="bv.kingbee.ovh" local="131760657011430674" remote="131763948600000000" Dst="2" />
+<file name="MorphMany.php" server="bv.kingbee.ovh" local="131760657012088909" remote="131763948600000000" Dst="2" />
+<file name="MorphOne.php" server="bv.kingbee.ovh" local="131760657012258467" remote="131763948600000000" Dst="2" />
+<file name="MorphOneOrMany.php" server="bv.kingbee.ovh" local="131760657013036379" remote="131763948600000000" Dst="2" />
+<file name="MorphPivot.php" server="bv.kingbee.ovh" local="131760657013225874" remote="131763948600000000" Dst="2" />
+<file name="MorphTo.php" server="bv.kingbee.ovh" local="131760657013724535" remote="131763948600000000" Dst="2" />
+<file name="MorphToMany.php" server="bv.kingbee.ovh" local="131760657013933981" remote="131763948600000000" Dst="2" />
+<file name="Pivot.php" server="bv.kingbee.ovh" local="131760657014502462" remote="131763948600000000" Dst="2" />
+<file name="Relation.php" server="bv.kingbee.ovh" local="131760657014921340" remote="131763948600000000" Dst="2" />
+</dwsync>

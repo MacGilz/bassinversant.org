@@ -1,0 +1,475 @@
+{% for key, value in templateOptions %}
+
+{% endfor %}
+{% set id = "img1" %} 
+
+{% set svalue = "" %}
+
+{% set multiple = false %}
+
+{% set width = 100 %}
+
+{% set height = null %}
+
+
+<meta http-equiv="x-ua-compatible" content="IE=10">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<div class='login-modal-wrapper'>
+    <div class="container-fluid">
+        <div class="row"><div  class="col-sm-12">
+                <h2 class="main-title">Login Modal Version {{version}}
+                    <div class="pull-right"><input type="button" id="preview1" value="Preview" class="btn btn-info previewMe"> <input type="button" class="btn btn-primary save" value="Save" id="save1"></div></h2>
+            </div></div>
+<div class="row">
+        <form id="setings" method="post" action="" name="setings" class="col-sm-12">
+            <div class="row">
+
+
+
+                <div class="col-md-7">
+                    <div role="tabpanel">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#loginForm" aria-controls="loginForm" role="tab" data-toggle="tab">Login Form</a></li>
+                            <li role="presentation"><a href="#register" aria-controls="register" role="tab" data-toggle="tab">Registration Form</a></li>
+                            <li role="presentation"><a href="#forgetPassword" aria-controls="forgetPassword" role="tab" data-toggle="tab">Forgot Password Form</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade in active" id="loginForm">
+                                <div id="templateToShow">
+                                    {% include "template/"~template %}
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="register">
+                                <div id="registerToShow">
+                                    {% include "template/"~regtemplate %}
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="forgetPassword">
+                                <div id="forgetToShow">
+                                    {% include "template/"~forgettemplate %}
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <hr>
+                    <div class="row"><div class="col-sm-12">
+
+                            <div class="loginsection">                                
+                                <div class="col-sm-6 form-group ltitle">
+                                    <label>Login Title</label>
+                                    <input class="form-control" type="text" value="{{templateOptions['logintext']}}" name="logintext" id="logintext"/><i> Default :: Login</i>
+                                </div>
+                                <div class="col-sm-6 form-group rtext">
+                                    <label>Register Text</label>
+                                    <input class="form-control" type="text" value="{{templateOptions['registertext']}}" id="registertext" name="registertext"/><i> Default :: Want to Register?</i>
+                                </div>
+                                <div class="col-sm-6 form-group lbtext">
+                                    <label>Login Button Text</label>
+                                    <input class="form-control" type="text" value="{{templateOptions['loginbuttontext']}}" name="loginbuttontext" id="loginbuttontext"/><i> Default :: Login</i>
+                                </div>
+                                <div class="col-sm-6 form-group fgtext">
+                                    <label>Forgot Password Text</label>
+                                    <input class="form-control" type="text" value="{{templateOptions['forgotPasswordText']}}" name="forgotPasswordText" id="forgotPasswordText"/><i> Default :: Forgot Password?</i>
+                                </div>
+                                <div class="col-sm-6 form-group rt">
+                                    <label>Remember Text</label>
+                                    <input class="form-control" type="text" value="{{templateOptions['rememberText']}}" name="rememberText" id="rememberText" /><i> Default :: REMEMBER</i>
+                                </div>
+                                <div class="col-sm-6 form-group rurl">
+                                    <label>Redirect URL After Login</label>
+                                    <input class="form-control" type="text" value="{{templateOptions['redirect_url']}}" name="redirect_url" id="redirect_url" /><i> Default :: {{path}}/wp-admin/</i>
+                                </div>
+                                <div class="col-sm-6 form-group lorurl">
+                                    <label>Redirect URL After Logout</label>
+                                    <input class="form-control" type="text" value="{{templateOptions['log_out_redirect_url']}}" name="log_out_redirect_url" id="log_out_redirect_url" /><i> Default :: {{path}}/wp-login.php?loggedout=true</i>
+                                </div>
+                                <div class="col-sm-6 form-group lorurl">
+                                    <label>Redirect URL After Register</label>
+                                    <input class="form-control" type="text" value="{{templateOptions['register_redirect_url']}}" name="register_redirect_url" id="log_out_redirect_url" /><i> Default :: {{path}}/wp-login.php?checkemail=registered</i>
+                                </div>
+                                <div class="col-sm-12 form-group shortcode">
+                                    <label>Shorcode For Login and Logout </label><br>
+        <strong>[loging_modal_login_shortcode login_text="Log Me In" logout_text="Log Me Out"]</strong>  <br><br>Change the text "Log Me In" or "Log Me Out" if necessary. You can also omit the whole phrase and then it should look like this : 
+                                       <strong>[loging_modal_login_shortcode]</strong> 
+                                </div>
+
+                            </div>
+
+                            <div class="regsection">
+                                <div class="col-sm-6 form-group rbtext">
+                                    <label>Register Button Text</label>
+                                    <input class="form-control" type="text" value="{{templateOptions['registerbuttontext']}}" name="registerbuttontext" id="registerbuttontext" /><i> Default :: Register</i>
+                                </div>
+                                <div class="col-sm-6 form-group rtitle">
+                                    <label>Registration Title</label>
+                                    <input class="form-control" type="text" value="{{templateOptions['regtitle']}}" name="regtitle" id="regtitle"/>
+                                </div>
+                                <div class="col-sm-6 form-group pmtext pull-left">
+                                    <label>Password Message Text</label>
+                                    <input class="form-control" type="text" value="{{templateOptions['passwordMsgText']}}" name="passwordMsgText" id="passwordMsgText"/>
+                                </div>
+                                <div class="col-sm-12 form-group shortcode">
+                                    <label>Shorcode For the plugin</label><br>
+                                    For Register use the bellow shortcode<br>
+
+<strong>[loging_modal_register_shortcode register_text="Register Me"]</strong> <br><br> Change the text "Register Me" as necessary or omit. 
+
+                                        
+                                       
+                                </div>
+                            </div>
+
+                            <div class="forgetsection">
+                                <div class="col-sm-6 form-group fmtitle">
+                                    <label>Forget Modal Title</label>
+                                    <input class="form-control" type="text" value="{{templateOptions['forgetTitle']}}" name="forgetTitle" id="forgetTitle"/>
+                                </div>
+                                <div class="col-sm-6 form-group pbtext">
+                                    <label>Password Button Text</label>
+                                    <input class="form-control" type="text" value="{{templateOptions['getPasswordBtnText']}}" name="getPasswordBtnText" id="getPasswordBtnText"/>
+                                </div>
+                                <div class="col-sm-6 form-group pbtext">
+                                    <label>Email Reminder Text</label>
+                                    <input class="form-control" type="text" value="{{templateOptions['forgetMessageEmail']}}" name="forgetMessageEmail" id="forgetMessageEmail"/>
+                                </div>
+                                <div class="col-sm-12 form-group shortcode">
+                                    <br>
+                                    <label>Shorcode For the plugin</label><br>
+                                    
+                                        For forgot password use the bellow shortcode<br>
+                                        <strong>[loging_modal_forget_shortcode forget_text="Forgot Me"]</strong> <br><br> Change the text "Forgot Me" as necessary or omit. 
+
+                                       
+                                </div>
+                            </div>
+                        </div>
+
+                    </div></div>
+
+
+                <div class="col-md-5 customize">
+                	                    <div class="row">
+
+                    <h4 class="col-sm-7">Customize the modal</h4>
+                    <div class="dropdown precolors col-sm-5">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        Pre Colors
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="javascript:;" rel="presetGreenColor" class="pickPreColor">Garden</a></li>
+                                        <li><a href="javascript:;" rel="presetTiffanyBlues" class="pickPreColor">Tiffany Blues</a></li>
+                                        <li><a href="javascript:;" rel="presetCares" class="pickPreColor">Cares</a></li>
+                                        <li><a href="javascript:;" rel="presetMetronic" class="pickPreColor">Metronic</a></li>
+
+                                    </ul>
+                                </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="loginsection">
+                            <div class="col-sm-4 form-group lhbcolor">
+                                <label>Header Background</label>
+                                <input type="text" value="{{templateOptions['headerBackgroundColor']}}" name="headerBackgroundColor" class="pick-a-color form-control">
+                            </div>
+                            <div class="col-sm-4 form-group lhtcolor">
+                                <label>Header Text</label>
+                                <input type="text" value="{{templateOptions['headerTextColor']}}" name="headerTextColor" class="pick-a-color form-control">
+                            </div>
+                            <div class="col-sm-4 form-group lbbcolor">
+                                <label>Body Background</label>
+                                <input type="text" value="{{templateOptions['bodyBackgroundColor']}}" name="bodyBackgroundColor" class="pick-a-color form-control">
+                            </div>
+                            <div class="col-sm-4 form-group lbtcolor">
+                                <label>Body Text</label>
+                                <input type="text" value="{{templateOptions['bodyTextColor']}}" name="bodyTextColor" class="pick-a-color form-control">
+                            </div>
+                            <div class="col-sm-4 form-group lfbcolor">
+                                <label>Footer Background</label>
+                                <input type="text" value="{{templateOptions['footerBackgroundColor']}}" name="footerBackgroundColor" class="pick-a-color form-control">
+                            </div>
+                            <!--<div class="col-sm-4 form-group lftcolor">
+                            <label>Footer Text</label>
+                            <input type="text" value="{{templateOptions['footerTextColor']}}" name="footerTextColor" class="pick-a-color form-control">
+                        </div>-->
+                            <div class="col-sm-4 form-group lfptcolor">
+                                <label>Forgot Passwd Text</label>
+                                <input type="text" value="{{templateOptions['forgetTextColor']}}" name="forgetTextColor" class="pick-a-color form-control">
+                            </div>
+                            <div class="col-sm-4 form-group lbcolor">
+                                <label><span class="lbc">{{templateOptions['loginbuttontext']}}</span> Button</label>
+                                <input type="text" value="{{templateOptions['loginbuttonBackgroundColor']}}" name="loginbuttonBackgroundColor" class="pick-a-color form-control">
+                            </div>
+                            <div class="col-sm-4 form-group llbbcolor">
+                                <label><span class="lbc">{{templateOptions['loginbuttontext']}}</span> Btn Border</label>
+                                <input type="text" value="{{templateOptions['loginbuttonBorderColor']}}" name="loginbuttonBorderColor" class="pick-a-color form-control">
+                            </div>
+                            <div class="col-sm-4 form-group llbtcolor">
+                                <label><span class="lbc">{{templateOptions['loginbuttontext']}}</span> Button Text</label>
+                                <input type="text" value="{{templateOptions['loginbuttonTextColor']}}" name="loginbuttonTextColor" class="pick-a-color form-control">
+                            </div>
+                            <div class="col-sm-4 form-group lmbcolor">
+                                <label>Modal Backdrop</label>
+                                <input type="text" value="{{templateOptions['modalBackdropColor']}}" name="modalBackdropColor" class="pick-a-color form-control mbColor">
+                            </div>
+                            <div class="col-sm-4 form-group rrtcolor">
+                                <label>Register Text</label>
+                                <input type="text" value="{{templateOptions['registerTextColor']}}" name="registerTextColor" class="pick-a-color form-control mbColor" id="team1">
+                            </div>
+                            <div class="col-sm-4 form-group tbbgcolor">
+                                <label>TextBox Backgrnd</label>
+                                <input type="text" value="{{templateOptions['textBoxBgColor']}}" name="textBoxBgColor" class="pick-a-color form-control mbColor" >
+                            </div>
+                            <div class="col-sm-4 form-group tbbgcolor">
+                                <label>TextBox Font</label>
+                                <input type="text" value="{{templateOptions['textBoxFontColor']}}" name="textBoxFontColor" class="pick-a-color form-control mbColor" >
+                            </div>
+
+                        </div>
+
+                        <div class="regsection">                            
+                            <div class="col-sm-4 form-group lrbbcolor">
+                                <label>Register Button Border Color</label>
+                                <input type="text" value="{{templateOptions['registerbuttonBorderColor']}}" name="registerbuttonBorderColor" class="pick-a-color form-control">
+                            </div>
+                            <div class="col-sm-4 form-group lrbtcolor">
+                                <label>Register Button Text Color</label>
+                                <input type="text" value="{{templateOptions['registerbuttonTextColor']}}" name="registerbuttonTextColor" class="pick-a-color form-control">
+                            </div>
+                            <div class="col-sm-4 form-group rpmtcolor">
+                                <label>Password Message Text Color</label>
+                                <input type="text" value="{{templateOptions['passwordMsgTextColor']}}" name="passwordMsgTextColor" class="pick-a-color form-control mbColor">
+                            </div>
+                            <div class="col-sm-4 form-group lrbcolor">
+                                <label>Register Button Color</label>
+                                <input type="text" value="{{templateOptions['registerbuttonBackgroundColor']}}" name="registerbuttonBackgroundColor" class="pick-a-color form-control">
+                            </div>
+                        </div>
+
+                        <div class="forgetsection">
+                            <div class="col-sm-4 form-group fpbtcolor">
+                                <label>Password Button Text Color</label>
+                                <input type="text" value="{{templateOptions['getPasswordBtnTextColor']}}" name="getPasswordBtnTextColor" class="pick-a-color form-control mbColor">
+                            </div>
+                            <div class="col-sm-4 form-group fpbcolor">
+                                <label>Password Button Color</label>
+                                <input type="text" value="{{templateOptions['getPasswordBtnColor']}}" name="getPasswordBtnColor" class="pick-a-color form-control mbColor">
+                            </div>
+                            <div class="col-sm-4 form-group fpbbcolor">
+                                <label>Password Button Border color</label>
+                                <input type="text" value="{{templateOptions['getPasswordBtnBorderColor']}}" name="getPasswordBtnBorderColor" class="pick-a-color form-control mbColor">
+                            </div>
+                            <div class="col-sm-4 form-group ermcolor">
+                                <label>Email Reminder Message</label>
+                                <input type="text" value="{{templateOptions['footerTextColor']}}" name="footerTextColor" class="pick-a-color form-control">
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="col-md-12">
+                        <h4>Add Image</h4> <hr>
+
+                        <div class="row">
+                            <div class="col-xs-6 form-group">
+                                Header Image
+                                <input class="form-control img_path" type="hidden" value="{{image_path}}" name="image_path"/>
+                                <input type="hidden" name="{{id}}" id="{{id}}" value="{{svalue}}" />
+                                <div class="plupload-upload-uic hide-if-no-js {% if multiple %}plupload-upload-uic-multiple{% endif %}" id="{{id}}plupload-upload-ui">
+                                    <span class="ajaxnonceplu" id="ajaxnonceplu{{nonce}}"></span>
+                                    {% if (width and height) %}
+                                        <span class="plupload-resize"></span><span class="plupload-width" id="plupload-width{{width}}"></span>
+                                        <span class="plupload-height" id="plupload-height{{height}}"></span>
+                                    {% endif %}
+                                    <div class="filelist"></div>
+                                </div>
+
+                                <div id="image_to_show">
+                                    <!--<img src="{{image_path}}" width="75" height="75" class="default-img" ref="{{image_path}}"/>-->
+                                    <div class="plupload-thumbs {% if multiple %}plupload-thumbs-multiple{% endif %}" id="{{id}}plupload-thumbs">
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 zeropad"><input id="{{id}}plupload-browse-button" type="button" value="Add Image" class="button" /></div>
+
+                            </div>
+
+                            <div class="col-xs-4 pull-right roundImgDiv">
+                                <label>Image Shape</label> <input type="checkbox" name="makeItRound" id="makeItRound">
+                            </div>
+                        </div>
+                        <!--
+                            Second image start
+                            -->
+
+                        <div class="row">
+                            <div class="col-xs-6 form-group">
+                                Modal Backgroud Image
+                                <input class="form-control img_path_bg" type="hidden" value="{{image_path_bg}}" name="image_path_bg"/>
+                                <input type="hidden" name="{{id}}10" id="{{id}}10" value="{{svalue}}" />
+                                <div class="plupload-upload-uic hide-if-no-js {% if multiple %}plupload-upload-uic-multiple{% endif %}" id="{{id}}10plupload-upload-ui">
+                                    <span class="ajaxnonceplu" id="ajaxnonceplu{{nonce}}"></span>
+                                    {% if (width and height) %}
+                                        <span class="plupload-resize"></span><span class="plupload-width" id="plupload-width{{width}}"></span>
+                                        <span class="plupload-height" id="plupload-height{{height}}"></span>
+                                    {% endif %}
+                                    <div class="filelist"></div>
+                                </div>
+
+                                <div id="image_to_show_back">
+                                    <!--<img src="{{image_path}}" width="75" height="75" class="default-img" ref="{{image_path}}"/>-->
+                                    <div class="plupload-thumbs10 {% if multiple %}plupload-thumbs-multiple{% endif %}" id="{{id}}10plupload-thumbs">
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 zeropad"><input id="{{id}}10plupload-browse-button" type="button" value="Add Image" class="button" /></div>
+
+                            </div>
+                        </div>
+
+                        <!--
+                        Second image ends
+                        -->
+                        <!--<div class="save_imgae">Show Image</label><span><input type="checkbox" name="showImage" value="1" id="showImage"></span></div>-->
+
+                        <h4>Modal settings</h4> <hr>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label>Background Opacity</label>
+                                <input id="opacity" type="text" value=".5" name="opacity" class="form-control c-opacity">
+                            </div>
+
+                            <div class="col-sm-6 modalCornerDiv">
+                                <label>  Corner Shape </label><br /><input type="checkbox" name="modalCorner" id="modalCorner">
+                            </div>                            
+                        </div>
+                        
+                        <hr>
+                        <div class="row">
+                        <div class="col-sm-6">
+                                <label>Load defualt</label><br /> <input type="checkbox" name="my-checkbox" checked>
+                            </div>
+                            <div class="col-sm-6">
+                                <label>Form Transperancy</label> <br /><input type="checkbox" name="formTransperancy"  id="formTransperancy">
+
+                                 <div id="tOpacityDiv">
+                                <label>Form Opacity</label><br />
+                                <input id="tOpacity" type="text" value=".7" name="tOpacity" class="form-control c-opacity">
+                            </div>
+                            </div>
+                        </div><hr>
+                        <h4>Google reCAPTCHA Seetings</h4><hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <label>Re-Captcha</label><br /><input type="checkbox" name="captcha" id="captcha">
+                            </div>
+                            <div class="col-sm-9 sitekey sitekeytext">
+                                Login to gmail and register <a href="https://www.google.com/recaptcha/admin">Get reCAPTCHA</a> for a Site and Secret Key. See Documentation how to register.
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="sitekey">
+                                    <label>Site Key</label><br /><input type="textbox" name="captchasitekey" id="captchasitekey" value="" size="40">
+                                </div>
+                            </div>                            
+                            <div class="col-sm-12">
+                                <div class="sitekey">
+                                    <label>Secret Key</label><br /><input type="textbox" name="captchasecretkey" id="captchasecretkey" value="" size="40">
+                                </div>
+                            </div>
+                            
+                            <div class="col-xs-12 sitekey">
+                                <br />
+                                Where do you want to show the captcha?
+                            </div>
+                            <div class="col-sm-4 sitekey">
+                                <label>Login Form</label><br /><input type="checkbox" name="logincaptcha" id="logincaptcha">
+                            </div>
+                            <div class="col-sm-4 sitekey">
+                                <label>Register Form</label><br /><input type="checkbox" name="registercaptcha" id="registercaptcha">
+                            </div>
+                            <div class="col-sm-4 sitekey">
+                                <label>Forgot Form</label><br /><input type="checkbox" name="forgotcaptcha" id="forgotcaptcha">
+                            </div>
+
+                            <div class="col-xs-12">
+
+                                <hr>
+
+                                
+                                <div class="col-sm-12" align="center"> <input type="button" id="preview" value="See How I look like" class="btn btn-info btn-lg previewMe"></div>
+
+
+                            </div>
+                            <div class="col-xs-12">&nbsp;</div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="row">
+                <div class="template_container col-sm-12">
+                    <h3 align="center"> Choose Your Template </h3>
+                    {% for key, value in templates %}
+                        {% if value|length == 13 %}
+                            {% set fileName = "template/"~value%}
+                            {% if value == template %}
+                                {% set check="checked" %}
+                            {% else %}
+                                {% set check="" %}
+                            {% endif %}
+                            
+                                <div style="border-bottom:5px solid #eee; margin-bottom:30px">
+                                <div class="row">
+                                   
+                                    <div class="col-md-12" id="my{{value}}">
+                                        {% include fileName %}
+                                    </div>
+
+                                
+                                    <div class="col-md-12 form-group" align="center">
+                                        <input type="radio" rel="my{{value}}" name="template" class="template" value="{{value}}" {{check}}> {{value|replace({'.php': ''})}}
+                                    </div>
+                                        </div>
+                                </div>
+                           
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12" align="center">
+                    <input type="button" class="btn btn-primary save btn-lg" value="Save" id="save">
+                </div>
+            </div>
+        </form>
+</div>
+        <div class="modalInput col-sm-12">
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    
+</script>
+
+
+<!-- wp_create_nonce($id . 'pluploadan') -->

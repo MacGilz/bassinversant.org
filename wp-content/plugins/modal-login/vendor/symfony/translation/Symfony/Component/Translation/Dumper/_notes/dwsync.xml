@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="CsvFileDumper.php" server="bv.kingbee.ovh" local="131760657093944378" remote="131763948600000000" Dst="2" />
+<file name="DumperInterface.php" server="bv.kingbee.ovh" local="131760657094153831" remote="131763948600000000" Dst="2" />
+<file name="FileDumper.php" server="bv.kingbee.ovh" local="131760657094612593" remote="131763948600000000" Dst="2" />
+<file name="IcuResFileDumper.php" server="bv.kingbee.ovh" local="131760657094822039" remote="131763948600000000" Dst="2" />
+<file name="IniFileDumper.php" server="bv.kingbee.ovh" local="131760657095091314" remote="131763948600000000" Dst="2" />
+<file name="JsonFileDumper.php" server="bv.kingbee.ovh" local="131760657095410461" remote="131763948600000000" Dst="2" />
+<file name="MoFileDumper.php" server="bv.kingbee.ovh" local="131760657095629888" remote="131763948600000000" Dst="2" />
+<file name="PhpFileDumper.php" server="bv.kingbee.ovh" local="131760657095869252" remote="131763948600000000" Dst="2" />
+<file name="PoFileDumper.php" server="bv.kingbee.ovh" local="131760657096118571" remote="131763948600000000" Dst="2" />
+<file name="QtFileDumper.php" server="bv.kingbee.ovh" local="131760657096367901" remote="131763948600000000" Dst="2" />
+<file name="XliffFileDumper.php" server="bv.kingbee.ovh" local="131760657096667104" remote="131763948600000000" Dst="2" />
+<file name="YamlFileDumper.php" server="bv.kingbee.ovh" local="131760657096956326" remote="131763948600000000" Dst="2" />
+</dwsync>

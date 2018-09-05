@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="ArrayLoader.php" server="bv.kingbee.ovh" local="131760657099369883" remote="131763948600000000" Dst="2" />
+<file name="CsvFileLoader.php" server="bv.kingbee.ovh" local="131760657099629184" remote="131763948600000000" Dst="2" />
+<file name="IcuDatFileLoader.php" server="bv.kingbee.ovh" local="131760657099968275" remote="131763948600000000" Dst="2" />
+<file name="IcuResFileLoader.php" server="bv.kingbee.ovh" local="131760657100237560" remote="131763948600000000" Dst="2" />
+<file name="IniFileLoader.php" server="bv.kingbee.ovh" local="131760657100506842" remote="131763948600000000" Dst="2" />
+<file name="JsonFileLoader.php" server="bv.kingbee.ovh" local="131760657101075334" remote="131763948600000000" Dst="2" />
+<file name="LoaderInterface.php" server="bv.kingbee.ovh" local="131760657101254851" remote="131763948600000000" Dst="2" />
+<file name="MoFileLoader.php" server="bv.kingbee.ovh" local="131760657101643807" remote="131763948600000000" Dst="2" />
+<file name="PhpFileLoader.php" server="bv.kingbee.ovh" local="131760657101943003" remote="131763948600000000" Dst="2" />
+<file name="PoFileLoader.php" server="bv.kingbee.ovh" local="131760657102282090" remote="131763948600000000" Dst="2" />
+<file name="QtFileLoader.php" server="bv.kingbee.ovh" local="131760657102481559" remote="131763948600000000" Dst="2" />
+<file name="XliffFileLoader.php" server="bv.kingbee.ovh" local="131760657102830635" remote="131763948600000000" Dst="2" />
+<file name="YamlFileLoader.php" server="bv.kingbee.ovh" local="131760657103209610" remote="131763948600000000" Dst="2" />
+</dwsync>

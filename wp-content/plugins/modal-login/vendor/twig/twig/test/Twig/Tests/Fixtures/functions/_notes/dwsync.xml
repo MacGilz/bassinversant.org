@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="attribute.test" server="bv.kingbee.ovh" local="131760657212008812" remote="131763949200000000" Dst="2" />
+<file name="block.test" server="bv.kingbee.ovh" local="131760657212367847" remote="131763949200000000" Dst="2" />
+<file name="constant.test" server="bv.kingbee.ovh" local="131760657212557334" remote="131763949200000000" Dst="2" />
+<file name="cycle.test" server="bv.kingbee.ovh" local="131760657212846567" remote="131763949200000000" Dst="2" />
+<file name="date.test" server="bv.kingbee.ovh" local="131760657213065994" remote="131763949200000000" Dst="2" />
+<file name="date_namedargs.test" server="bv.kingbee.ovh" local="131760657213285396" remote="131763949200000000" Dst="2" />
+<file name="dump.test" server="bv.kingbee.ovh" local="131760657213534734" remote="131763949200000000" Dst="2" />
+<file name="dump_array.test" server="bv.kingbee.ovh" local="131760657213794042" remote="131763949200000000" Dst="2" />
+<file name="dynamic_function.test" server="bv.kingbee.ovh" local="131760657214043376" remote="131763949200000000" Dst="2" />
+<file name="max.test" server="bv.kingbee.ovh" local="131760657217184972" remote="131763949200000000" Dst="2" />
+<file name="min.test" server="bv.kingbee.ovh" local="131760657217424336" remote="131763949200000000" Dst="2" />
+<file name="range.test" server="bv.kingbee.ovh" local="131760657217713558" remote="131763949200000000" Dst="2" />
+<file name="recursive_block_with_inheritance.test" server="bv.kingbee.ovh" local="131760657217932975" remote="131763949200000000" Dst="2" />
+<file name="source.test" server="bv.kingbee.ovh" local="131760657218222196" remote="131763949200000000" Dst="2" />
+<file name="special_chars.test" server="bv.kingbee.ovh" local="131760657218451587" remote="131763949200000000" Dst="2" />
+<file name="template_from_string.test" server="bv.kingbee.ovh" local="131760657218680973" remote="131763949200000000" Dst="2" />
+</dwsync>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="BaseCommand.php" server="bv.kingbee.ovh" local="131760657001916101" remote="131763948600000000" Dst="2" />
+<file name="InstallCommand.php" server="bv.kingbee.ovh" local="131760657002125547" remote="131763948600000000" Dst="2" />
+<file name="MigrateCommand.php" server="bv.kingbee.ovh" local="131760657002843624" remote="131763948600000000" Dst="2" />
+<file name="MigrateMakeCommand.php" server="bv.kingbee.ovh" local="131760657003122891" remote="131763948600000000" Dst="2" />
+<file name="RefreshCommand.php" server="bv.kingbee.ovh" local="131760657003781128" remote="131763948600000000" Dst="2" />
+<file name="ResetCommand.php" server="bv.kingbee.ovh" local="131760657003920740" remote="131763948600000000" Dst="2" />
+<file name="RollbackCommand.php" server="bv.kingbee.ovh" local="131760657004638831" remote="131763948600000000" Dst="2" />
+</dwsync>

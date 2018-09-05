@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="assignment.test" server="bv.kingbee.ovh" local="131760657214302683" remote="131763949200000000" Dst="2" />
+<file name="autoescaping.test" server="bv.kingbee.ovh" local="131760657214532077" remote="131763949200000000" Dst="2" />
+<file name="basic.test" server="bv.kingbee.ovh" local="131760657214771426" remote="131763949200000000" Dst="2" />
+<file name="expression.test" server="bv.kingbee.ovh" local="131760657214960918" remote="131763949200000000" Dst="2" />
+<file name="ignore_missing.test" server="bv.kingbee.ovh" local="131760657215210259" remote="131763949200000000" Dst="2" />
+<file name="missing.test" server="bv.kingbee.ovh" local="131760657215469559" remote="131763949200000000" Dst="2" />
+<file name="missing_nested.test" server="bv.kingbee.ovh" local="131760657215728871" remote="131763949200000000" Dst="2" />
+<file name="sandbox.test" server="bv.kingbee.ovh" local="131760657215948287" remote="131763949200000000" Dst="2" />
+<file name="template_instance.test" server="bv.kingbee.ovh" local="131760657216167696" remote="131763949200000000" Dst="2" />
+<file name="templates_as_array.test" server="bv.kingbee.ovh" local="131760657216456925" remote="131763949200000000" Dst="2" />
+<file name="with_context.test" server="bv.kingbee.ovh" local="131760657216676331" remote="131763949200000000" Dst="2" />
+<file name="with_variables.test" server="bv.kingbee.ovh" local="131760657216915698" remote="131763949200000000" Dst="2" />
+</dwsync>

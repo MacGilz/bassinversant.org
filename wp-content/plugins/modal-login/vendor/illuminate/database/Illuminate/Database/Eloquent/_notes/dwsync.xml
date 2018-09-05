@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="Builder.php" server="bv.kingbee.ovh" local="131760657006932692" remote="131763948600000000" Dst="2" />
+<file name="Collection.php" server="bv.kingbee.ovh" local="131760657007142134" remote="131763948600000000" Dst="2" />
+<file name="MassAssignmentException.php" server="bv.kingbee.ovh" local="131760657007790402" remote="131763948600000000" Dst="2" />
+<file name="Model.php" server="bv.kingbee.ovh" local="131760657008059702" remote="131763948600000000" Dst="2" />
+<file name="ModelNotFoundException.php" server="bv.kingbee.ovh" local="131760657008957293" remote="131763948600000000" Dst="2" />
+<file name="ScopeInterface.php" server="bv.kingbee.ovh" local="131760657015400064" remote="131763948600000000" Dst="2" />
+<file name="SoftDeletingScope.php" server="bv.kingbee.ovh" local="131760657015659368" remote="131763948600000000" Dst="2" />
+<file name="SoftDeletingTrait.php" server="bv.kingbee.ovh" local="131760657016247800" remote="131763948600000000" Dst="2" />
+</dwsync>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="ConnectionFactory.php" server="bv.kingbee.ovh" local="131760656997677441" remote="131763948600000000" Dst="2" />
+<file name="Connector.php" server="bv.kingbee.ovh" local="131760656997856955" remote="131763948600000000" Dst="2" />
+<file name="ConnectorInterface.php" server="bv.kingbee.ovh" local="131760656998565065" remote="131763948600000000" Dst="2" />
+<file name="MySqlConnector.php" server="bv.kingbee.ovh" local="131760656998834336" remote="131763948600000000" Dst="2" />
+<file name="PostgresConnector.php" server="bv.kingbee.ovh" local="131760656999562394" remote="131763948600000000" Dst="2" />
+<file name="SQLiteConnector.php" server="bv.kingbee.ovh" local="131760656999761859" remote="131763948600000000" Dst="2" />
+<file name="SqlServerConnector.php" server="bv.kingbee.ovh" local="131760657000479954" remote="131763948600000000" Dst="2" />
+</dwsync>

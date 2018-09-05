@@ -1,0 +1,110 @@
+/*		Used At backend		**/
+@charset "utf-8";
+/* CSS Document */
+.native{
+	background: none repeat scroll 0 0 #F9F9F9 !important;
+	padding:1px;
+	}
+.notification-status input[type="checkbox"] {
+	margin:0px;
+	vertical-align: middle;
+}
+
+.notification label {
+	padding-top:0px !important;
+	vertical-align: middle;
+}
+.native-email-admin-acount label{
+	padding-right:6px;
+	padding-top: 1px;
+}
+
+.preheading{
+	padding:10px;
+	height:80px;
+	background:#fff;
+	margin-bottom:10px;
+}
+.preheading .btn-primary , .preheading input[type="submit"]
+{
+	height: 37px;
+    width: 100px;
+}
+.tab-cover{
+	width:14.28%;
+	border-bottom: 1px solid #f1f1f1;
+	min-width:156px;
+	margin:0px;
+	display:inline-block;
+	height:37px;
+}
+.tab-cover .nav-tab{
+	width:100%;
+	margin:0px;
+}
+
+
+.logosection .upload, .logosection .upload:hover, .logosection .upload:focus {
+    /* background: #1d0f75 none repeat scroll 0 0; */
+    border: 0 none;
+    border-radius: 5px;
+    box-shadow: 0 0 0 3px rgba(33, 33, 33, 0.4);
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    float: none;
+    font-family: Tahoma,Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 3px;
+    min-width: 80px;
+    padding: 0px 5px;
+    text-align: center;
+    text-decoration: none;
+    height: 25px;
+    white-space: nowrap;
+	overflow:hidden;
+	background-color:#a0ce4e;
+	position:relative;
+}
+
+.logosection input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    -ms-filter: 'alpha(opacity=0)';
+    font-size: 200px;
+    direction: ltr;
+    cursor: pointer;
+	font-size:6px;
+}
+#select2_2 input{
+	width:100%;
+}
+.native_categorylist input[type="checkbox"]{
+	    margin: 6px 3px 5px 0;
+}
+.native-select-all{
+	cursor: pointer;
+    margin: 10px 0;
+    text-align: center;
+    width: 80px;
+	padding:10px;
+	background:#303030;
+	color:#fff;
+	font-weight:bold;
+	text-align:center;
+}
+#toplevel_page_nativeemailpro.wp-has-current-submenu > .toplevel_page_nativeemailpro > .wp-menu-image{
+	background:rgba(0, 0, 0, 0) url("EAPIcon.png") no-repeat scroll 8px 9px;	
+}
+
+#toplevel_page_nativeemailpro > .toplevel_page_nativeemailpro:hover > .wp-menu-image {
+	background:rgba(0, 0, 0, 0) url("EAPIcon-hover.png") no-repeat scroll 8px 9px;	
+}
+
+#toplevel_page_nativeemailpro > .toplevel_page_nativeemailpro:hover > .wp-menu-image > img , #toplevel_page_nativeemailpro.wp-has-current-submenu > .toplevel_page_nativeemailpro > .wp-menu-image > img  {
+	display:none;
+}

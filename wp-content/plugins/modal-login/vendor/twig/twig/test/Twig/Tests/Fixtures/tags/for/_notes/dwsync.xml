@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="condition.test" server="bv.kingbee.ovh" local="131760657228484779" remote="131763949200000000" Dst="2" />
+<file name="context.test" server="bv.kingbee.ovh" local="131760657228634364" remote="131763949200000000" Dst="2" />
+<file name="else.test" server="bv.kingbee.ovh" local="131760657228793949" remote="131763949200000000" Dst="2" />
+<file name="inner_variables.test" server="bv.kingbee.ovh" local="131760657228993403" remote="131763949200000000" Dst="2" />
+<file name="keys.test" server="bv.kingbee.ovh" local="131760657229123066" remote="131763949200000000" Dst="2" />
+<file name="keys_and_values.test" server="bv.kingbee.ovh" local="131760657229372403" remote="131763949200000000" Dst="2" />
+<file name="loop_context.test" server="bv.kingbee.ovh" local="131760657229541947" remote="131763949200000000" Dst="2" />
+<file name="loop_context_local.test" server="bv.kingbee.ovh" local="131760657229701517" remote="131763949200000000" Dst="2" />
+<file name="loop_not_defined.test" server="bv.kingbee.ovh" local="131760657229900996" remote="131763949200000000" Dst="2" />
+<file name="loop_not_defined_cond.test" server="bv.kingbee.ovh" local="131760657230020689" remote="131763949200000000" Dst="2" />
+<file name="nested_else.test" server="bv.kingbee.ovh" local="131760657230200188" remote="131763949200000000" Dst="2" />
+<file name="objects.test" server="bv.kingbee.ovh" local="131760657230529313" remote="131763949200000000" Dst="2" />
+<file name="objects_countable.test" server="bv.kingbee.ovh" local="131760657230748725" remote="131763949200000000" Dst="2" />
+<file name="recursive.test" server="bv.kingbee.ovh" local="131760657230938213" remote="131763949200000000" Dst="2" />
+<file name="values.test" server="bv.kingbee.ovh" local="131760657231167607" remote="131763949200000000" Dst="2" />
+</dwsync>

@@ -1,0 +1,141 @@
+/** Used at fronend* **/
+#emailaertpro_error_message{
+	color:red;
+}
+.widget-email-alert
+{
+ width:100%;
+ margin:15px 0px;
+ padding:5px;
+ max-width:300px;
+}
+.widget-email-alert .widget-email-alert-title
+{
+  
+}
+.widget-email-alert .widget-email-alert-title h3
+{
+ margin:0px;
+ padding:0px;
+ color:#FFF;
+}
+.widget-email-alert .widget-email-alert-description
+{
+   /*
+    font-weight: bolder;
+    line-height: 20px;
+    margin: 0 0 8px;
+    padding: 0;
+    width: 100%;
+*/
+}
+.widget-email-alert  .widget-email-alert-form
+{
+ /*
+ float:left;
+ margin:0px 0px 8px 0px;
+*/
+}
+.widget-email-alert .widget-email-alert-cat
+{
+ list-style-type:none;
+ width:100%;
+ padding:0px;
+ margin:0px;
+}
+.widget-email-alert .widget-email-alert-cat li
+{
+ padding:0px;
+ width:100%;
+ margin:0px 0px 8px 0px;
+}
+.widget-email-alert .widget-email-alert-cat input[type="checkbox"]
+{
+	 margin:3px 8px 0px 0px;
+}
+.widget-email-alert .widget-email-alert-cat label
+{
+ margin:0px 0px 0px 0px;
+ font-size:14px;
+}
+.widget-email-alert  input[type="text"]
+{
+	/*
+    border: 1px solid #000000;
+    border-radius: 7px;
+    height: 30px;
+    line-height: 30px;
+*/
+}
+.widget-email-alert  input[type="submit"]
+{
+ }
+ 
+li .native_categorylist {
+    margin-left: 10px;
+}
+
+
+/***widget change****/
+.native_categorylist{
+float:left;
+width:100%;
+}
+.native_categorylist li {
+	clear: both;
+}
+li .native_categorylist {
+	margin-left: 10px;
+	text-align: initial;
+}
+
+
+/****v2*****/
+
+.catman2 li , .catman li {
+    list-style:none;
+}
+.catman2 input, .widget-email-alert-label { 
+    margin-left: 12px;
+}
+
+.NCbutton:active, .NCbutton:hover, .NCbutton{
+	position: relative;
+	padding: 10px 5px 11px !important;
+	font-size:16px !important;
+	box-shadow:0px !important;
+	padding: 8px !important;
+	border-radius: 5px !important;
+}
+.emailicon{
+		background-image: url("images/email-icon1.png");
+		background-repeat: no-repeat;
+		display: inline-block;
+		height: 20px;
+		margin-right: 5px;
+		vertical-align: middle;
+		width: 25px;
+	}
+.native_categorylist_cover{
+	float:left;
+	 display: inline-block;
+}
+.native-select-all{
+	cursor: pointer;
+    margin: 10px 0;
+    text-align: center;
+    width: 80px;
+	padding:10px;
+	background:#303030;
+	color:#fff;
+	font-weight:bold;
+	text-align:center;
+}
+
+.emailaertpro_mail_submit {
+    font-size: 14px;
+    height: 36px;
+   
+    margin-top: 10px;
+    width: 100px;
+}

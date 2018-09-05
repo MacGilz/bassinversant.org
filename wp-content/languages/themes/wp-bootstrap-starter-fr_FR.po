@@ -1,0 +1,425 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wp-bootstrap-starter\n"
+"POT-Creation-Date: 2018-08-22 19:04+0200\n"
+"PO-Revision-Date: 2018-08-22 19:05+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:21
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: buddypress/common/nav/directory-nav.php:10
+msgid "Directory menu"
+msgstr ""
+
+#. translators: %s: post title
+#: comments.php:34
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr ""
+
+#: comments.php:39
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:55 comments.php:73
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:58 comments.php:76
+msgid "Older Comments"
+msgstr "Commentaires plus anciens"
+
+#: comments.php:59 comments.php:77
+msgid "Newer Comments"
+msgstr "Commentaires plus réçents"
+
+#: comments.php:90
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:97
+msgid "Leave a Reply"
+msgstr ""
+
+#: comments.php:98
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: comments.php:99
+msgid "Cancel Reply"
+msgstr ""
+
+#: comments.php:100
+msgid "Post Comment"
+msgstr ""
+
+#: comments.php:105
+msgid ""
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes:"
+msgstr ""
+
+#: functions.php:56
+msgid "Primary"
+msgstr ""
+
+#: functions.php:108
+msgid "Sidebar"
+msgstr "Barre latérale"
+
+#: functions.php:110 functions.php:119 functions.php:128 functions.php:137
+msgid "Add widgets here."
+msgstr ""
+
+#: functions.php:117
+msgid "Footer 1"
+msgstr ""
+
+#: functions.php:126
+msgid "Footer 2"
+msgstr ""
+
+#: functions.php:135
+msgid "Footer 3"
+msgstr ""
+
+#: functions.php:229
+msgid "To view this protected post, enter the password below:"
+msgstr ""
+
+#: functions.php:230
+msgid "Password:"
+msgstr "Mot de passe:"
+
+#: functions.php:230
+msgid "Submit"
+msgstr "Envoyer"
+
+#: functions.php:416
+msgid "Page"
+msgstr ""
+
+#: functions.php:441 functions.php:446 functions.php:467
+msgid "Rubriques"
+msgstr ""
+
+#: functions.php:442
+msgid "Rubrique"
+msgstr ""
+
+#: functions.php:462
+msgid "Toutes Rubriques"
+msgstr ""
+
+#: functions.php:463 functions.php:464
+msgid "Modifier Rubrique"
+msgstr ""
+
+#: functions.php:465
+msgid "Ajouter Rubrique"
+msgstr ""
+
+#: functions.php:466
+msgid "Nouveau nom de Rubrique"
+msgstr ""
+
+#: functions.php:963
+msgid "Contributing Members"
+msgstr ""
+
+#: header.php:31
+msgid "Skip to content"
+msgstr ""
+
+#: inc/customizer.php:27
+msgid "Preset Styles"
+msgstr "Styles prédéfinis"
+
+#: inc/customizer.php:79
+msgid "Typography"
+msgstr ""
+
+#: inc/customizer.php:104
+msgid "Header Banner"
+msgstr ""
+
+#: inc/customizer.php:113
+msgid "Header Image"
+msgstr "Image de Header"
+
+#: inc/customizer.php:131
+msgid "Header Banner Background Color"
+msgstr ""
+
+#: inc/customizer.php:138
+msgid "WP Bootstrap Framework"
+msgstr ""
+
+#: inc/customizer.php:142
+msgid "Banner Title"
+msgstr "Titre de la bannière"
+
+#: inc/customizer.php:149
+msgid ""
+"To customize the contents of this header banner and other elements of your "
+"site go to Dashboard - Appearance - Customize"
+msgstr ""
+
+#: inc/customizer.php:153
+msgid "Banner Tagline"
+msgstr ""
+
+#: inc/customizer.php:164
+msgid "Remove Header Banner"
+msgstr ""
+
+#: inc/customizer.php:176
+msgid "Other Customizations"
+msgstr ""
+
+#: inc/customizer.php:184
+msgid "Background Color"
+msgstr "Couleur d’arrière-plan"
+
+#: inc/customizer.php:193
+msgid "Background Image"
+msgstr "Image de fond"
+
+#: inc/customizer.php:216
+msgid "Upload Logo (replaces text)"
+msgstr ""
+
+#: inc/template-tags.php:26
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Posté le %s"
+
+#: inc/template-tags.php:33
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr "par %s"
+
+#. translators: used between list items, there is a space after the comma
+#. KBS
+#. $categories_list = get_the_category_list( esc_html__( ', ', 'wp-bootstrap-starter' ) );
+#.
+#. if ( $categories_list && wp_bootstrap_starter_categorized_blog() ) {
+#. printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'wp-bootstrap-starter' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+#. }
+#. KBS
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:66
+msgid " "
+msgstr ""
+
+#: inc/template-tags.php:68
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: inc/template-tags.php:142
+msgid "Pingback:"
+msgstr ""
+
+#: inc/template-tags.php:142
+msgid "Edit"
+msgstr "Editer"
+
+#: inc/template-tags.php:157
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr ""
+
+#: inc/template-tags.php:161
+#, php-format
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: inc/template-tags.php:164
+msgid ""
+"<span style=\"margin-left: 5px;\" class=\"glyphicon glyphicon-edit\"></span> "
+"Edit"
+msgstr ""
+
+#: inc/template-tags.php:169
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: search.php:19
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Résultat de la recherche pour: %s"
+
+#: searchform.php:14
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "Rechercher;"
+
+#: searchform.php:14
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: template-parts/content-archives-actualites.php:74
+#: template-parts/content-homepage.php:139
+#: template-parts/content-notitle.php:18 template-parts/content-page.php:24
+#: template-parts/content-ressource.php:60
+#: template-parts/content-ressources-headcontent.php:30
+#: template-parts/content-ressources-liste-home-sous-site.php:73
+#: template-parts/content-ressources-liste.php:72
+#: template-parts/content-ressources.php:76
+#: template-parts/content-sous-site-landing-content.php:21
+#: template-parts/content.php:42 template_actualites.php:75
+#: template_archives_actualites.php:102
+msgid "Pages:"
+msgstr ""
+
+#. translators: %s: Name of current post
+#: template-parts/content-homepage.php:152 template-parts/content-page.php:37
+#: template-parts/content-ressources-headcontent.php:43
+#: template-parts/content-ressources.php:93
+#: template-parts/content-sous-site-landing-content.php:34
+#, php-format
+msgid "Edit %s"
+msgstr "Modifier %s"
+
+#: template-parts/content-none.php:3
+msgid "Nothing Found"
+msgstr "Aucun resultat"
+
+#: template-parts/content-none.php:12
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Désolé, mais rien ne correspond à vos termes de recherche. Veuillez "
+"réessayer avec d'autres mots-clés."
+
+#: template-parts/content-none.php:18
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content.php:38
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: woocommerce/cart/cart.php:35 woocommerce/cart/cart.php:77
+msgid "Product"
+msgstr "Produit"
+
+#: woocommerce/cart/cart.php:36 woocommerce/cart/cart.php:93
+msgid "Price"
+msgstr "Prix"
+
+#: woocommerce/cart/cart.php:37 woocommerce/cart/cart.php:99
+msgid "Quantity"
+msgstr "Quantité"
+
+#: woocommerce/cart/cart.php:38 woocommerce/cart/cart.php:115
+msgid "Total"
+msgstr ""
+
+#: woocommerce/cart/cart.php:60
+msgid "Remove this item"
+msgstr "Enlever cet article"
+
+#: woocommerce/cart/cart.php:89
+msgid "Available on backorder"
+msgstr ""
+
+#: woocommerce/cart/cart.php:133
+msgid "Coupon:"
+msgstr ""
+
+#: woocommerce/cart/cart.php:133
+msgid "Coupon code"
+msgstr ""
+
+#: woocommerce/cart/cart.php:133
+msgid "Apply coupon"
+msgstr ""
+
+#: woocommerce/cart/cart.php:138
+msgid "Update cart"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "wp-bootstrap-starter"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "King Bee Std"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://kingbeestudio.com/"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Left Sidebar"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Ressources"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Recherche"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Landing Page Sous-site"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Actualités"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Actualités Archives"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Toutes les ressources"
+msgstr ""
+
+#~ msgid "(more...)"
+#~ msgstr "(Lire le suite…)"
+
+#~ msgid "Theme Option"
+#~ msgstr "Option de thème"

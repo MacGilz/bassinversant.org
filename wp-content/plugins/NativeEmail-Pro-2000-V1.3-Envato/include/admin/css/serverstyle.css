@@ -1,0 +1,106 @@
+.btn-primary , input[type="submit"] , .btn-primary :hover, input[type="submit"]:hover{
+	background: #A0CE4E;
+	border-color: #A0CE4E;
+	color: #fff;
+}
+.register_user th{
+	height:35px;
+	font-size:15px;
+	font-weight:bold;
+}
+
+.register_user tr ,.register_user td , .register_user th{
+	border:1px solid #808080;
+	text-align:center;
+}
+input[type="radio"] , input[type="checkbox"]{
+      margin:0 10px 0 2px;
+	vertical-align: text-top;
+	}
+.nav-tab-active{
+	background-color:#ffffff;
+	text-decoration:none;
+}
+#s2id_select2_1 {
+/*    width: 90% !important;*/
+}
+.filter {
+    float: left;
+	margin: 0 0 0 -30px;
+}
+.template .widget{ 
+/*
+margin-left:10px;
+margin-right:10px;
+margin-bottom:30px;
+*/
+height:500px;
+}
+
+
+.native_categorylist > li > span {
+    vertical-align: sub;
+}
+
+
+.email_template_select .box {
+	margin: 0 5px 35px 15px;
+    vertical-align: text-top;
+	background: none repeat scroll 0 0 #FFF;
+	border: 1px solid #E2E1E1;
+	height: 580px;
+/*	width:30%; */
+	float: left;
+	padding:0px;
+}
+
+
+.email_template_select .box img {
+	width: 200px;
+	
+
+	margin-top: 15px;
+}
+
+.box h3 label{
+    padding-right: 10px;
+	color:#555555;
+}
+/*
+.box h3 {
+    color: #fff;
+}
+*/
+
+.box img  , .email_template_select{
+   width:100%;
+   text-align: center;
+}
+.metricsDrawHook input {
+	width:100%;
+}
+.dtpicker-overlay {
+	position:static !important;
+}
+#dtBox {
+    margin-top: 22px;
+}
+/****/
+/* for internet explorer
+/*******/
+
+/***navigation tabs**/
+.nav-tab {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 28px;
+    padding: 6px 8px !important;
+    text-align: center;
+    width: 155px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.file {
+	float: left;
+	width: 53%;
+}

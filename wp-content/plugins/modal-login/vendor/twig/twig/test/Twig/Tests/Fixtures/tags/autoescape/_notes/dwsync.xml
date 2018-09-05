@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="basic.test" server="bv.kingbee.ovh" local="131760657221593191" remote="131763949200000000" Dst="2" />
+<file name="blocks.test" server="bv.kingbee.ovh" local="131760657221832558" remote="131763949200000000" Dst="2" />
+<file name="double_escaping.test" server="bv.kingbee.ovh" local="131760657222071908" remote="131763949200000000" Dst="2" />
+<file name="functions.test" server="bv.kingbee.ovh" local="131760657222311264" remote="131763949200000000" Dst="2" />
+<file name="literal.test" server="bv.kingbee.ovh" local="131760657222520721" remote="131763949200000000" Dst="2" />
+<file name="nested.test" server="bv.kingbee.ovh" local="131760657222800028" remote="131763949200000000" Dst="2" />
+<file name="objects.test" server="bv.kingbee.ovh" local="131760657223049300" remote="131763949200000000" Dst="2" />
+<file name="raw.test" server="bv.kingbee.ovh" local="131760657223268716" remote="131763949200000000" Dst="2" />
+<file name="strategy.test" server="bv.kingbee.ovh" local="131760657223498095" remote="131763949200000000" Dst="2" />
+<file name="type.test" server="bv.kingbee.ovh" local="131760657223757414" remote="131763949200000000" Dst="2" />
+<file name="with_filters.test" server="bv.kingbee.ovh" local="131760657223986800" remote="131763949200000000" Dst="2" />
+<file name="with_filters_arguments.test" server="bv.kingbee.ovh" local="131760657224226157" remote="131763949200000000" Dst="2" />
+<file name="with_pre_escape_filters.test" server="bv.kingbee.ovh" local="131760657224455547" remote="131763949200000000" Dst="2" />
+<file name="with_preserves_safety_filters.test" server="bv.kingbee.ovh" local="131760657224694911" remote="131763949200000000" Dst="2" />
+</dwsync>

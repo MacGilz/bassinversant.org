@@ -1,0 +1,3038 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Search & Filter Pro\n"
+"POT-Creation-Date: 2018-08-22 18:41+0200\n"
+"PO-Revision-Date: 2018-08-22 18:59+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: search-filter-pro.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: admin/class-search-filter-admin.php:158
+msgid "Shortcode"
+msgstr ""
+
+#: admin/class-search-filter-admin.php:159
+msgid "Fields List"
+msgstr ""
+
+#: admin/class-search-filter-admin.php:160
+msgid "Results Method"
+msgstr ""
+
+#: admin/class-search-filter-admin.php:161
+#: admin/views/admin-search-form-settings-metabox.php:720
+#: admin/views/admin-search-form-settings-metabox.php:780
+#: admin/views/fields/post-date.php:37 admin/views/fields/post-meta.php:39
+#: admin/views/fields/post-meta/date.php:5
+#: admin/views/fields/sort-order-option.php:32
+msgid "Date"
+msgstr ""
+
+#: admin/class-search-filter-admin.php:249
+#: admin/views/admin-search-form-settings-metabox.php:213
+#: admin/views/admin-system-status.php:629
+msgid "As an Archive"
+msgstr ""
+
+#: admin/class-search-filter-admin.php:268
+#: admin/views/admin-system-status.php:648
+#, php-format
+msgid "Post Type Archive: <strong>%s</strong>"
+msgstr ""
+
+#: admin/class-search-filter-admin.php:272
+#: admin/views/admin-search-form-settings-metabox.php:230
+#: admin/views/admin-system-status.php:652
+msgid "Using a Shortcode"
+msgstr ""
+
+#: admin/class-search-filter-admin.php:276
+#: admin/views/admin-search-form-settings-metabox.php:254
+#: admin/views/admin-system-status.php:656
+msgid "Custom"
+msgstr ""
+
+#: admin/class-search-filter-admin.php:280
+#: admin/views/admin-search-form-settings-metabox.php:239
+#: admin/views/admin-system-status.php:660
+msgid "WooCommerce Shop"
+msgstr ""
+
+#: admin/class-search-filter-admin.php:284
+#: admin/views/admin-search-form-settings-metabox.php:246
+#: admin/views/admin-system-status.php:664
+msgid "EDD Downloads Page"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+#: admin/class-search-filter-admin.php:380
+msgid "Search & Filter Pro"
+msgstr ""
+
+#: admin/class-search-filter-admin.php:381
+msgid "Search & Filter"
+msgstr ""
+
+#: admin/class-search-filter-admin.php:390
+#: admin/class-search-filter-admin.php:391
+#: includes/class-search-filter-shared.php:37
+#: public/class-search-filter.php:671
+msgid "New Search Form"
+msgstr ""
+
+#: admin/class-search-filter-admin.php:398
+msgid "Search &amp; Filter Settings"
+msgstr ""
+
+#: admin/class-search-filter-admin.php:399
+#: admin/class-search-filter-admin.php:705
+msgid "Settings"
+msgstr ""
+
+#: admin/class-search-filter-admin.php:408
+#: admin/views/admin-license-settings.php:16
+msgid "Search &amp; Filter License"
+msgstr ""
+
+#: admin/class-search-filter-admin.php:409
+msgid "License"
+msgstr ""
+
+#: admin/class-search-filter-admin.php:417
+msgid "Search &amp; Filter System Status"
+msgstr ""
+
+#: admin/class-search-filter-admin.php:418
+#: admin/views/admin-system-status.php:21
+msgid "System Status"
+msgstr ""
+
+#: admin/class-search-filter-admin.php:428
+msgid "Search &amp; Filter Cache"
+msgstr ""
+
+#: admin/class-search-filter-admin.php:429
+#: admin/includes/class-search-filter-posts-admin.php:743
+#: admin/views/admin-settings.php:17
+msgid "Cache"
+msgstr ""
+
+#: admin/class-search-filter-admin.php:940
+msgid "Dismiss"
+msgstr ""
+
+#: admin/class-search-filter-admin.php:943
+msgid "Welcome to Search &amp; Filter"
+msgstr ""
+
+#: admin/class-search-filter-admin.php:944
+msgid "Build a custom UI for Searching &amp; Filtering your posts."
+msgstr ""
+
+#: admin/class-search-filter-admin.php:947
+msgid "Get Started"
+msgstr ""
+
+#: admin/class-search-filter-admin.php:948
+msgid ""
+"If you've just set up the plugin, the first thing you need to do is create a "
+"new Search Form"
+msgstr ""
+
+#: admin/class-search-filter-admin.php:949
+#: includes/class-search-filter-shared.php:34
+#: includes/class-search-filter-shared.php:35
+#: public/class-search-filter.php:668 public/class-search-filter.php:669
+msgid "Add New Search Form"
+msgstr ""
+
+#: admin/class-search-filter-admin.php:952
+msgid "Documentation"
+msgstr ""
+
+#: admin/class-search-filter-admin.php:954
+msgid "Getting Started with Search &amp; Filter"
+msgstr ""
+
+#: admin/class-search-filter-admin.php:955
+msgid "Feature Requests"
+msgstr ""
+
+#: admin/class-search-filter-admin.php:959
+msgid "Help"
+msgstr ""
+
+#: admin/class-search-filter-admin.php:961
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: admin/class-search-filter-admin.php:962
+msgid "Support Forums"
+msgstr ""
+
+#: admin/class-search-filter-admin.php:1027
+msgid ""
+"<strong>Search &amp; Filter Error: </strong> The caching tables are missing "
+"- "
+msgstr ""
+
+#: admin/class-search-filter-admin.php:1028
+msgid "click here to create them"
+msgstr ""
+
+#: admin/includes/EDD_SL_Plugin_Updater.php:186
+#, php-format
+msgid ""
+"There is a new version of %1$s available. %2$sView version %3$s details%4$s."
+msgstr ""
+
+#: admin/includes/EDD_SL_Plugin_Updater.php:194
+#, php-format
+msgid ""
+"There is a new version of %1$s available. %2$sView version %3$s details%4$s "
+"or %5$supdate now%6$s."
+msgstr ""
+
+#: admin/includes/EDD_SL_Plugin_Updater.php:337
+msgid "You do not have permission to install plugin updates"
+msgstr ""
+
+#: admin/includes/EDD_SL_Plugin_Updater.php:337
+msgid "Error"
+msgstr ""
+
+#: admin/includes/class-search-filter-admin-notices.php:174
+#, php-format
+msgid ""
+"WooCommerce is not enabled and is in use in your search forms.  Choose a "
+"different display method or enable <strong>WooCommerce</strong> plugin.%s"
+msgstr ""
+
+#: admin/includes/class-search-filter-admin-notices.php:185
+#, php-format
+msgid ""
+"There are <strong>%d</strong> Search Forms using display mode "
+"<strong>WooCommerce Shop</strong> - you may only have <strong>1</strong>%s"
+msgstr ""
+
+#: admin/includes/class-search-filter-admin-notices.php:209
+#, php-format
+msgid ""
+"There are <strong>%d</strong> Search Forms set to use <strong>Post Type "
+"Archive</strong> display mode for the post type <strong>%s</strong> - you "
+"may only have <strong>1</strong>%s"
+msgstr ""
+
+#: admin/includes/class-search-filter-admin-notices.php:227
+msgid "<strong>Error: </strong> "
+msgstr ""
+
+#: admin/includes/class-search-filter-admin-notices.php:283
+#, php-format
+msgid ""
+"The custom template file `<strong>%s</strong>` cannot be found - go to "
+"<strong>Display Results</strong> tab to fix"
+msgstr ""
+
+#: admin/includes/class-search-filter-admin-notices.php:293
+msgid ""
+"You have not specified a <strong>custom template</strong> file for your "
+"results - this may lead to unexpected behaviour when displaying your results"
+msgstr ""
+
+#: admin/includes/class-search-filter-admin-notices.php:344
+#, php-format
+msgid ""
+"There are <strong>%d</strong> Search Forms set to use <strong>Post Type "
+"Archive</strong> display mode for the post type <strong>%s</strong> - you "
+"may only have <strong>1</strong>"
+msgstr ""
+
+#: admin/includes/class-search-filter-admin-notices.php:377
+msgid ""
+"WooCommerce is not enabled. Choose a different display method or enable "
+"<strong>WooCommerce</strong> plugin."
+msgstr ""
+
+#: admin/includes/class-search-filter-admin-notices.php:407
+#, php-format
+msgid ""
+"There are <strong>%d</strong> Search Forms using display mode "
+"<strong>WooCommerce Shop</strong> - you may only have <strong>1</strong>"
+msgstr ""
+
+#: admin/includes/class-search-filter-admin-notices.php:421
+msgid ""
+"Easy Digital Downloads is not enabled. Choose a different display method or "
+"enable <strong>Easy Digital Downloads</strong> plugin."
+msgstr ""
+
+#: admin/includes/class-search-filter-admin-notices.php:576
+#, php-format
+msgid ""
+"The `<strong>has_archive</strong>` attribute is set to false for the post "
+"type <strong>%s</strong> - this must be enabled in order to use the Post "
+"Type Archive in WP"
+msgstr ""
+
+#: admin/includes/class-search-filter-admin-notices.php:592
+#, php-format
+msgid ""
+"You can only select <strong>%d</strong> post type(s) - or change your "
+"display method"
+msgstr ""
+
+#: admin/includes/class-search-filter-admin-notices.php:631
+msgid "You can only select the following post types: "
+msgstr ""
+
+#: admin/includes/class-search-filter-admin-notices.php:631
+msgid " (or change your display method)"
+msgstr ""
+
+#: admin/includes/class-search-filter-admin-notices.php:644
+msgid ""
+"Your <strong>Results URL</strong> is empty - go to <strong>Display Results</"
+"strong> tab to fix"
+msgstr ""
+
+#: admin/includes/class-search-filter-admin-notices.php:660
+#: admin/views/admin-system-status.php:688
+msgid "Error: "
+msgstr ""
+
+#: admin/includes/class-search-filter-admin-notices.php:663
+#: admin/views/admin-system-status.php:691
+msgid "Notice:"
+msgstr ""
+
+#: admin/includes/class-search-filter-posts-admin.php:79
+msgid ""
+"<strong>Caching not enabled: </strong> please enable to use advanced "
+"features."
+msgstr ""
+
+#: admin/includes/class-search-filter-posts-admin.php:82
+msgid ""
+"<strong>Caching currently in progress: </strong> You will only find search "
+"results from posts that have been cached so far."
+msgstr ""
+
+#: admin/includes/class-search-filter-posts-admin.php:751
+msgid "Shortcodes"
+msgstr ""
+
+#: admin/includes/class-search-filter-posts-admin.php:769
+msgid "Settings & Defaults"
+msgstr ""
+
+#: admin/includes/class-search-filter-posts-admin.php:778
+msgid "Available Fields"
+msgstr "Champs disponibles"
+
+#: admin/includes/class-search-filter-posts-admin.php:788
+msgid "Search Form UI"
+msgstr ""
+
+#: admin/includes/class-search-filter-posts-admin.php:1104
+#: public/includes/fields/search.php:29
+msgid "Search &hellip;"
+msgstr ""
+
+#: admin/views/admin-available-fields-metabox.php:15
+msgid ""
+"Drag any of these Available Fields in to the <strong>Search Form UI</strong> "
+"to start building your Search Form."
+msgstr ""
+
+#: admin/views/admin-cache.php:18
+msgid "Cache has not started yet..."
+msgstr ""
+
+#: admin/views/admin-cache.php:92
+msgid "Status: "
+msgstr ""
+
+#: admin/views/admin-cache.php:99
+msgid "Restarting "
+msgstr "Redémarrage"
+
+#: admin/views/admin-cache.php:108
+msgid "Current Progress: "
+msgstr ""
+
+#: admin/views/admin-cache.php:112
+#, php-format
+msgid "Last Updated: %s"
+msgstr ""
+
+#: admin/views/admin-cache.php:118
+msgid "Run Method: "
+msgstr ""
+
+#: admin/views/admin-cache.php:121
+msgid "switch"
+msgstr ""
+
+#: admin/views/admin-cache.php:143
+msgid "Connection Status: "
+msgstr ""
+
+#: admin/views/admin-cache.php:151
+msgid "Locked: "
+msgstr ""
+
+#: admin/views/admin-cache.php:159
+msgid "Error Count: "
+msgstr ""
+
+#: admin/views/admin-cache.php:167
+msgid "Cache List"
+msgstr ""
+
+#: admin/views/admin-cache.php:173
+msgid "Notice: Duplicates Found: "
+msgstr ""
+
+#: admin/views/admin-cache.php:185
+msgid "Cached Data"
+msgstr ""
+
+#: admin/views/admin-license-settings.php:20
+msgid "Enter your license key to enable updates."
+msgstr ""
+
+#: admin/views/admin-license-settings.php:25
+msgid "License Key"
+msgstr "Clé de licence"
+
+#: admin/views/admin-license-settings.php:29
+msgid "Enter your license key"
+msgstr ""
+
+#: admin/views/admin-license-settings.php:35
+#: admin/views/admin-license-settings.php:44
+msgid "Activate License"
+msgstr ""
+
+#: admin/views/admin-license-settings.php:39
+msgid "active"
+msgstr ""
+
+#: admin/views/admin-license-settings.php:41
+msgid "Deactivate License"
+msgstr ""
+
+#: admin/views/admin-search-form-cache-metabox.php:15
+msgid ""
+"<strong>Notice</strong>: Running background processes is either disabled or "
+"has failed in this environment.<br /><br />Therefore you must leave this "
+"page open to complete caching."
+msgstr ""
+
+#: admin/views/admin-search-form-cache-metabox.php:52
+msgid "<em>Fetching cache information...</em>"
+msgstr ""
+
+#: admin/views/admin-search-form-cache-metabox.php:69
+#: admin/views/admin-search-form-cache-metabox.php:91
+#: admin/views/admin-search-form-settings-metabox.php:159
+#: admin/views/admin-search-form-settings-metabox.php:985
+msgid "Enable"
+msgstr ""
+
+#: admin/views/admin-search-form-cache-metabox.php:74
+msgid ""
+"<strong>Notice:</strong> Cache is not enabled, this is required for advanced "
+"features."
+msgstr ""
+
+#: admin/views/admin-search-form-cache-metabox.php:98
+#: admin/views/admin-search-form-cache-metabox.php:121
+msgid "Current Progress:"
+msgstr ""
+
+#: admin/views/admin-search-form-cache-metabox.php:102
+msgid ""
+"<span class='progress-current'>0</span> / <span class='progress-total'>0</"
+"span> posts - <strong><span class='progress-percent'>0</span>%</strong>"
+msgstr ""
+
+#: admin/views/admin-search-form-cache-metabox.php:107
+msgid "Building cache..."
+msgstr ""
+
+#: admin/views/admin-search-form-cache-metabox.php:110
+#: admin/views/admin-search-form-cache-metabox.php:133
+msgid "<strong>Caching paused: </strong> attempting to resume..."
+msgstr ""
+
+#: admin/views/admin-search-form-cache-metabox.php:113
+#: admin/views/admin-search-form-cache-metabox.php:137
+msgid "Search results will only contain posts when caching has completed."
+msgstr ""
+
+#: admin/views/admin-search-form-cache-metabox.php:125
+msgid "Building the Term Cache"
+msgstr ""
+
+#: admin/views/admin-search-form-cache-metabox.php:130
+msgid "Almost finished..."
+msgstr ""
+
+#: admin/views/admin-search-form-cache-metabox.php:145
+msgid "<strong>Error: </strong>Unable to cache posts."
+msgstr ""
+
+#: admin/views/admin-search-form-cache-metabox.php:148
+msgid ""
+"Something prevented the caching process from running, you can try again by "
+"selecting <strong>Rebuild Cache</strong>.<br /><a href='#' "
+"target='_blank'>More info</a>"
+msgstr ""
+
+#: admin/views/admin-search-form-cache-metabox.php:157
+msgid "Cache up to date, all systems go."
+msgstr ""
+
+#: admin/views/admin-search-form-cache-metabox.php:165
+msgid "Restarting..."
+msgstr ""
+
+#: admin/views/admin-search-form-cache-metabox.php:169
+msgid "Changes have been made which require the cache to be rebuilt."
+msgstr ""
+
+#: admin/views/admin-search-form-cache-metabox.php:173
+msgid "Please wait a moment..."
+msgstr ""
+
+#: admin/views/admin-search-form-cache-metabox.php:180
+msgid "Ready, waiting for some posts to cache..."
+msgstr ""
+
+#: admin/views/admin-search-form-cache-metabox.php:184
+msgid "There is no data to cache yet."
+msgstr ""
+
+#: admin/views/admin-search-form-cache-metabox.php:193
+msgid "Rebuild Cache"
+msgstr "Reconstruire le cache"
+
+#: admin/views/admin-search-form-metabox.php:15
+msgid ""
+"Build your Search Form here by dragging Available Fields in to this area."
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:20
+msgid "Settings &amp; Default Conditions for this Search Form."
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:24
+msgid "General"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:25
+msgid "Display Results"
+msgstr "Afficher les résultats"
+
+#: admin/views/admin-search-form-settings-metabox.php:26
+msgid "Posts"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:27
+msgid "Tags, Categories &amp; Taxonomies"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:28
+#: admin/views/fields/post-meta.php:26
+msgid "Post Meta"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:29
+#: admin/views/fields/sort-order-option.php:61
+msgid "Advanced"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:40
+#: public/includes/class-search-filter-active-query.php:878
+msgid "Post Types"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:45
+msgid "Search in the following post types:"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:112
+msgid "Results per page:"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:120
+msgid "Auto submit form?"
+msgstr "Formulaire de soumission automatique?"
+
+#: admin/views/admin-search-form-settings-metabox.php:120
+msgid ""
+"Update the results whenever a user changes a value - no need for a submit "
+"button"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:128
+msgid "Maintain Search Form State"
+msgstr "Maintenir l'état du formulaire de recherche"
+
+#: admin/views/admin-search-form-settings-metabox.php:129
+msgid ""
+"Prevents the Search Form from resetting when clicking through on to "
+"individual search results (modifies permalinks)."
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:140
+msgid "Field relationships:"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:140
+msgid ""
+"AND - posts shown will match all fields, OR - posts shown will match any of "
+"the fields"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:144
+#: admin/views/fields/author.php:62 admin/views/fields/category.php:63
+#: admin/views/fields/post-meta/choice.php:29 admin/views/fields/tag.php:65
+#: admin/views/fields/taxonomy.php:118
+msgid "AND"
+msgstr "AND"
+
+#: admin/views/admin-search-form-settings-metabox.php:145
+#: admin/views/fields/author.php:63 admin/views/fields/category.php:64
+#: admin/views/fields/post-meta/choice.php:30 admin/views/fields/tag.php:66
+#: admin/views/fields/taxonomy.php:119
+msgid "OR"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:147
+msgid ""
+"The relationship between tag, category, taxonomy & post meta (choice) fields"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:153
+msgid "Enable Auto Count:"
+msgstr "Activer le comptage automatique:"
+
+#: admin/views/admin-search-form-settings-metabox.php:153
+msgid "Dynamic counts of results in form fields - eg - Plugins (12)"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:162
+msgid ""
+"Dynamically update the count number shown and also calculate which options "
+"to hide in your tag, category, taxonomy & post meta (choice) fields."
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:167
+msgid "Update the Search Form on user interaction"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:170
+msgid ""
+"If disabled, the count numbers will only update when new results are loaded "
+"(ie, when the Search form is submitted)"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:177
+msgid "Detect defaults from current page"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:178
+msgid ""
+"When a Search Form is used on any page other than the Search Results Page, "
+"S&amp;F will try to detect the post type and associated taxonomies of the "
+"current page - and set defaults in the Search Form to match these."
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:185
+msgid "Choose which kinds of pages S&amp;F will try to do this on:"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:188
+msgid " Post Type Archives <!--(is_post_type_archive)-->"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:189
+msgid ""
+" Tag, Category &amp; Taxonomy Archives <!--(is_tag, is_category, is_tax)-->"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:191
+msgid " Author Archives<!-- (is_author)-->"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:215
+msgid "Use a regular template from your theme to output your results."
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:216
+#: admin/views/admin-search-form-settings-metabox.php:225
+msgid ""
+"* Templates must use the <a href='http://codex.wordpress.org/The_Loop' "
+"target='_blank'>The Loop</a> and not a custom query"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:217
+msgid "View the Archive setup instructions"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:222
+msgid "Post Type Archive"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:224
+msgid ""
+"Filter results on your Post Type Archives - only one post type must be "
+"selected."
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:226
+msgid "View the Post Type Archive setup instructions"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:232
+msgid ""
+"Place a results shortcode in any post or theme file to position where the "
+"results are displayed."
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:233
+msgid ""
+"* You can find your results shortcode in the <strong>Shortcodes</strong> box "
+"on this page"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:234
+msgid "View the Shortcode setup instructions"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:241
+msgid ""
+"Let WooCommerce handle the display of results and direct all searches to the "
+"shop page."
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:242
+msgid "View the WooCommerce setup instructions"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:248
+msgid ""
+"Let Easy Digital Downloads handle the display of results - simply supply the "
+"full URL of a page containing your downloads shortcode."
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:249
+msgid "View the Easy Digital Downloads setup instructions"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:255
+msgid ""
+"Manually add S&F to an existing query and then simply supply the URL where "
+"this can be located."
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:256
+msgid "View the Custom setup instructions"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:273
+msgid "Display results method:"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:315
+msgid "Template Options"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:322
+msgid "Results URL:"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:322
+msgid "The full URL of a page where your results shortcode can be found"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:323
+msgid ""
+"This should be the Full URL to a page/post where your results can be found - "
+"must contain the shortcode"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:334
+msgid "Use a custom template for results?"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:334
+msgid ""
+"if this is not set you may not have control on how your results page displays"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:341
+#: admin/views/admin-search-form-settings-metabox.php:367
+#: admin/views/admin-search-form-settings-metabox.php:523
+msgid ""
+"This must be a selector targeting all pagination links on your page - ie, "
+"<code>.nav-links a</code>"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:347
+msgid "Enable filtering on Taxonomy Archives?"
+msgstr "Activer le filtrage sur les archives taxonomiques?"
+
+#: admin/views/admin-search-form-settings-metabox.php:347
+msgid ""
+"enabling this will allow S&F to filter your taxonomy archives as well as "
+"post type archives"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:353
+msgid ""
+"In WooCommerce this will mean the search form also works with your Product "
+"Tag and Product Category Archives."
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:360
+msgid "Enter the filename of the custom template:"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:366
+msgid "The template will be loaded from your theme directory."
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:374
+msgid "Set a slug?"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:405
+msgid "Ajax"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:412
+msgid "Load results using Ajax?"
+msgstr "Charger les résultats via Ajax ?"
+
+#: admin/views/admin-search-form-settings-metabox.php:423
+msgid "Make searches bookmarkable?"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:423
+msgid ""
+"If using results shortcode then &quot;Results URL&quot; must be valid to "
+"enable this"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:428
+msgid "Changes the URL in the address bar as the user searches."
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:435
+msgid "Only use Ajax on the results page?"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:435
+msgid "Initially redirect users to your results page"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:440
+msgid ""
+"If the user is not on the results page already, the first submit of the "
+"Search Form will cause a page redirect."
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:447
+msgid "Scroll window to:"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:448
+msgid "Automatically scroll the page when new results are loading"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:454
+#: admin/views/admin-search-form-settings-metabox.php:561
+#: admin/views/admin-search-form-settings-metabox.php:774
+#: admin/views/fields/post-meta/choice.php:98
+msgid "None"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:455
+msgid "Top of Page (Window)"
+msgstr "Haut de page (Fenêtre)"
+
+#: admin/views/admin-search-form-settings-metabox.php:456
+#: includes/class-search-filter-shared.php:33
+#: public/class-search-filter.php:667
+msgid "Search Form"
+msgstr "Formulaire de recherche"
+
+#: admin/views/admin-search-form-settings-metabox.php:457
+msgid "Results Container"
+msgstr "Conteneur des résultats"
+
+#: admin/views/admin-search-form-settings-metabox.php:458
+msgid "Custom Selector:"
+msgstr "Sélecteur personnalisé :"
+
+#: admin/views/admin-search-form-settings-metabox.php:461
+#: admin/views/admin-search-form-settings-metabox.php:484
+#: admin/views/admin-search-form-settings-metabox.php:522
+#: admin/views/admin-search-form-settings-metabox.php:590
+msgid "#id or .class"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:466
+msgid "on"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:469
+msgid "All"
+msgstr "Tout"
+
+#: admin/views/admin-search-form-settings-metabox.php:470
+#: public/includes/fields/submit.php:23
+msgid "Submit"
+msgstr "Envoyer"
+
+#: admin/views/admin-search-form-settings-metabox.php:471
+msgid "Pagination"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:480
+msgid "Ajax Container:"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:480
+#: admin/views/admin-search-form-settings-metabox.php:554
+msgid "The ID or class of the container which your results are loaded in to"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:485
+#: admin/views/admin-search-form-settings-metabox.php:578
+#: admin/views/admin-search-form-settings-metabox.php:593
+#: admin/views/admin-search-form-settings-metabox.php:607
+msgid ""
+"This should be an ID, ie - <code>#content</code> - or a unique class "
+"selector, ie - <code>.content-container</code>."
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:495
+msgid "Ajax Pagination"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:502
+msgid "Pagination Type"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:506
+msgid "Normal"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:507
+msgid "Infinite Scroll"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:517
+msgid "Pagination selector:"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:517
+msgid ""
+"to enable Ajax on your pagination links you must put the CSS selector here"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:533
+msgid ""
+"Setting up Infinite Scroll will require some knowledge of html/css - <a href="
+"\"https://searchandfilter.com/documentation/search-results/infinite-scroll/"
+"\" target=\"_blank\">read the guide here</a>."
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:543
+msgid "Show loading icon?"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:543
+msgid "Disable this if you wish to add your own"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:554
+msgid "Infinite Scroll jQuery Selector Type:"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:555
+msgid ""
+"Choose another selector type to better control the behaviour of infinite "
+"scroll."
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:562
+msgid "Posts Container"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:563
+msgid "Post Class"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:571
+msgid "Post / Result Selector:"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:571
+msgid "tag or class to select the actual posts/results themselves"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:572
+#: admin/views/admin-search-form-settings-metabox.php:585
+msgid "(optional)"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:576
+msgid "html tag or .class"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:577
+msgid ""
+"Rather than adding all the html content from a container, you can specify a "
+"css selector to target only elements that are results - eg - `article` or "
+"`div.post`"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:584
+msgid "Infinite Scroll Container:"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:584
+#: admin/views/admin-search-form-settings-metabox.php:599
+msgid ""
+"This should be a container which contains only the results themselves (the "
+"repeatable content for each result listing)"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:586
+#: admin/views/admin-search-form-settings-metabox.php:600
+msgid ""
+"* if using the demo template set this to <strong>.search-filter-results-"
+"list<strong>"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:591
+msgid ""
+"The infinite scroll container should only contain the posts/results "
+"themselves, no pagination or other result related data."
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:599
+msgid "Infinite Scroll Trigger:"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:605
+msgid ""
+"When loading more results, S&F uses the bottom of Ajax Container (or "
+"Infinite Scroll container) to determine when the user has reached the bottom "
+"of the results.<br />Choose an offset in pixels from this point to activate "
+"infinite scroll."
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:619
+msgid "Post Status:"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:651
+msgid "Published"
+msgstr "Publié"
+
+#: admin/views/admin-search-form-settings-metabox.php:656
+msgid "Pending"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:656
+msgid "post is pending review"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:661
+msgid "Draft"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:661
+msgid "a post in draft status"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:666
+msgid "Future"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:666
+msgid "a post to publish in the future"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:671
+msgid "Private"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:671
+msgid "not visible to users who are not logged in"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:679
+msgid "Exclude Post IDs:"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:679
+msgid ""
+"comma seperated list of post IDs to exclude - these can be of any post type"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:688
+msgid "Sticky Posts:"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:695
+#: admin/views/fields/author.php:113 admin/views/fields/category.php:116
+#: admin/views/fields/tag.php:116 admin/views/fields/taxonomy.php:183
+msgid "Default"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:696
+msgid "Exclude"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:697
+msgid "Ignore"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:707
+msgid "Default Order:"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:714
+msgid "Choose an option"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:715
+#: admin/views/admin-search-form-settings-metabox.php:775
+#: admin/views/fields/sort-order-option.php:27
+msgid "Post ID"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:716
+#: admin/views/admin-search-form-settings-metabox.php:776
+#: admin/views/fields/author.php:26 admin/views/fields/sort-order-option.php:28
+#: public/includes/class-search-filter-active-query.php:946
+msgid "Author"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:717
+#: admin/views/admin-search-form-settings-metabox.php:777
+#: admin/views/fields/sort-order-option.php:29
+msgid "Title"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:718
+#: admin/views/admin-search-form-settings-metabox.php:778
+#: admin/views/fields/sort-order-option.php:30
+msgid "Name (Post Slug)"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:719
+#: admin/views/admin-search-form-settings-metabox.php:779
+#: admin/views/fields/sort-order-option.php:31
+msgid "Type (Post Type)"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:721
+#: admin/views/admin-search-form-settings-metabox.php:781
+#: admin/views/fields/sort-order-option.php:33
+msgid "Last Modified Date"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:722
+#: admin/views/admin-search-form-settings-metabox.php:782
+#: admin/views/fields/sort-order-option.php:34
+msgid "Parent ID"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:723
+#: admin/views/admin-search-form-settings-metabox.php:783
+#: admin/views/fields/sort-order-option.php:35
+msgid "Random Order"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:724
+#: admin/views/admin-search-form-settings-metabox.php:784
+#: admin/views/fields/sort-order-option.php:36
+msgid "Comment Count"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:725
+#: admin/views/admin-search-form-settings-metabox.php:785
+#: admin/views/fields/sort-order-option.php:37
+msgid "Menu Order"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:726
+#: admin/views/admin-search-form-settings-metabox.php:786
+#: admin/views/fields/sort-order-option.php:38
+msgid "Meta Value"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:730
+#: admin/views/admin-search-form-settings-metabox.php:790
+#: admin/views/fields/sort-order-option.php:46
+msgid "Descending"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:731
+#: admin/views/admin-search-form-settings-metabox.php:791
+#: admin/views/fields/sort-order-option.php:47
+msgid "Ascending"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:740
+#: admin/views/admin-search-form-settings-metabox.php:800
+msgid "Choose Meta Key:"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:757
+#: admin/views/admin-search-form-settings-metabox.php:817
+#: admin/views/fields/post-meta/choice.php:109
+msgid "Numerical"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:758
+#: admin/views/admin-search-form-settings-metabox.php:818
+#: admin/views/fields/post-meta/choice.php:108
+msgid "Alphabetical"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:767
+msgid "Secondary Sort Order:"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:767
+msgid "only works with WordPress 4.2 and up"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:827
+msgid ""
+"Include or Exclude results with specific tags, categories and taxonomy terms."
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:839
+msgid "Comma Seperated IDs"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:935
+msgid "Only return results which match specific post meta data."
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:958
+msgid "Add Condition"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:969
+msgid "Advanced / Miscellaneous Settings"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:979
+msgid "Relevanssi"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:999
+msgid "Sort Results By relevance?"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:1002
+msgid ""
+"When a Search Term has been entered results will be ordered by relevance "
+"instead of the default sort order"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:1028
+msgid ""
+"Force <a href='http://codex.wordpress.org/Function_Reference/is_search' "
+"target='_blank'>is_search</a> to always be true?"
+msgstr ""
+
+#: admin/views/admin-search-form-settings-metabox.php:1036
+msgid ""
+"Force <a href='http://codex.wordpress.org/Function_Reference/is_archive' "
+"target='_blank'>is_archive</a> to always be true?"
+msgstr ""
+
+#: admin/views/admin-search-form-shortcode-metabox.php:18
+msgid "Search Form Shortcode:"
+msgstr ""
+
+#: admin/views/admin-search-form-shortcode-metabox.php:18
+msgid "You can also use a widget to place the search form."
+msgstr ""
+
+#: admin/views/admin-search-form-shortcode-metabox.php:25
+msgid "Results Shortcode:"
+msgstr ""
+
+#: admin/views/admin-search-form-shortcode-metabox.php:25
+msgid ""
+"This must be used on a page where your search form can be found - otherwise "
+"S&amp;F won't know where to load the results."
+msgstr ""
+
+#: admin/views/admin-search-form-shortcode-metabox.php:31
+msgid "EDD Shortcode:"
+msgstr ""
+
+#: admin/views/admin-search-form-shortcode-metabox.php:31
+msgid "Place this directly before your EDD [downloads] shortcode"
+msgstr ""
+
+#: admin/views/admin-search-form-shortcode-metabox.php:36
+msgid "Use slug instead of ID:"
+msgstr ""
+
+#: admin/views/admin-search-form-shortcode-metabox.php:36
+msgid "You can also use the slug instead of ID in your shortcodes."
+msgstr ""
+
+#: admin/views/admin-settings.php:15
+msgid "Global settings are applied to all search forms"
+msgstr ""
+
+#: admin/views/admin-settings.php:27
+msgid "Caching Speed"
+msgstr ""
+
+#: admin/views/admin-settings.php:33
+msgid "Slow"
+msgstr ""
+
+#: admin/views/admin-settings.php:34
+msgid "Medium"
+msgstr ""
+
+#: admin/views/admin-settings.php:35
+msgid "Fast"
+msgstr ""
+
+#: admin/views/admin-settings.php:38
+msgid ""
+"This controls the speed at which the Cache is built when first indexing all "
+"the posts on your site or when it is required to be rebuilt."
+msgstr ""
+
+#: admin/views/admin-settings.php:42
+msgid ""
+"A faster setting means more posts will be cached in each process, however "
+"this is generally considered to me more resource intensive."
+msgstr ""
+
+#: admin/views/admin-settings.php:43
+msgid ""
+"Using a high setting when your server cannot support it may result in "
+"internal server errors and resource limits being reached."
+msgstr ""
+
+#: admin/views/admin-settings.php:53
+msgid "Use Background Processes"
+msgstr ""
+
+#: admin/views/admin-settings.php:60
+msgid ""
+"Build the cache in the background using `wp_remote_get()` - this is "
+"generally a good thing."
+msgstr ""
+
+#: admin/views/admin-settings.php:64
+msgid ""
+"Disable this if you are having issues with resources in your environement "
+"and you have already tried lowering the caching speed above."
+msgstr ""
+
+#: admin/views/admin-settings.php:65
+msgid ""
+"If disabled, you must then goto any <strong>Add/Edit Search Form</strong> "
+"screen to allow the caching processes to complete via Ajax."
+msgstr ""
+
+#: admin/views/admin-settings.php:74
+msgid "Use Transients"
+msgstr ""
+
+#: admin/views/admin-settings.php:80
+msgid ""
+"Frequently accessed query data will be stored in transients - this sometimes "
+"helps on sites with larger numbers of posts and filters/options. "
+msgstr ""
+
+#: admin/views/admin-settings.php:84
+msgid ""
+"This does not need to be enabled unless you are experiencing performance "
+"issues."
+msgstr ""
+
+#: admin/views/admin-settings.php:93
+msgid "Use Manual Caching"
+msgstr ""
+
+#: admin/views/admin-settings.php:100
+msgid "Manually rebuild the cache via the UI"
+msgstr ""
+
+#: admin/views/admin-settings.php:104
+msgid ""
+"This only applies when initially building the cache or rebuilding the entire "
+"cache.  Once the cache has been built once, it is automatically maintained "
+"regardless of this setting."
+msgstr ""
+
+#: admin/views/admin-settings.php:117
+msgid "JavaScript & CSS"
+msgstr ""
+
+#: admin/views/admin-settings.php:123
+msgid "Load JavaScript & CSS files"
+msgstr ""
+
+#: admin/views/admin-settings.php:128
+msgid ""
+"<strong>Do not turn this setting off</strong>, S&amp;F will not work unless "
+"you plan to manually copy all JS &amp; CSS into your theme."
+msgstr ""
+
+#: admin/views/admin-settings.php:135
+msgid "Lazy Load JavaScript"
+msgstr ""
+
+#: admin/views/admin-settings.php:140
+msgid ""
+"Not all themes support lazy loading - enabling this option ensures that "
+"Search &amp; Filter JavaScript files are only loaded on the pages that "
+"contain search forms - speeding up the other pages on your site."
+msgstr ""
+
+#: admin/views/admin-settings.php:146
+msgid "Combobox Script"
+msgstr ""
+
+#: admin/views/admin-settings.php:151
+msgid "Select2"
+msgstr ""
+
+#: admin/views/admin-settings.php:152
+msgid "Chosen"
+msgstr ""
+
+#: admin/views/admin-settings.php:160
+msgid "Load jQuery UI i18n files"
+msgstr ""
+
+#: admin/views/admin-settings.php:165
+msgid ""
+"This loads the jQuery i18n files - which allows the date picker to be "
+"translated automatically using the jQuery translation files."
+msgstr ""
+
+#: admin/views/admin-settings.php:176
+msgid "Miscellaneous"
+msgstr ""
+
+#: admin/views/admin-settings.php:182
+msgid "Remove all data when deleting Search & Filter"
+msgstr ""
+
+#: admin/views/admin-settings.php:187
+msgid ""
+"Enable this setting to remove all data when uninstalling Search & Filter via "
+"the `plugins` page."
+msgstr ""
+
+#: admin/views/admin-settings.php:191
+msgid ""
+"Leaving this option disabled allows you to delete and re-install later, "
+"preserving your saved search forms and cache."
+msgstr ""
+
+#: admin/views/admin-settings.php:194
+msgid ""
+"If you have modified any posts while the plugin is disabled / removed, you "
+"will likely need to rebuild the cache when activating Search & Filter again. "
+msgstr ""
+
+#: admin/views/admin-system-status.php:22
+msgid "Search Forms"
+msgstr "Formulaires de recherche"
+
+#: admin/views/admin-system-status.php:51
+msgid "WordPress Environment"
+msgstr ""
+
+#: admin/views/admin-system-status.php:56
+msgid "Home URL"
+msgstr ""
+
+#: admin/views/admin-system-status.php:57
+#: admin/views/admin-system-status.php:331
+#: admin/views/admin-system-status.php:357
+#: admin/views/admin-system-status.php:384
+#: admin/views/admin-system-status.php:411
+msgid "The URL of your site's homepage."
+msgstr ""
+
+#: admin/views/admin-system-status.php:61
+msgid "Site URL"
+msgstr ""
+
+#: admin/views/admin-system-status.php:62
+msgid "The root URL of your site."
+msgstr ""
+
+#: admin/views/admin-system-status.php:66
+msgid "Search & Filter Pro Version"
+msgstr ""
+
+#: admin/views/admin-system-status.php:67
+msgid "The version of Search & Filter Pro installed on your site."
+msgstr ""
+
+#: admin/views/admin-system-status.php:82
+msgid "WP Version"
+msgstr ""
+
+#: admin/views/admin-system-status.php:83
+msgid "The version of WordPress installed on your site."
+msgstr ""
+
+#: admin/views/admin-system-status.php:87
+msgid "WP Multisite"
+msgstr ""
+
+#: admin/views/admin-system-status.php:88
+msgid "Whether or not you have WordPress Multisite enabled."
+msgstr ""
+
+#: admin/views/admin-system-status.php:92
+msgid "WP Memory Limit"
+msgstr ""
+
+#: admin/views/admin-system-status.php:93
+msgid "The maximum amount of memory (RAM) that your site can use at one time."
+msgstr ""
+
+#: admin/views/admin-system-status.php:104
+#, php-format
+msgid "%s - We recommend setting memory to at least 64MB."
+msgstr ""
+
+#: admin/views/admin-system-status.php:111
+msgid "WP Debug Mode"
+msgstr ""
+
+#: admin/views/admin-system-status.php:112
+msgid "Displays whether or not WordPress is in Debug Mode."
+msgstr ""
+
+#: admin/views/admin-system-status.php:116
+msgid "Language"
+msgstr ""
+
+#: admin/views/admin-system-status.php:117
+msgid "The current language used by WordPress. Default = English"
+msgstr ""
+
+#: admin/views/admin-system-status.php:125
+msgid "Server Environment"
+msgstr ""
+
+#: admin/views/admin-system-status.php:130
+msgid "Server Info"
+msgstr ""
+
+#: admin/views/admin-system-status.php:131
+msgid "Information about the web server that is currently hosting your site."
+msgstr ""
+
+#: admin/views/admin-system-status.php:135
+msgid "PHP Version"
+msgstr ""
+
+#: admin/views/admin-system-status.php:136
+msgid "The version of PHP installed on your hosting server."
+msgstr ""
+
+#: admin/views/admin-system-status.php:149
+msgid "Couldn't determine PHP version because phpversion() doesn't exist."
+msgstr ""
+
+#: admin/views/admin-system-status.php:155
+msgid "PHP Post Max Size"
+msgstr ""
+
+#: admin/views/admin-system-status.php:156
+msgid "The largest filesize that can be contained in one post."
+msgstr ""
+
+#: admin/views/admin-system-status.php:160
+msgid "PHP Time Limit"
+msgstr ""
+
+#: admin/views/admin-system-status.php:161
+msgid ""
+"The amount of time (in seconds) that your site will spend on a single "
+"operation before timing out (to avoid server lockups)"
+msgstr ""
+
+#: admin/views/admin-system-status.php:165
+msgid "PHP Max Input Vars"
+msgstr ""
+
+#: admin/views/admin-system-status.php:166
+msgid ""
+"The maximum number of variables your server can use for a single function to "
+"avoid overloads."
+msgstr ""
+
+#: admin/views/admin-system-status.php:170
+msgid "SUHOSIN Installed"
+msgstr ""
+
+#: admin/views/admin-system-status.php:171
+msgid ""
+"Suhosin is an advanced protection system for PHP installations. It was "
+"designed to protect your servers on the one hand against a number of well "
+"known problems in PHP applications and on the other hand against potential "
+"unknown vulnerabilities within these applications or the PHP core itself. If "
+"enabled on your server, Suhosin may need to be configured to increase its "
+"data submission limits."
+msgstr ""
+
+#: admin/views/admin-system-status.php:176
+msgid "MySQL Version"
+msgstr ""
+
+#: admin/views/admin-system-status.php:177
+msgid "The version of MySQL installed on your hosting server."
+msgstr ""
+
+#: admin/views/admin-system-status.php:187
+msgid "Max Upload Size"
+msgstr ""
+
+#: admin/views/admin-system-status.php:188
+msgid ""
+"The largest filesize that can be uploaded to your WordPress installation."
+msgstr ""
+
+#: admin/views/admin-system-status.php:208
+msgid ""
+"Payment gateways can use cURL to communicate with remote servers to "
+"authorize payments, other plugins may also use it when communicating with "
+"remote services."
+msgstr ""
+
+#: admin/views/admin-system-status.php:214
+msgid ""
+"Your server does not have fsockopen or cURL enabled - PayPal IPN and other "
+"scripts which communicate with other servers will not work. Contact your "
+"hosting provider."
+msgstr ""
+
+#: admin/views/admin-system-status.php:252
+msgid ""
+"Multibyte String (mbstring) is used to convert character encoding, like for "
+"emails or converting characters to lowercase."
+msgstr ""
+
+#: admin/views/admin-system-status.php:258
+#, php-format
+msgid ""
+"Your server does not support the %s functions - this is required for better "
+"character encoding. Some fallbacks will be used instead for it."
+msgstr ""
+
+#: admin/views/admin-system-status.php:325
+msgid "Database"
+msgstr ""
+
+#: admin/views/admin-system-status.php:330
+#: admin/views/admin-system-status.php:356
+#, php-format
+msgctxt "search-filter-pro"
+msgid "Table `%s` Exists"
+msgstr ""
+
+#: admin/views/admin-system-status.php:337
+#: admin/views/admin-system-status.php:363
+msgid "Table Not Found"
+msgstr ""
+
+#: admin/views/admin-system-status.php:350
+#: admin/views/admin-system-status.php:376
+msgid "Rows Found"
+msgstr ""
+
+#: admin/views/admin-system-status.php:383
+msgid "Total Number of Fields Cached"
+msgstr ""
+
+#: admin/views/admin-system-status.php:410
+msgid "Fields in Cache"
+msgstr ""
+
+#: admin/views/admin-system-status.php:430
+msgid "Active Plugins"
+msgstr ""
+
+#: admin/views/admin-system-status.php:455
+msgid "Visit plugin homepage"
+msgstr ""
+
+#: admin/views/admin-system-status.php:464
+#, php-format
+msgctxt "by author"
+msgid "by %s"
+msgstr ""
+
+#: admin/views/admin-system-status.php:475
+msgid "Theme"
+msgstr ""
+
+#: admin/views/admin-system-status.php:487 admin/views/fields/author.php:115
+#: admin/views/fields/category.php:118 admin/views/fields/tag.php:118
+#: admin/views/fields/taxonomy.php:185
+msgid "Name"
+msgstr ""
+
+#: admin/views/admin-system-status.php:488
+msgid "The name of the current active theme."
+msgstr ""
+
+#: admin/views/admin-system-status.php:492
+msgid "Version"
+msgstr ""
+
+#: admin/views/admin-system-status.php:493
+msgid "The installed version of the current active theme."
+msgstr ""
+
+#: admin/views/admin-system-status.php:503
+msgid "Author URL"
+msgstr ""
+
+#: admin/views/admin-system-status.php:504
+msgid "The theme developers URL."
+msgstr ""
+
+#: admin/views/admin-system-status.php:508
+msgid "Child Theme"
+msgstr ""
+
+#: admin/views/admin-system-status.php:509
+msgid "Displays whether or not the current theme is a child theme."
+msgstr ""
+
+#: admin/views/admin-system-status.php:521
+msgid "Parent Theme Name"
+msgstr ""
+
+#: admin/views/admin-system-status.php:522
+msgid "The name of the parent theme."
+msgstr ""
+
+#: admin/views/admin-system-status.php:526
+msgid "Parent Theme Version"
+msgstr ""
+
+#: admin/views/admin-system-status.php:527
+msgid "The installed version of the parent theme."
+msgstr ""
+
+#: admin/views/admin-system-status.php:537
+msgid "Parent Theme Author URL"
+msgstr ""
+
+#: admin/views/admin-system-status.php:538
+msgid "The parent theme developers URL."
+msgstr ""
+
+#: admin/views/admin-system-status.php:568
+msgid "Fields"
+msgstr ""
+
+#: admin/views/admin-system-status.php:569
+msgid "The list of fields in your search form."
+msgstr ""
+
+#: admin/views/admin-system-status.php:609
+msgid "Display Results Method"
+msgstr ""
+
+#: admin/views/admin-system-status.php:610
+msgid "The method your search form uses to display results."
+msgstr ""
+
+#: admin/views/admin-system-status.php:673
+msgid "Potential Issues"
+msgstr ""
+
+#: admin/views/admin-system-status.php:674
+msgid "A list of potential issues"
+msgstr ""
+
+#: admin/views/admin-system-status.php:702
+msgid "None Reported"
+msgstr ""
+
+#: admin/views/fields/author.php:34 admin/views/fields/category.php:34
+#: admin/views/fields/post-type.php:34 admin/views/fields/tag.php:34
+#: admin/views/fields/taxonomy.php:34
+msgid "Advanced settings"
+msgstr ""
+
+#: admin/views/fields/author.php:38 admin/views/fields/category.php:39
+#: admin/views/fields/post-date.php:35
+#: admin/views/fields/post-meta/choice.php:3
+#: admin/views/fields/post-meta/date.php:3
+#: admin/views/fields/post-meta/number.php:4
+#: admin/views/fields/post-type.php:86 admin/views/fields/posts-per-page.php:40
+#: admin/views/fields/reset.php:39 admin/views/fields/sort-order.php:38
+#: admin/views/fields/tag.php:39 admin/views/fields/taxonomy.php:96
+msgid "Input type: "
+msgstr ""
+
+#: admin/views/fields/author.php:40 admin/views/fields/category.php:42
+#: admin/views/fields/post-meta/choice.php:5
+#: admin/views/fields/post-meta/number.php:8
+#: admin/views/fields/post-meta/number.php:39
+#: admin/views/fields/post-type.php:88 admin/views/fields/posts-per-page.php:42
+#: admin/views/fields/sort-order.php:40 admin/views/fields/tag.php:42
+#: admin/views/fields/taxonomy.php:99
+msgid "Dropdown"
+msgstr ""
+
+#: admin/views/fields/author.php:41 admin/views/fields/category.php:43
+#: admin/views/fields/post-meta/choice.php:6
+#: admin/views/fields/post-meta/number.php:9
+#: admin/views/fields/post-type.php:89 admin/views/fields/tag.php:43
+#: admin/views/fields/taxonomy.php:100
+msgid "Checkbox"
+msgstr ""
+
+#: admin/views/fields/author.php:42 admin/views/fields/category.php:44
+#: admin/views/fields/post-meta/choice.php:7
+#: admin/views/fields/post-meta/number.php:10
+#: admin/views/fields/post-type.php:90 admin/views/fields/posts-per-page.php:43
+#: admin/views/fields/sort-order.php:41 admin/views/fields/tag.php:44
+#: admin/views/fields/taxonomy.php:101
+msgid "Radio"
+msgstr ""
+
+#: admin/views/fields/author.php:43 admin/views/fields/category.php:45
+#: admin/views/fields/post-meta/choice.php:8
+#: admin/views/fields/post-type.php:91 admin/views/fields/tag.php:45
+#: admin/views/fields/taxonomy.php:102
+msgid "Multi-select"
+msgstr ""
+
+#: admin/views/fields/author.php:48 admin/views/fields/category.php:50
+#: admin/views/fields/post-date.php:43
+#: admin/views/fields/post-meta/choice.php:14
+#: admin/views/fields/post-meta/date.php:12
+#: admin/views/fields/post-meta/number.php:20
+#: admin/views/fields/post-type.php:97 admin/views/fields/posts-per-page.php:56
+#: admin/views/fields/reset.php:33 admin/views/fields/search.php:34
+#: admin/views/fields/sort-order.php:46 admin/views/fields/submit.php:33
+#: admin/views/fields/tag.php:51 admin/views/fields/taxonomy.php:108
+msgid "Add a heading?"
+msgstr ""
+
+#: admin/views/fields/author.php:51 admin/views/fields/category.php:53
+#: admin/views/fields/post-meta/choice.php:19
+#: admin/views/fields/post-meta/number.php:47
+#: admin/views/fields/post-type.php:100
+#: admin/views/fields/posts-per-page.php:48
+#: admin/views/fields/sort-order.php:49 admin/views/fields/tag.php:54
+#: admin/views/fields/taxonomy.php:111
+msgid "Change All Items Label?"
+msgstr ""
+
+#: admin/views/fields/author.php:51
+msgid "override the default - e.g. &quot;All Authors&quot;"
+msgstr ""
+
+#: admin/views/fields/author.php:55 admin/views/fields/category.php:57
+#: admin/views/fields/post-date.php:46
+#: admin/views/fields/post-meta/choice.php:23
+#: admin/views/fields/post-meta/date.php:15
+#: admin/views/fields/post-meta/number.php:52
+#: admin/views/fields/post-type.php:104
+#: admin/views/fields/posts-per-page.php:60 admin/views/fields/search.php:40
+#: admin/views/fields/sort-order.php:54 admin/views/fields/tag.php:58
+#: admin/views/fields/taxonomy.php:125
+msgid "Add screen reader text?"
+msgstr ""
+
+#: admin/views/fields/author.php:55 admin/views/fields/category.php:57
+#: admin/views/fields/post-date.php:46
+#: admin/views/fields/post-meta/choice.php:23
+#: admin/views/fields/post-meta/date.php:15
+#: admin/views/fields/post-meta/number.php:52
+#: admin/views/fields/post-type.php:104
+#: admin/views/fields/posts-per-page.php:60 admin/views/fields/search.php:40
+#: admin/views/fields/sort-order.php:54 admin/views/fields/tag.php:58
+#: admin/views/fields/taxonomy.php:125
+msgid ""
+"adds hidden text that will be read by screen readers - complies with WCAG 2.0"
+msgstr ""
+
+#: admin/views/fields/author.php:60 admin/views/fields/category.php:61
+#: admin/views/fields/post-meta/choice.php:27 admin/views/fields/tag.php:63
+#: admin/views/fields/taxonomy.php:116
+msgid "Search Operator"
+msgstr ""
+
+#: admin/views/fields/author.php:60 admin/views/fields/category.php:61
+#: admin/views/fields/taxonomy.php:116
+msgid ""
+"AND - posts must be in each category, OR - posts must be in any category"
+msgstr ""
+
+#: admin/views/fields/author.php:75 admin/views/fields/category.php:74
+#: admin/views/fields/post-meta/choice.php:43 admin/views/fields/tag.php:78
+#: admin/views/fields/taxonomy.php:135
+msgid "Display count?"
+msgstr ""
+
+#: admin/views/fields/author.php:75
+msgid "display the number of posts for each author"
+msgstr ""
+
+#: admin/views/fields/author.php:79
+msgid "Hide empty authors?"
+msgstr ""
+
+#: admin/views/fields/author.php:79
+msgid "hide authors with no posts"
+msgstr ""
+
+#: admin/views/fields/author.php:83
+msgid "Exclude Admin?"
+msgstr ""
+
+#: admin/views/fields/author.php:83
+msgid "exclude authors that are also admins"
+msgstr ""
+
+#: admin/views/fields/author.php:87
+msgid "Show Full Name?"
+msgstr ""
+
+#: admin/views/fields/author.php:87
+msgid "use the authors full name instead of their display name"
+msgstr ""
+
+#: admin/views/fields/author.php:92 admin/views/fields/category.php:91
+#: admin/views/fields/post-meta/choice.php:40
+#: admin/views/fields/post-type.php:113 admin/views/fields/tag.php:87
+#: admin/views/fields/taxonomy.php:153
+msgid "Make Combobox?"
+msgstr ""
+
+#: admin/views/fields/author.php:92 admin/views/fields/category.php:91
+#: admin/views/fields/post-meta/choice.php:40
+#: admin/views/fields/post-type.php:113 admin/views/fields/tag.php:87
+#: admin/views/fields/taxonomy.php:153
+msgid ""
+"Allow for text input to find values, with autocomplete and dropdown suggest"
+msgstr ""
+
+#: admin/views/fields/author.php:97 admin/views/fields/category.php:96
+#: admin/views/fields/post-type.php:118 admin/views/fields/tag.php:92
+#: admin/views/fields/taxonomy.php:158
+msgid "No Matches message"
+msgstr ""
+
+#: admin/views/fields/author.php:98 admin/views/fields/category.php:97
+#: admin/views/fields/post-type.php:119 admin/views/fields/tag.php:93
+#: admin/views/fields/taxonomy.php:159
+msgid ""
+"This message is usually displayed when there are no matches in the list - "
+"leave blank for default"
+msgstr ""
+
+#: admin/views/fields/author.php:111
+msgid "Order authors by: "
+msgstr ""
+
+#: admin/views/fields/author.php:114 admin/views/fields/category.php:117
+#: admin/views/fields/tag.php:117 admin/views/fields/taxonomy.php:184
+msgid "ID"
+msgstr ""
+
+#: admin/views/fields/author.php:116
+msgid "User Email"
+msgstr ""
+
+#: admin/views/fields/author.php:117
+msgid "User URL"
+msgstr ""
+
+#: admin/views/fields/author.php:118
+msgid "Registered Date"
+msgstr ""
+
+#: admin/views/fields/author.php:119
+msgid "User Login"
+msgstr ""
+
+#: admin/views/fields/author.php:120
+msgid "Post Count"
+msgstr ""
+
+#: admin/views/fields/author.php:124 admin/views/fields/category.php:125
+#: admin/views/fields/post-meta/choice.php:103 admin/views/fields/tag.php:125
+#: admin/views/fields/taxonomy.php:192
+msgid "ASC"
+msgstr ""
+
+#: admin/views/fields/author.php:125 admin/views/fields/category.php:126
+#: admin/views/fields/post-meta/choice.php:104 admin/views/fields/tag.php:126
+#: admin/views/fields/taxonomy.php:193
+msgid "DESC"
+msgstr ""
+
+#: admin/views/fields/author.php:132
+msgid "Exclude IDs (only WP 3.9 and above)"
+msgstr ""
+
+#: admin/views/fields/author.php:132
+msgid "comma seperated list of author IDs to exclude"
+msgstr ""
+
+#: admin/views/fields/author.php:148 admin/views/fields/category.php:161
+#: admin/views/fields/post-date.php:150 admin/views/fields/post-meta.php:71
+#: admin/views/fields/post-type.php:134
+#: admin/views/fields/posts-per-page.php:100 admin/views/fields/reset.php:64
+#: admin/views/fields/search.php:52 admin/views/fields/sort-order.php:114
+#: admin/views/fields/submit.php:47 admin/views/fields/tag.php:159
+#: admin/views/fields/taxonomy.php:223
+msgid "Delete"
+msgstr ""
+
+#: admin/views/fields/author.php:149 admin/views/fields/category.php:162
+#: admin/views/fields/post-date.php:151 admin/views/fields/post-meta.php:72
+#: admin/views/fields/post-type.php:135
+#: admin/views/fields/posts-per-page.php:101 admin/views/fields/reset.php:65
+#: admin/views/fields/search.php:53 admin/views/fields/sort-order.php:115
+#: admin/views/fields/submit.php:48 admin/views/fields/tag.php:160
+#: admin/views/fields/taxonomy.php:224
+msgid "Close"
+msgstr ""
+
+#: admin/views/fields/author.php:156
+msgid "Add an Author Field to your form"
+msgstr ""
+
+#: admin/views/fields/category.php:26
+msgid "Category"
+msgstr ""
+
+#: admin/views/fields/category.php:41 admin/views/fields/tag.php:41
+#: admin/views/fields/taxonomy.php:98
+msgid "List"
+msgstr ""
+
+#: admin/views/fields/category.php:53
+msgid "override the default - e.g. &quot;All Categories&quot;"
+msgstr ""
+
+#: admin/views/fields/category.php:74
+msgid "display the number of posts in each category"
+msgstr ""
+
+#: admin/views/fields/category.php:78 admin/views/fields/tag.php:82
+#: admin/views/fields/taxonomy.php:139
+msgid "Hide empty terms?"
+msgstr ""
+
+#: admin/views/fields/category.php:78
+msgid "hide categories with no posts/items"
+msgstr ""
+
+#: admin/views/fields/category.php:82 admin/views/fields/tag.php:100
+#: admin/views/fields/taxonomy.php:143
+msgid "Hierarchical?"
+msgstr ""
+
+#: admin/views/fields/category.php:82
+msgid "show child categories underneath their parents"
+msgstr ""
+
+#: admin/views/fields/category.php:86 admin/views/fields/taxonomy.php:147
+msgid "Include Children in Parents?"
+msgstr "Inclure les enfants dans les parents?"
+
+#: admin/views/fields/category.php:86
+msgid ""
+"results in child categories will also be returned when a user searches its "
+"parent"
+msgstr ""
+
+#: admin/views/fields/category.php:104 admin/views/fields/tag.php:104
+#: admin/views/fields/taxonomy.php:171
+msgid "Make drill down?"
+msgstr ""
+
+#: admin/views/fields/category.php:104
+msgid "child categories will only be revealed once a parent has been selected"
+msgstr ""
+
+#: admin/views/fields/category.php:114 admin/views/fields/tag.php:114
+#: admin/views/fields/taxonomy.php:181
+msgid "Order terms by: "
+msgstr ""
+
+#: admin/views/fields/category.php:119 admin/views/fields/tag.php:119
+#: admin/views/fields/taxonomy.php:186
+msgid "Slug"
+msgstr ""
+
+#: admin/views/fields/category.php:120 admin/views/fields/tag.php:120
+#: admin/views/fields/taxonomy.php:187
+msgid "Count"
+msgstr ""
+
+#: admin/views/fields/category.php:121 admin/views/fields/tag.php:121
+#: admin/views/fields/taxonomy.php:188
+msgid "Term Group"
+msgstr ""
+
+#: admin/views/fields/category.php:134 admin/views/fields/tag.php:133
+#: admin/views/fields/taxonomy.php:200
+msgid "Exclude IDs"
+msgstr ""
+
+#: admin/views/fields/category.php:135 admin/views/fields/taxonomy.php:200
+msgid "comma seperated list of category IDs to exclude"
+msgstr ""
+
+#: admin/views/fields/category.php:145 admin/views/fields/tag.php:143
+#: admin/views/fields/taxonomy.php:207
+msgid "Sync with Settings?"
+msgstr ""
+
+#: admin/views/fields/category.php:145
+msgid ""
+"This will show / hide categories for this field based upon the settings from "
+"the &quot;Settings &amp; Defaults&quot;"
+msgstr ""
+
+#: admin/views/fields/category.php:169
+msgid "Add a Category Field to your form"
+msgstr ""
+
+#: admin/views/fields/meta-option.php:23
+msgid "Option Value"
+msgstr ""
+
+#: admin/views/fields/meta-option.php:29
+msgid "Option Label"
+msgstr ""
+
+#: admin/views/fields/meta-option.php:38
+#: admin/views/fields/sort-order-option.php:61
+msgid "Remove"
+msgstr ""
+
+#: admin/views/fields/post-date.php:26
+msgid "Post Date"
+msgstr ""
+
+#: admin/views/fields/post-date.php:38 admin/views/fields/post-meta/date.php:6
+msgid "Date Range"
+msgstr ""
+
+#: admin/views/fields/post-date.php:52
+msgid "Date Format"
+msgstr ""
+
+#: admin/views/fields/post-date.php:83
+#: admin/views/fields/post-meta/date.php:122
+#: admin/views/fields/post-meta/number.php:127
+msgid "UI Options"
+msgstr ""
+
+#: admin/views/fields/post-date.php:83
+#: admin/views/fields/post-meta/choice.php:55
+#: admin/views/fields/post-meta/date.php:30
+#: admin/views/fields/post-meta/number.php:64
+msgid "choose a meta key for this field"
+msgstr ""
+
+#: admin/views/fields/post-date.php:90
+#: admin/views/fields/post-meta/date.php:129
+msgid "From Prefix"
+msgstr ""
+
+#: admin/views/fields/post-date.php:90
+#: admin/views/fields/post-meta/date.php:129
+msgid "text to appear before the From field"
+msgstr ""
+
+#: admin/views/fields/post-date.php:96
+#: admin/views/fields/post-meta/date.php:135
+msgid "From Postfix"
+msgstr ""
+
+#: admin/views/fields/post-date.php:96
+#: admin/views/fields/post-meta/date.php:135
+msgid "text to appear after the From field"
+msgstr ""
+
+#: admin/views/fields/post-date.php:102
+#: admin/views/fields/post-meta/date.php:141
+msgid "From Placeholder"
+msgstr ""
+
+#: admin/views/fields/post-date.php:111
+#: admin/views/fields/post-meta/date.php:150
+msgid "To Prefix"
+msgstr ""
+
+#: admin/views/fields/post-date.php:111
+#: admin/views/fields/post-meta/date.php:150
+msgid "text to appear before the To field"
+msgstr ""
+
+#: admin/views/fields/post-date.php:117
+#: admin/views/fields/post-meta/date.php:156
+msgid "To Postfix"
+msgstr ""
+
+#: admin/views/fields/post-date.php:117
+#: admin/views/fields/post-meta/date.php:156
+msgid "text to appear after the To field"
+msgstr ""
+
+#: admin/views/fields/post-date.php:123
+#: admin/views/fields/post-meta/date.php:162
+msgid "To Placeholder"
+msgstr ""
+
+#: admin/views/fields/post-date.php:133
+#: admin/views/fields/post-meta/date.php:172
+#: admin/views/fields/post-meta/date.php:182
+msgid "Use dropdown for Year"
+msgstr ""
+
+#: admin/views/fields/post-date.php:133
+#: admin/views/fields/post-meta/date.php:172
+#: admin/views/fields/post-meta/date.php:182
+msgid "Add dropdown for Year"
+msgstr ""
+
+#: admin/views/fields/post-date.php:136
+#: admin/views/fields/post-meta/date.php:175
+#: admin/views/fields/post-meta/date.php:185
+msgid "Use dropdown for month"
+msgstr ""
+
+#: admin/views/fields/post-date.php:136
+#: admin/views/fields/post-meta/date.php:175
+#: admin/views/fields/post-meta/date.php:185
+msgid "Add dropdown for month"
+msgstr ""
+
+#: admin/views/fields/post-date.php:157
+msgid "Add a Post Date Field to your form"
+msgstr ""
+
+#: admin/views/fields/post-meta.php:34
+msgid ""
+"Choose from displaying the field as numerical data, choice input or date "
+"picker."
+msgstr ""
+
+#: admin/views/fields/post-meta.php:37
+#: admin/views/fields/post-meta/number.php:7
+msgid "Number"
+msgstr ""
+
+#: admin/views/fields/post-meta.php:38
+msgid "Choice"
+msgstr ""
+
+#: admin/views/fields/post-meta.php:79
+msgid "Add a Post Meta Field to your form"
+msgstr ""
+
+#: admin/views/fields/post-meta/choice.php:19
+#: admin/views/fields/post-meta/number.php:47
+msgid "override the default - e.g. &quot;All Items&quot;"
+msgstr ""
+
+#: admin/views/fields/post-meta/choice.php:27
+msgid ""
+"AND - posts must have each option selected, OR - posts must have any of the "
+"options selected"
+msgstr ""
+
+#: admin/views/fields/post-meta/choice.php:43
+msgid ""
+"display the number of posts for each option - only available if Auto Count "
+"is enabled"
+msgstr ""
+
+#: admin/views/fields/post-meta/choice.php:46
+msgid "Hide Empty?"
+msgstr ""
+
+#: admin/views/fields/post-meta/choice.php:46
+msgid "hide values with no results - only available if Auto Count is enabled"
+msgstr ""
+
+#: admin/views/fields/post-meta/choice.php:50
+msgid "Combobox No Results message"
+msgstr ""
+
+#: admin/views/fields/post-meta/choice.php:55
+#: admin/views/fields/post-meta/date.php:24
+#: admin/views/fields/post-meta/number.php:58
+msgid "Meta Key"
+msgstr ""
+
+#: admin/views/fields/post-meta/choice.php:57
+#: admin/views/fields/post-meta/date.php:26
+#: admin/views/fields/post-meta/number.php:60
+msgid "Choose the min / max key names to be used for comparison."
+msgstr ""
+
+#: admin/views/fields/post-meta/choice.php:79
+msgid "Options"
+msgstr ""
+
+#: admin/views/fields/post-meta/choice.php:82
+msgid "Choose how the options for this field are fetched:"
+msgstr ""
+
+#: admin/views/fields/post-meta/choice.php:86
+msgid "Get Options: "
+msgstr ""
+
+#: admin/views/fields/post-meta/choice.php:88
+msgid "Automatically"
+msgstr ""
+
+#: admin/views/fields/post-meta/choice.php:89
+msgid "Manual Entry"
+msgstr ""
+
+#: admin/views/fields/post-meta/choice.php:94
+msgid "Order Options by: "
+msgstr ""
+
+#: admin/views/fields/post-meta/choice.php:96
+#: admin/views/fields/post-meta/choice.php:125
+msgid "Value"
+msgstr ""
+
+#: admin/views/fields/post-meta/choice.php:97
+#: admin/views/fields/post-meta/choice.php:128
+#: admin/views/fields/sort-order-option.php:53
+#: admin/views/fields/sort-order.php:72
+msgid "Label"
+msgstr ""
+
+#: admin/views/fields/post-meta/choice.php:115
+msgid "Is ACF Field?"
+msgstr ""
+
+#: admin/views/fields/post-meta/choice.php:115
+msgid ""
+"if this is an 'Advanced Custom Fields' field enable here to sync labels & "
+"options with ACF directly"
+msgstr ""
+
+#: admin/views/fields/post-meta/choice.php:121
+msgid ""
+"Add the options that will be available to this field, each option must have "
+"a value and a label."
+msgstr ""
+
+#: admin/views/fields/post-meta/choice.php:125
+msgid ""
+"the internal meta value - this value will be used to search your meta data"
+msgstr ""
+
+#: admin/views/fields/post-meta/choice.php:128
+msgid ""
+"text that is visible to a user when selecting this option in the Search Form"
+msgstr ""
+
+#: admin/views/fields/post-meta/choice.php:133
+msgid "Sort By Value"
+msgstr "Trier par valeur"
+
+#: admin/views/fields/post-meta/choice.php:134
+msgid "Sort By Label"
+msgstr "Trier par label"
+
+#: admin/views/fields/post-meta/choice.php:138
+msgid "<strong>There are no options</strong>."
+msgstr ""
+
+#: admin/views/fields/post-meta/choice.php:160
+#: admin/views/fields/sort-order.php:100
+msgid "Add Option"
+msgstr ""
+
+#: admin/views/fields/post-meta/choice.php:161
+msgid "Browse Values"
+msgstr ""
+
+#: admin/views/fields/post-meta/choice.php:161
+msgid ""
+"*experimental - suggest possible values based on a search of existing values "
+"for the meta key"
+msgstr ""
+
+#: admin/views/fields/post-meta/choice.php:162
+#: admin/views/fields/sort-order.php:101
+msgid "Clear All Options"
+msgstr ""
+
+#: admin/views/fields/post-meta/date.php:30
+#: admin/views/fields/post-meta/number.php:64
+msgid "Start Meta Key"
+msgstr ""
+
+#: admin/views/fields/post-meta/date.php:51
+#: admin/views/fields/post-meta/number.php:84
+msgid "Use same for End Key?"
+msgstr ""
+
+#: admin/views/fields/post-meta/date.php:51
+msgid "if your meta key is not listed or not yet created enter here"
+msgstr ""
+
+#: admin/views/fields/post-meta/date.php:71
+#: admin/views/fields/post-meta/number.php:104
+msgid "Compare Mode "
+msgstr ""
+
+#: admin/views/fields/post-meta/date.php:71
+#: admin/views/fields/post-meta/date.php:84
+#: admin/views/fields/post-meta/number.php:104
+msgid "the format the date is saved in the database"
+msgstr ""
+
+#: admin/views/fields/post-meta/date.php:73
+#: admin/views/fields/post-meta/number.php:106
+msgid "Post Meta must be within input range"
+msgstr ""
+
+#: admin/views/fields/post-meta/date.php:74
+#: admin/views/fields/post-meta/number.php:107
+msgid "Input must be within the Post Meta range"
+msgstr ""
+
+#: admin/views/fields/post-meta/date.php:75
+#: admin/views/fields/post-meta/number.php:108
+msgid "Input overlaps any of the Post Meta range"
+msgstr ""
+
+#: admin/views/fields/post-meta/date.php:84
+msgid "Date Input Format "
+msgstr ""
+
+#: admin/views/fields/post-meta/date.php:86
+msgid "Timestamp"
+msgstr ""
+
+#: admin/views/fields/post-meta/date.php:87
+msgid "YYYYMMDD (ACF)"
+msgstr ""
+
+#: admin/views/fields/post-meta/date.php:94 admin/views/fields/search.php:37
+msgid "Placeholder text"
+msgstr ""
+
+#: admin/views/fields/post-meta/date.php:94
+msgid "text that appears in the date field before a selection has been made"
+msgstr ""
+
+#: admin/views/fields/post-meta/date.php:101
+msgid "Date Display Format"
+msgstr ""
+
+#: admin/views/fields/post-meta/number.php:6
+msgid "Slider"
+msgstr ""
+
+#: admin/views/fields/post-meta/number.php:11
+msgid "Range - Slider"
+msgstr ""
+
+#: admin/views/fields/post-meta/number.php:12
+msgid "Range - Number"
+msgstr ""
+
+#: admin/views/fields/post-meta/number.php:13
+msgid "Range - Dropdown"
+msgstr ""
+
+#: admin/views/fields/post-meta/number.php:14
+msgid "Range - Radio"
+msgstr ""
+
+#: admin/views/fields/post-meta/number.php:15
+msgid "Range - Checkbox"
+msgstr ""
+
+#: admin/views/fields/post-meta/number.php:27
+msgid "Display input as"
+msgstr ""
+
+#: admin/views/fields/post-meta/number.php:29
+msgid "Single Field"
+msgstr ""
+
+#: admin/views/fields/post-meta/number.php:30
+msgid "From / To Fields"
+msgstr ""
+
+#: admin/views/fields/post-meta/number.php:36
+msgid "Display values as"
+msgstr ""
+
+#: admin/views/fields/post-meta/number.php:38
+msgid "Input Field"
+msgstr ""
+
+#: admin/views/fields/post-meta/number.php:40
+msgid "Plain Text"
+msgstr "Texte brut"
+
+#: admin/views/fields/post-meta/number.php:84
+msgid "Tick this box to use the same option from the Start Meta Key"
+msgstr ""
+
+#: admin/views/fields/post-meta/number.php:117
+msgid "Data is decimal?"
+msgstr ""
+
+#: admin/views/fields/post-meta/number.php:117
+msgid "use this option if you are filtering things like currencies"
+msgstr ""
+
+#: admin/views/fields/post-meta/number.php:120
+msgid ""
+"Decimal Places - this is used internally to perform accurate database queries"
+msgstr ""
+
+#: admin/views/fields/post-meta/number.php:133
+#: admin/views/fields/posts-per-page.php:71
+msgid "Min Value"
+msgstr "Valeur minimale"
+
+#: admin/views/fields/post-meta/number.php:133
+#: admin/views/fields/posts-per-page.php:71
+msgid "the lowest value that a user can select"
+msgstr ""
+
+#: admin/views/fields/post-meta/number.php:147
+#: admin/views/fields/post-meta/number.php:165
+msgid "Auto Detect?"
+msgstr ""
+
+#: admin/views/fields/post-meta/number.php:147
+msgid "set the min based on the lowest value in the database"
+msgstr ""
+
+#: admin/views/fields/post-meta/number.php:151
+#: admin/views/fields/posts-per-page.php:78
+msgid "Max Value"
+msgstr "Valeur maximale"
+
+#: admin/views/fields/post-meta/number.php:151
+#: admin/views/fields/posts-per-page.php:78
+msgid "the highest value that a user can select"
+msgstr ""
+
+#: admin/views/fields/post-meta/number.php:165
+msgid "set the max based on the highest value in the database"
+msgstr ""
+
+#: admin/views/fields/post-meta/number.php:172
+#: admin/views/fields/posts-per-page.php:87
+msgid "Step"
+msgstr ""
+
+#: admin/views/fields/post-meta/number.php:172
+#: admin/views/fields/posts-per-page.php:87
+msgid "the increment amount"
+msgstr ""
+
+#: admin/views/fields/post-meta/number.php:183
+msgid "Value Prefix"
+msgstr ""
+
+#: admin/views/fields/post-meta/number.php:183
+msgid "text to appear before a value  - such as a currency symbol - &dollar;"
+msgstr ""
+
+#: admin/views/fields/post-meta/number.php:190
+msgid "Value Postfix"
+msgstr ""
+
+#: admin/views/fields/post-meta/number.php:190
+msgid "text to appear after a value  - such as a currency symbol - &euro;"
+msgstr ""
+
+#: admin/views/fields/post-meta/number.php:199
+msgid "Values Seperator"
+msgstr ""
+
+#: admin/views/fields/post-meta/number.php:209
+msgid "Decimal Places"
+msgstr ""
+
+#: admin/views/fields/post-meta/number.php:215
+msgid "Thousands Seperator"
+msgstr ""
+
+#: admin/views/fields/post-meta/number.php:227
+msgid "Decimal Seperator"
+msgstr ""
+
+#: admin/views/fields/post-type.php:26
+#: public/includes/class-search-filter-active-query.php:879
+msgid "Post Type"
+msgstr ""
+
+#: admin/views/fields/post-type.php:38
+msgid "Post Types:"
+msgstr ""
+
+#: admin/views/fields/post-type.php:38
+msgid "post types available to this field"
+msgstr ""
+
+#: admin/views/fields/post-type.php:39
+msgid ""
+"Any post types made available here must also be made available to the search "
+"form under <strong>Settings</strong> before a user will see them as options."
+msgstr ""
+
+#: admin/views/fields/post-type.php:100
+msgid "override the default - e.g. &quot;All Post Types&quot;"
+msgstr ""
+
+#: admin/views/fields/post-type.php:142
+msgid "Add a Post Type Field your form"
+msgstr ""
+
+#: admin/views/fields/posts-per-page.php:27
+msgid "Posts Per Page"
+msgstr "Articles par page"
+
+#: admin/views/fields/posts-per-page.php:35
+msgid ""
+"Add a field allowing your users to change how many results are displayed per "
+"page."
+msgstr ""
+
+#: admin/views/fields/posts-per-page.php:48
+#: admin/views/fields/sort-order.php:49
+msgid "override the default - e.g. &quot;Sort Results By&quot;"
+msgstr ""
+
+#: admin/views/fields/posts-per-page.php:109
+#: admin/views/fields/sort-order.php:123
+msgid "Add a Sort Order Field to your form"
+msgstr ""
+
+#: admin/views/fields/reset.php:25
+msgid "Reset Button"
+msgstr ""
+
+#: admin/views/fields/reset.php:36
+msgid "Reset label"
+msgstr ""
+
+#: admin/views/fields/reset.php:36 admin/views/fields/submit.php:36
+msgid "Text that appears on the button"
+msgstr ""
+
+#: admin/views/fields/reset.php:41
+msgid "Link"
+msgstr ""
+
+#: admin/views/fields/reset.php:42
+msgid "Button"
+msgstr ""
+
+#: admin/views/fields/reset.php:47
+msgid "Submit Form: "
+msgstr ""
+
+#: admin/views/fields/reset.php:49
+msgid "Always"
+msgstr ""
+
+#: admin/views/fields/reset.php:50
+msgid "Never"
+msgstr ""
+
+#: admin/views/fields/reset.php:51
+msgid "Only when auto submit is enabled"
+msgstr ""
+
+#: admin/views/fields/reset.php:71
+msgid "Add a Reset Button to your form"
+msgstr ""
+
+#: admin/views/fields/search.php:26
+msgid "Search"
+msgstr ""
+
+#: admin/views/fields/search.php:37
+msgid "text that appears in the search box before the use starts typing"
+msgstr ""
+
+#: admin/views/fields/search.php:59
+msgid "Add a Search Field to your form"
+msgstr ""
+
+#: admin/views/fields/sort-order-option.php:24
+#: admin/views/fields/sort-order.php:66
+msgid "Sort By"
+msgstr "Trier par"
+
+#: admin/views/fields/sort-order-option.php:44
+#: admin/views/fields/sort-order.php:69
+msgid "Direction"
+msgstr ""
+
+#: admin/views/fields/sort-order-option.php:77
+msgid "Meta Key: "
+msgstr ""
+
+#: admin/views/fields/sort-order-option.php:77
+msgid "choose a meta key to sort by"
+msgstr ""
+
+#: admin/views/fields/sort-order-option.php:93
+msgid "Sort Type: "
+msgstr ""
+
+#: admin/views/fields/sort-order-option.php:95
+msgid "numeric"
+msgstr ""
+
+#: admin/views/fields/sort-order-option.php:96
+msgid "alphabetic"
+msgstr ""
+
+#: admin/views/fields/sort-order.php:27
+#: public/includes/class-search-filter-active-query.php:535
+#: public/includes/class-search-filter-active-query.php:536
+#: public/includes/class-search-filter-active-query.php:537
+msgid "Sort Order"
+msgstr ""
+
+#: admin/views/fields/sort-order.php:35
+msgid "Add a field allowing your users to sort results."
+msgstr ""
+
+#: admin/views/fields/sort-order.php:60
+msgid "Sort Options"
+msgstr ""
+
+#: admin/views/fields/sort-order.php:62
+msgid "Add the sort options that will be available to this field."
+msgstr ""
+
+#: admin/views/fields/sort-order.php:66
+msgid "sorting option"
+msgstr ""
+
+#: admin/views/fields/sort-order.php:69
+msgid "choose a direction for sorting"
+msgstr ""
+
+#: admin/views/fields/sort-order.php:72
+msgid "the text label a uses sees when selecting this option"
+msgstr ""
+
+#: admin/views/fields/sort-order.php:77
+msgid "<strong>There are no sort options</strong>."
+msgstr ""
+
+#: admin/views/fields/submit.php:25
+msgid "Submit Button"
+msgstr "Bouton soumettre"
+
+#: admin/views/fields/submit.php:36
+msgid "Submit label"
+msgstr ""
+
+#: admin/views/fields/submit.php:54
+msgid "Add a Submit Button to your form"
+msgstr "Ajouter un bouton d'envoi à votre formulaire"
+
+#: admin/views/fields/tag.php:26
+msgid "Tag"
+msgstr ""
+
+#: admin/views/fields/tag.php:54
+msgid "override the default - e.g. &quot;All Tags&quot;"
+msgstr ""
+
+#: admin/views/fields/tag.php:63
+msgid "AND - posts must be in each tag, OR - posts must be in any tag"
+msgstr ""
+
+#: admin/views/fields/tag.php:78
+msgid "display the number of posts in each tag"
+msgstr ""
+
+#: admin/views/fields/tag.php:82
+msgid "hide tags with no posts/items"
+msgstr ""
+
+#: admin/views/fields/tag.php:100
+msgid "show child tags underneath their parents"
+msgstr ""
+
+#: admin/views/fields/tag.php:104
+msgid "child tags will only be revealed once a parent has been selected"
+msgstr ""
+
+#: admin/views/fields/tag.php:133
+msgid "comma seperated list of tag IDs to exclude"
+msgstr ""
+
+#: admin/views/fields/tag.php:143
+msgid ""
+"This will show / hide tags for this field based upon the settings from the "
+"&quot;Settings &amp; Defaults&quot;"
+msgstr ""
+
+#: admin/views/fields/tag.php:167
+msgid "Add a Tag Field to your form"
+msgstr ""
+
+#: admin/views/fields/taxonomy.php:26
+msgid "Taxonomy"
+msgstr ""
+
+#: admin/views/fields/taxonomy.php:38
+msgid "Taxonomy: "
+msgstr ""
+
+#: admin/views/fields/taxonomy.php:111
+msgid "override the default - e.g. &quot;All Colours&quot;"
+msgstr ""
+
+#: admin/views/fields/taxonomy.php:135
+msgid "display the number of posts in each taxonomy term"
+msgstr ""
+
+#: admin/views/fields/taxonomy.php:139
+msgid "hide taxonomy terms with no posts/items"
+msgstr ""
+
+#: admin/views/fields/taxonomy.php:143
+msgid "show child taxonomy terms underneath their parents"
+msgstr ""
+
+#: admin/views/fields/taxonomy.php:147
+msgid ""
+"results in child terms will also be returned when a user searches its parent"
+msgstr ""
+
+#: admin/views/fields/taxonomy.php:171
+msgid ""
+"child taxonomy terms will only be revealed once a parent has been selected"
+msgstr ""
+
+#: admin/views/fields/taxonomy.php:207
+msgid ""
+"This will show / hide terms for this field based upon the settings from the "
+"&quot;Settings &amp; Defaults&quot;"
+msgstr ""
+
+#: admin/views/fields/taxonomy.php:231
+msgid "Add a Taxonomy Field to your form"
+msgstr ""
+
+#: admin/views/settings-metabox/meta-option.php:100
+msgid "Current Date"
+msgstr ""
+
+#: admin/views/settings-metabox/meta-option.php:101
+msgid "this meta query is always performed against the current date"
+msgstr ""
+
+#: admin/views/settings-metabox/meta-option.php:111
+msgid "Current Time"
+msgstr ""
+
+#: admin/views/settings-metabox/meta-option.php:112
+msgid "this meta query is always performed against the current time (NOW)"
+msgstr ""
+
+#: includes/class-search-filter-register-widget.php:83
+msgid "Title:"
+msgstr ""
+
+#: includes/class-search-filter-register-widget.php:87
+msgid "Please choose"
+msgstr ""
+
+#: includes/class-search-filter-register-widget.php:107
+msgid "Don't see a Search Form you want to use? <a href=\""
+msgstr ""
+
+#: includes/class-search-filter-shared.php:32
+#: public/class-search-filter.php:666
+msgid "Search &amp; Filter"
+msgstr ""
+
+#: includes/class-search-filter-shared.php:36
+#: public/class-search-filter.php:670
+msgid "Edit Search Form"
+msgstr ""
+
+#: includes/class-search-filter-shared.php:38
+#: public/class-search-filter.php:672
+msgid "View Search Form"
+msgstr ""
+
+#: includes/class-search-filter-shared.php:39
+#: public/class-search-filter.php:673
+msgid "Search 'Search Forms'"
+msgstr ""
+
+#: includes/class-search-filter-shared.php:40
+#: public/class-search-filter.php:674
+msgid "No Search Forms found"
+msgstr ""
+
+#: includes/class-search-filter-shared.php:41
+#: public/class-search-filter.php:675
+msgid "No Search Forms found in Trash"
+msgstr ""
+
+#: public/includes/class-search-filter-active-query.php:880
+#: public/includes/fields/post_type.php:48
+msgid "All Post Types"
+msgstr ""
+
+#: public/includes/class-search-filter-active-query.php:945
+msgid "Authors"
+msgstr ""
+
+#: public/includes/class-search-filter-active-query.php:947
+#: public/includes/fields/author.php:67
+msgid "All Authors"
+msgstr ""
+
+#: public/includes/class-search-filter-display-shortcode.php:879
+msgid ""
+"<p><strong>Notice:</strong> This Search Form has not been configured to use "
+"a shortcode. <a href='"
+msgstr ""
+
+#: public/includes/fields/post_date.php:53
+#: public/includes/fields/post_meta_date.php:58
+msgid "mm/dd/yyyy"
+msgstr ""
+
+#: public/includes/fields/post_date.php:54
+#: public/includes/fields/post_meta_date.php:59
+msgid "mm/dd/yy"
+msgstr ""
+
+#: public/includes/fields/post_date.php:58
+#: public/includes/fields/post_meta_date.php:63
+msgid "dd/mm/yyyy"
+msgstr ""
+
+#: public/includes/fields/post_date.php:59
+#: public/includes/fields/post_meta_date.php:64
+msgid "dd/mm/yy"
+msgstr ""
+
+#: public/includes/fields/post_date.php:63
+#: public/includes/fields/post_meta_date.php:68
+msgid "yyyy/mm/dd"
+msgstr ""
+
+#: public/includes/fields/post_date.php:64
+#: public/includes/fields/post_meta_date.php:69
+msgid "yy/mm/dd"
+msgstr ""
+
+#: public/includes/fields/post_meta.php:91
+#: public/includes/fields/post_meta_number.php:166
+msgid "All Items"
+msgstr ""
+
+#: public/includes/fields/posts_per_page.php:52
+msgid "Results Per Page "
+msgstr "Résultats par page"
+
+#: public/includes/fields/posts_per_page.php:56
+msgid "Results Per Page"
+msgstr "Résultats par page"
+
+#: public/includes/fields/reset.php:24
+msgid "Reset"
+msgstr ""
+
+#: public/includes/fields/sort_order.php:50
+msgid "Sort Results By"
+msgstr ""
+
+#: public/includes/fields/sort_order.php:54
+msgid "Default Sort Order"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://searchandfilter.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Search & Filtering for posts, products and custom posts. Allow your users to "
+"Search & Filter by categories, tags, taxonomies, custom fields, post meta, "
+"post dates, post types and authors."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Designs & Code"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.codeamp.com"
+msgstr ""
