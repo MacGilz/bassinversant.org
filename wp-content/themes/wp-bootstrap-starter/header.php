@@ -68,13 +68,14 @@ if( is_page() ) {
                  *     return;
                  */
 
+
                 echo '<div> <a href="javascript:;" class="name"><i class="far fa-user-lock mr-1"></i>' . $current_user->display_name . '</a></div>';
-                echo '<div> <a href="javascript:;">Mon espace</a> | <a href="javascript:;" class="modal-login-logOutClass">Déconnexion</a></div>';
+                echo '<div> <a href="/membres/'.$current_user->user_login.'">Mon espace</a> | <a href="javascript:;" class="modal-login-logOutClass">Déconnexion</a></div>';
 
             }
             if ( !is_user_logged_in() ) {
                 echo '<div><a href="javascript:;" class="modal-login-loginClass"><i class="far fa-unlock mr-1"></i> Connexion</a></div>';
-                echo '<div><a href="javascript:;" class=""><i class="far fa-user-plus mr-1"></i> Adhérer</a></div>';
+                echo '<div><a href="/demande-adhesion/" class=""><i class="far fa-user-plus mr-1"></i> Adhérer</a></div>';
             }
             ?>
 			

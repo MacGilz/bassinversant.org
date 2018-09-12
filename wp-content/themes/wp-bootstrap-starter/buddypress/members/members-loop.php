@@ -41,13 +41,20 @@ if ( bp_has_members(  'exclude=' . exclude_by_role($excluded_roles) . '&' . bp_a
 
 					<div class="item-block">
 
-						<h4 class="list-title member-name">
+						<h3 class="member-name mt-0 mb-1">
 							<a href="<?php bp_member_permalink(); ?>"><?php bp_member_name(); ?></a>
-						</h4>
+						</h3>
 
 						<?php 
+//KBS
+                         if(xprofile_get_field_data( 'Organisme', bp_get_member_user_id()  ))                      
+                         echo '<div class="organisme"><h5 class="mb-2">'.xprofile_get_field_data( 'Organisme', bp_get_member_user_id()).'</h5></div>';
+                        if(xprofile_get_field_data( 'Titre', bp_get_member_user_id()  ))                      
+                         echo '<div class=""><p class="mb-0">'.xprofile_get_field_data( 'Titre', bp_get_member_user_id()).'</p></div>';
+                         if(xprofile_get_field_data( 'Fonction', bp_get_member_user_id()  ))                      
+                         echo '<div class=""><p class="mb-0">'.xprofile_get_field_data( 'Fonction', bp_get_member_user_id()).'</p></div>';
 
-                        //KBS
+                        
                         if ( bp_nouveau_member_has_meta()  && (current_user_can('administrator') OR current_user_can('editor')) ) : ?>
 							<p class="item-meta last-activity">
 								<?php bp_nouveau_member_meta(); ?>

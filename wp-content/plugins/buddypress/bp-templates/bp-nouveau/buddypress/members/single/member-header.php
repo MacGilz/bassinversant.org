@@ -5,9 +5,11 @@
  * @since 3.0.0
  * @version 3.0.0
  */
+
 ?>
 
-<div id="item-header-avatar">
+<div class="row">
+<div id="item-header-avatar"  class="col-12 col-sm-3">
 	<a href="<?php bp_displayed_user_link(); ?>">
 
 		<?php bp_displayed_user_avatar( 'type=full' ); ?>
@@ -33,3 +35,4 @@
 
 	<?php bp_nouveau_member_header_buttons( array( 'container_classes' => array( 'member-header-actions' ) ) ); ?>
 </div><!-- #item-header-content -->
+</div>

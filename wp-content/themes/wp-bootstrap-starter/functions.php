@@ -1,3 +1,4 @@
+
 <?php
 
 
@@ -13,8 +14,8 @@
 
 */
 
-error_reporting( E_ALL );
-ini_set( 'display_errors', 1 );
+//error_reporting( E_ALL );
+//ini_set( 'display_errors', 1 );
 
 if ( !function_exists( 'wp_bootstrap_starter_setup' ) ):
     /**
@@ -116,7 +117,7 @@ function wp_bootstrap_starter_widgets_init() {
     register_sidebar( array(
         'name' => esc_html__( 'Footer 1', 'wp-bootstrap-starter' ),
         'id' => 'footer-1',
-        'description' => esc_html__( 'Add widgets here.', 'wp-bootstrap-starter' ),
+        'description' => esc_html__( 'Ajouter des widget.', 'wp-bootstrap-starter' ),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget' => '</section>',
         'before_title' => '<h3 class="widget-title">',
@@ -125,7 +126,7 @@ function wp_bootstrap_starter_widgets_init() {
     register_sidebar( array(
         'name' => esc_html__( 'Footer 2', 'wp-bootstrap-starter' ),
         'id' => 'footer-2',
-        'description' => esc_html__( 'Add widgets here.', 'wp-bootstrap-starter' ),
+        'description' => esc_html__( 'Ajouter des widget.', 'wp-bootstrap-starter' ),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget' => '</section>',
         'before_title' => '<h3 class="widget-title">',
@@ -134,13 +135,21 @@ function wp_bootstrap_starter_widgets_init() {
     register_sidebar( array(
         'name' => esc_html__( 'Footer 3', 'wp-bootstrap-starter' ),
         'id' => 'footer-3',
-        'description' => esc_html__( 'Add widgets here.', 'wp-bootstrap-starter' ),
+        'description' => esc_html__( 'Ajouter des widget.', 'wp-bootstrap-starter' ),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget' => '</section>',
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>',
     ) );
-
+    register_sidebar( array(
+        'name' => esc_html__( 'Accueils Rubriques', 'wp-bootstrap-starter' ),
+        'id' => 'sidebar-rubrique',
+        'description' => esc_html__( 'Ajouter des widget.', 'wp-bootstrap-starter' ),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
 }
 add_action( 'widgets_init', 'wp_bootstrap_starter_widgets_init' );
 
@@ -163,8 +172,7 @@ function wp_bootstrap_starter_scripts() {
         wp_enqueue_style( 'wp-bootstrap-starter-' . get_theme_mod( 'theme_option_setting' ), get_template_directory_uri() . '/inc/assets/css/presets/theme-option/' . get_theme_mod( 'theme_option_setting' ) . '.css', false, '' );
     }
     if ( get_theme_mod( 'preset_style_setting' ) === 'ubuntu' ) {
-        wp_enqueue_style( 'wp-bootstrap-starter-Ubuntu-font', '
-       https://fonts.googleapis.com/css?family=Ubuntu+Condensed|Ubuntu:300,400,500,700' );
+        wp_enqueue_style( 'wp-bootstrap-starter-Ubuntu-font', 'https://fonts.googleapis.com/css?family=Ubuntu+Condensed|Ubuntu:300,400,500,700' );
     }
     if ( get_theme_mod( 'preset_style_setting' ) === 'poppins-lora' ) {
         wp_enqueue_style( 'wp-bootstrap-starter-poppins-lora-font', 'https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Poppins:300,400,500,600,700' );
@@ -208,7 +216,6 @@ function wp_bootstrap_starter_scripts() {
     wp_enqueue_script( 'wp-bootstrap-starter-bootstrapjs', get_template_directory_uri() . '/inc/assets/js/bootstrap.min.js', array(), '', true );
     wp_enqueue_script( 'wp-bootstrap-starter-themejs', get_template_directory_uri() . '/inc/assets/js/theme-script.min.js', array(), '', true );
     
-     
     wp_enqueue_script( 'wp-bootstrap-starter-skip-link-focus-fix', get_template_directory_uri() . '/inc/assets/js/skip-link-focus-fix.min.js', array(), '20151215', true );
 
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -233,18 +240,6 @@ function conditionnal_enqueue() {
 }
 
 add_action('wp_enqueue_scripts', 'conditionnal_enqueue');
-
-
-function wp_bootstrap_starter_password_form() {
-    global $post;
-    $label = 'pwbox-' . ( empty( $post->ID ) ? rand() : $post->ID );
-    $o = '<form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post">
-    <div class="d-block mb-3">' . __( "To view this protected post, enter the password below:", "wp-bootstrap-starter" ) . '</div>
-    <div class="form-group form-inline"><label for="' . $label . '" class="mr-2">' . __( "Password:", "wp-bootstrap-starter" ) . ' </label><input name="post_password" id="' . $label . '" type="password" size="20" maxlength="20" class="form-control mr-2" /> <input type="submit" name="Submit" value="' . esc_attr__( "Submit", "wp-bootstrap-starter" ) . '" class="btn btn-primary"/></div>
-    </form>';
-    return $o;
-}
-add_filter( 'the_password_form', 'wp_bootstrap_starter_password_form' );
 
 
 
@@ -279,7 +274,6 @@ require get_template_directory() . '/inc/plugin-compatibility/plugin-compatibili
 if ( !class_exists( 'wp_bootstrap_navwalker' ) ) {
     require_once( get_template_directory() . '/inc/wp_bootstrap_navwalker.php' );
 }
-
 
 
 
@@ -372,7 +366,7 @@ else {
             } else {
 
                 // Just display current page if not parents
-                echo '<li class="item-current item-' . $post->ID . '"><em class="bread-current bread-' . $post->ID . '"> ' . get_the_title() . '</em></li>';
+             //   echo '<li class="item-current item-' . $post->ID . '"><em class="bread-current bread-' . $post->ID . '"> ' . get_the_title() . '</em></li>';
 
             }
 
@@ -657,7 +651,7 @@ acf_add_options_sub_page(array(
 function get_tag_posts(
     $post_type = '',
     $cat_actu = '',
-    $postperpage = 1,
+    $postperpage = 10,
     $nopagination = true,
     $format = "compact", //ou paysage ou archives
     $acf_rubriques = '',
@@ -669,10 +663,12 @@ function get_tag_posts(
     $bootstrapclass='col-12',
     $typePost=false // affichage du type ressources ou actu
     )
-{
+{  
+
         $args = array(
         'post_type' => $post_type,
         'posts_per_page' => $postperpage,
+        'posts_per_archive_page' => $postperpage, 
         'nopaging' => $nopagination,
         'tag' => $tagslugs, // ('tag1,tag2)   
         'orderby' => 'date',
@@ -682,30 +678,52 @@ function get_tag_posts(
     $query = new WP_Query( $args ); 
     //print_r($query);
     //
-    
 
-    
-    if ( $query->have_posts() ) {
 
-            ($query->found_posts > 1 ) ? print '<div class="col-12 foundpost">'.$query->found_posts.' contenus trouvés.</div>': print '<div class="col-12 foundpost">'.$query->found_posts.' contenu trouvé.</div>';
-       
+if ( $query->have_posts() ) {
+        
+        
+ ($query->found_posts > 1 ) ? print '<div class="col-12 foundpost">'.$query->found_posts.' contenus trouvés.</div>': print '<div class="col-12 foundpost">'.$query->found_posts.' contenu trouvé.</div>';
+    
+  $col_Actus='  <div class="col-12 col-sm-6">
+      <div class="row" id="liste-actualites">
+        <div class="col-12">
+        <h2>Actualités</h2>
+          </div>';
+        
+$col_Ressources='  <div class="col-12 col-sm-6">
+      <div class="row" id="liste-ressources">
+        <div class="col-12">
+        <h2>Ressources</h2>
+          </div>';      
+    
         while ( $query->have_posts() ) {
 
             $query->the_post();
             switch(get_post_type()){
                 case 'post':
-                 include(locate_template('template-parts/content-actualite-'.$format.'.php')); 
+                    ob_start();
+                    include(locate_template('template-parts/content-actualite-'.$format.'.php')); 
+                    $col_Actus.= ob_get_clean();
                 break;
                 case 'ressource':
-                 include(locate_template('template-parts/content-ressource-'.$format.'.php')); 
+                    ob_start();
+                    include(locate_template('template-parts/content-ressource-'.$format.'.php')); 
+                     $col_Ressources.=ob_get_clean();
                 break;
                     
                 default:
                 break;
             }
-   
 
         }
+    $col_Actus.='      </div>
+  </div>';
+$col_Ressources.='      </div>
+  </div>';
+            
+echo $col_Actus.$col_Ressources;
+
     }
     wp_reset_query();
 
@@ -1043,20 +1061,47 @@ print_r($query_args);
 QUFORM  gestion des dependances js et css dans les pages
 ================*/
 
-function my_quform_scripts( $enqueue ) {
-    if ( !in_array( get_queried_object_id(), array( 149 ) ) ) { //liste des ids avec formulaires   
-        $enqueue = false;
-    }
-
-    return $enqueue;
-}
-add_filter( 'quform_enqueue_scripts', 'my_quform_scripts' );
-add_filter( 'quform_enqueue_styles', 'my_quform_scripts' );
+//function my_quform_scripts( $enqueue ) {
+//    if ( !in_array( get_queried_object_id(), array( 149 ) ) ) { //liste des ids avec formulaires   
+//        $enqueue = false;
+//    }
+//
+//    return $enqueue;
+//}
+//add_filter( 'quform_enqueue_scripts', 'my_quform_scripts' );
+//add_filter( 'quform_enqueue_styles', 'my_quform_scripts' );
 
 
 /*===============
 BUDDY PRESS 
 ================*/
+//groupes types
+
+function my_bp_custom_group_types() {
+    bp_groups_register_group_type( 'structure', array(
+        'labels' => array(
+            'name' => 'Structures',
+            'singular_name' => 'Structure'
+        ),
+ 
+        // New parameters as of BP 2.7.
+        'has_directory' => 'structures',
+        'show_in_create_screen' => true,
+        'show_in_list' => true,
+        'description' => '',
+        'create_screen_checked' => true
+    ) );
+}
+add_action( 'bp_groups_register_group_types', 'my_bp_custom_group_types' );
+
+
+// Role par defaut
+add_filter('pre_option_default_role', function($default_role){
+    // You can also add conditional tags here and return whatever
+    return 'subscriber'; // This is changed
+    return $default_role; // This allows default
+});
+
 // add order options to members loop
 function ch_member_order_options() {
     ?>
@@ -1351,4 +1396,4 @@ if ( !current_user_can( 'edit_users' ) ) {
     add_filter( 'pre_option_update_core', create_function( '$a', "return null;" ) );
 
 }
-    
+

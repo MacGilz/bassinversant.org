@@ -278,9 +278,9 @@ get_header();
 <div class="row ">
 
        <?php
-   //  echo $_SESSION[ 'filtres-ressources' ][ 'editeur' ];
+    
     // 
-       get_archives_ressources ('',3,true,$_SESSION[ 'filtres-ressources' ][ 'rubrique' ],$_SESSION[ 'filtres-ressources' ][ 'categorie' ], $_SESSION[ 'filtres-ressources' ][ 'description_geographique' ],$_SESSION[ 'filtres-ressources' ][ 'tag' ] ,$_SESSION[ 'filtres-ressources' ][ 'type_document' ] ,$_SESSION[ 'filtres-ressources' ][ 'genre_document' ],$_SESSION[ 'filtres-ressources' ][ 'editeur' ],$_SESSION[ 'filtres-ressources' ][ 'datepicker_year' ],false,'','','',false);
+       get_archives_ressources (3,true,$_SESSION[ 'filtres-ressources' ][ 'rubrique' ],$_SESSION[ 'filtres-ressources' ][ 'categorie' ], $_SESSION[ 'filtres-ressources' ][ 'description_geographique' ],$_SESSION[ 'filtres-ressources' ][ 'tag' ] ,$_SESSION[ 'filtres-ressources' ][ 'type_document' ] ,$_SESSION[ 'filtres-ressources' ][ 'genre_document' ],$_SESSION[ 'filtres-ressources' ][ 'editeur' ],$_SESSION[ 'filtres-ressources' ][ 'datepicker_year' ],false,'','','',false,'col-12 col-sm-6 col-md-4');
             
        ?>
     

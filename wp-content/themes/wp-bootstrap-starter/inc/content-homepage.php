@@ -2,7 +2,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-8 pl-md-0 pr-md-4">
+            <div class="col-12 col-md-8 pl-md-0">
                 <?php
 
                 echo do_shortcode( '[smartslider3 slider=6]' );
@@ -11,7 +11,7 @@
                    
                 </div>
             </div>
-            <div class="col-12 col-md-4 mt-3 pl-md-5 border border-top-0 border-right-0 border-bottom-0 border-blue">
+            <div class="col-12 col-md-4 mt-3 border border-top-0 border-right-0 border-bottom-0 border-white">
                 <div class="widget-ressources">
                     <img src="/wp-content/uploads/2018/07/ressources-logo.svg" class="img-titre mb-2" alt="Ressources">
 
@@ -29,7 +29,7 @@
                     <a href="/ressources/" class="hvr-sweep-to-right button-primary mt-3">Toutes les actualités  <i class="fal fa-angle-right" ></i> </a>
                 </div>
             </div>
-            <div class="col-12 col-md-4 pl-md-5 border border-top-0 border-right-0 border-bottom-0 border-blue">
+            <div class="col-12 col-md-4  border border-top-0 border-right-0 border-bottom-0 border-white">
                 <a href="/ressources/" class="hvr-sweep-to-right button-primary mt-3">Toutes les ressources  <i class="fal fa-angle-right" ></i></a>
             </div>
         </div>

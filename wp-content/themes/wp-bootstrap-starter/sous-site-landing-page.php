@@ -13,18 +13,12 @@ get_header(); ?>
 $rubriques= get_field('rubriques');
 
 ##print_r($rubriques);
-?>
-<?php
-            
-            
-
-            
-			while ( have_posts() ) : the_post();
+   
+			the_post();
 
 				get_template_part( 'template-parts/content', 'sous-site-landing-content' );
 
-			endwhile; // End of the loop.
-			?>
+?>
 
 		</main><!-- #main -->
 	</section><!-- #primary -->
@@ -33,9 +27,7 @@ $rubriques= get_field('rubriques');
 
 <section id="primary" class="content-area">
 <div class="row">
-<div class="col-12">
 
-</div>
 <div class="col-12 col-md-6" id="liste-actualites">
 
     <h2>Dernières Actualités</h2>
@@ -47,20 +39,21 @@ $rubriques= get_field('rubriques');
       
       if($rubriques[0]->slug=="aneb") {
             //Actualités epinglées de toutes les rubriques
-            get_post_actualites ('',true,3,false,'portrait',$rubriques[0]->term_id,180,100, 'float-left pr-4',true );
+            get_post_actualites ('',true,3,false,'portrait',$rubriques[0]->term_id,180,100, 'float-left pr-4 mb-5',true );
       }
     else {
-           get_post_actualites ('',true,3,false,'portrait',$rubriques[0]->term_id,180,100, 'float-left pr-4',false );
+           get_post_actualites ('',true,3,false,'portrait',$rubriques[0]->term_id,180,100, 'float-left pr-4 mb-5',false );
     }
             
             ?>
     
 </div>
 </div>
-<div class="col-12 col-md-6" id="liste-ressources">
-
+<div class="col-12 col-md-6  " >
+<div id="liste-ressources" class="px-xs-4 px-sm-4 px-md-5" >
+    
     <h2>Dernières Ressources</h2>
-        
+    
     <div class="row">
     
               <?php 
@@ -68,7 +61,7 @@ $rubriques= get_field('rubriques');
               ?>
     
         </div>
-
+</div>
 </div>
 </section>  
 </div>

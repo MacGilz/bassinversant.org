@@ -114,24 +114,24 @@ function check_login_modal(){
     $user = wp_signon( $info, false );
 
     if(isset($user->errors['incorrect_password'])){
-        echo json_encode(array('loggedin'=>false, 'message'=>__('The password you entered for the username <strong>'.$_POST["username"].'</strong> is incorrect.')));
+        echo json_encode(array('loggedin'=>false, 'message'=>__('Le mot de passe entré pour <strong>'.$_POST["username"].'</strong> vn\'est pas correct')));
         wp_die();
     }
     if(isset($user->errors['invalid_username'])){
-        echo json_encode(array('loggedin'=>false, 'message'=>__('This username is invalid.')));
+        echo json_encode(array('loggedin'=>false, 'message'=>__('Identifiant non reconnu.')));
         wp_die();
     }
     if($_POST['username']==""){
-        echo json_encode(array('loggedin'=>false, 'message'=>__('Username is empty.')));
+        echo json_encode(array('loggedin'=>false, 'message'=>__('Entrez votre identifiant.')));
         wp_die();
     }
     if($_POST['password']==""){
-        echo json_encode(array('loggedin'=>false, 'message'=>__('Password is empty.')));
+        echo json_encode(array('loggedin'=>false, 'message'=>__('Renseignez le mot de passe')));
         wp_die();
     }
 
     if ( is_wp_error($user) ){
-        echo json_encode(array('loggedin'=>false, 'message'=>__('Wrong username or password.')));
+        echo json_encode(array('loggedin'=>false, 'message'=>__('Identifiant ou mot de passe erroné.')));
         wp_die();
     }
 
@@ -349,11 +349,11 @@ function login_modal_register_user(){
         //print_r($errors);
         $msg="";
         if(isset($errors->errors['empty_username'])){
-            $msg = 'This username is empty.';
+            $msg = 'Entrez votre identifiant.';
         }
         if(isset($errors->errors['empty_email'])){
             if($msg!=""){
-                $msg.=" And email is empty too.";
+                $msg.=" L'Email doit être renseigné.";
             }
             else{
                 $msg = 'This email is empty.';
@@ -361,10 +361,10 @@ function login_modal_register_user(){
         }
         if(isset($errors->errors['invalid_username'])){
             if($msg!=""){
-                $msg.=" And username is invalid too.";
+                $msg.=" Identifiant non reconnu.";
             }
             else{
-                $msg = 'This username is invalid.';
+                $msg = 'Identifiant non reconnu';
             }
         }
         if(isset($errors->errors['invalid_email'])){

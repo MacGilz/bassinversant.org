@@ -177,6 +177,7 @@ function ressources_register_taxonomies() {
 // Fonction de recuperation des ressources 
 // paramètres ( slug catégorie; nombre de posts,nopagination,format,Rubriques ACF - si nul tous, showcategories, monthago, resume (bool),limit_resume(int),tag_liste(bool) )
 
+// REMPLACER PAR get_archives_ressources !!!!
 function get_last_ressources(
     $cat_ressources = '',
     $postperpage = 3,
@@ -260,8 +261,7 @@ function get_last_ressources(
 // paramètres ( slug catégorie; nombre de posts,nopagination,format,Rubriques ACF - si nul tous, showcategories, monthago, resume (bool),limit_resume(int),tag_liste(bool) )
 
 function get_archives_ressources(
-    $cat_ressources = '',
-    $postperpage = 3,
+    $postperpage = 12,
     $nopagination = false, // sur false pour que posts_per_page fonctionne
     $acf_rubriques = '',
     $categorie='',
@@ -275,7 +275,8 @@ function get_archives_ressources(
     $resume = false,
     $limit_resume = '',
     $tag_liste = false,
-    $typePost=false) {
+    $typePost=false,
+    $bootstrapclass='') {
 
 
     $args = array(
@@ -283,7 +284,6 @@ function get_archives_ressources(
         'posts_per_page' => $postperpage,
         'nopaging' => $nopagination,
         'tag' => $tagslugs,
-
          );
         
   

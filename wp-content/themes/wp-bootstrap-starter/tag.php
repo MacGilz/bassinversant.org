@@ -3,8 +3,6 @@
  * Template Name: Actualités
  */
 
-//error_reporting( E_ALL );
-//ini_set( 'display_errors', 1 );
 
 get_header();
 
@@ -55,12 +53,41 @@ get_header();
 
 <div class="row">
 
-
-    <?php
+  <div class="col-12 col-sm-6">
+      <div class="row" id="liste-actualites">
+        <div class="col-12">
+        <h2>Actualités</h2>
+          </div>
+        <div class="col-12">
+      <?php echo do_shortcode('
+[ajax_load_more  id="tag_actus" posts_per_page="12" container_type="div" post_type="post" tag="'.get_query_var('tag').'" button_label="Voir les plus anciens" button_loading_label="Chargement" scroll="false"]
+'); ?>
+          </div>
+      </div>
+  </div>
     
-    echo get_tag_posts(array('ressource','post'),'','','','compact','','','','','', get_query_var('tag'),'col-12 col-md-4', true);
+      <div class="col-12 col-sm-6">
+      <div class="row" id="liste-ressources">
+        <div class="col-12">
+        <h2>Ressources</h2>
+          </div>
+        <div class="col-12">
+      <?php echo do_shortcode('
+[ajax_load_more  id="tag_actus"  posts_per_page="12" container_type="div" post_type="ressource" tag="'.get_query_var('tag').'" button_label="Voir les plus anciens" button_loading_label="Chargement" scroll="false"]
+'); ?>
+
+
+
+
+          </div>
+      </div>
+  </div>
+    <?php
+
+   // echo get_tag_posts(array('ressource','post'),'',2,'','compact','','','','','', get_query_var('tag'),'col-12 col-md-6', true);
     
     ?>
+
 
 
 </div>
@@ -68,7 +95,8 @@ get_header();
 
     <!-- .row -->
 </div> <!-- .container -->
+
 <?php
 
-get_footer();
-?>
+get_footer();?>
+  

@@ -1,6 +1,6 @@
 
-<div class="d-flex flex-column col-12 items-ressources">
-    <article id="post-<?php the_ID(); ?>" <?php post_class('dotted-bottom pb-3'); ?>>
+<div class="d-flex flex-column col-12 items-ressources mb-4">
+    <article id="post-<?php the_ID(); ?>" <?php post_class('dotted-bottom pb-4'); ?>>
         <?php
         $enable_vc = get_post_meta( get_the_ID(), '_wpb_vc_js_status', true );
         if ( !$enable_vc ) {
@@ -81,5 +81,5 @@ endif;
         </div>
 
     </article>
-    <!-- #post-## -->
+
 </div>

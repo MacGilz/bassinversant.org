@@ -12,8 +12,8 @@
 		<label class="bp-screen-reader-text" for="<?php bp_nouveau_filter_id(); ?>">
 			<span ><?php bp_nouveau_filter_label(); ?></span>
 		</label>
-		<div class="select-wrap">
-			<select id="<?php bp_nouveau_filter_id(); ?>" data-bp-filter="<?php bp_nouveau_filter_component(); ?>">
+		<div class="">
+			<select class="form-control" id="<?php bp_nouveau_filter_id(); ?>" data-bp-filter="<?php bp_nouveau_filter_component(); ?>">
 
 				<?php bp_nouveau_filter_options(); ?>
 
