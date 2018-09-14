@@ -301,7 +301,7 @@ h1 {
   word-spacing: 0.2rem
 }
 h2 {
-  font-size: 1.599rem;
+  font-size: 1.444rem;
   padding-bottom: 0.3rem;
   text-transform: uppercase;
  letter-spacing: 0.05rem
@@ -624,9 +624,8 @@ a.page-scroller {
   margin-top: 2rem;
 }
 
-
 .content-rubrique-home{
-    background-color: #F0F0F0
+   
 }
 #main .widget_nav_menu .menu{
     border: 2.5px solid #00B0F0;
@@ -1088,8 +1087,8 @@ color: #009492;
 }
 
 @media only screen and (min-width: 961px) {
-    #liste-ressources {padding: 1.44rem}
-    #liste-actualites {padding-top: 1.44rem}
+    #liste-ressources {}
+    #liste-actualites {}
 }
 
 /*## connexion header*/

@@ -2,7 +2,7 @@
 
 <div class="row">
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('col-12'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('col-12 mb-5'); ?>>
 
     <header class="entry-header">
         <span class="vaguepost"><img src="/wp-content/themes/imgs/vague.svg" /></span>
@@ -20,12 +20,10 @@
     <?php endif ?>
 
 
-</article><!-- #post-## -->
-    
-<?php /*?><aside id="secondary" class="widget-area col-12 col-md-3" role="complementary" >
-            <?php get_sidebar(); ?>
-</aside><?php */?>
-    
+</article>
+    <div class="col-12 pr-md-5">
+    <?php echo do_shortcode('[MWB_PDF_GEN]'); ?>
+    </div>
 </div>
 
 

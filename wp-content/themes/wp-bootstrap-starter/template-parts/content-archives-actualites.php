@@ -35,7 +35,7 @@ endif;
             
 
     ?>
-qsxqsxsqxqs
+
         </div>
         <!-- .entry-meta -->
         <?php

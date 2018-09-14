@@ -17,6 +17,10 @@
 //error_reporting( E_ALL );
 //ini_set( 'display_errors', 1 );
 
+// Populate select field using filter
+add_filter('acf/load_field/name=bp_group', 'acf_load_bp_groups');
+
+
 if ( !function_exists( 'wp_bootstrap_starter_setup' ) ):
     /**
      * Sets up theme defaults and registers support for various WordPress features.
@@ -1075,8 +1079,33 @@ QUFORM  gestion des dependances js et css dans les pages
 /*===============
 BUDDY PRESS 
 ================*/
-//groupes types
 
+
+// Permet de recupere les groupes dans acf ( declarer un champ et uiliser sont slug ci-dessous ex : bp_group)
+function acf_load_bp_groups( $field ) {
+  // Reset choices
+  $field['choices'] = array();
+  $user_id = get_current_user_id();
+  $groups = array();
+  if ( bp_has_groups('user_id=' . $user_id) ) :
+    while ( bp_groups() ) : bp_the_group(); 
+    $groups[] = bp_get_group_name() . '_' . bp_get_group_id();
+    endwhile; 
+  endif;
+  
+  // Populate choices
+  foreach( $groups as $group ) {
+      $groupvalues = explode('_', $group);
+    $field['choices'][ $groupvalues[1] ] = $groupvalues[0];
+  }
+  
+  // Return choices
+  return $field;
+  
+}
+
+
+//Types de groupes
 function my_bp_custom_group_types() {
     bp_groups_register_group_type( 'structure', array(
         'labels' => array(

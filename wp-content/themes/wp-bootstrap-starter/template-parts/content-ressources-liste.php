@@ -1,15 +1,10 @@
 
 <div class="d-flex flex-column col-12 col-md-4 items-ressources">
     <article id="post-<?php the_ID(); ?>" <?php post_class('dotted-bottom'); ?>>
-        <?php
-        $enable_vc = get_post_meta( get_the_ID(), '_wpb_vc_js_status', true );
-        if ( !$enable_vc ) {
-            ?>
+
         <header class="entry-header">
             <?php the_title( '<a href="'.get_permalink() .'"><h3 class="entry-title">', '</h3></a>' ); ?>
         </header>
-        <!-- .entry-header -->
-        <?php } ?>
 
         <div class="entry-content">
           

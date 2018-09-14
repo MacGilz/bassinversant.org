@@ -61,19 +61,11 @@ endif;
 
     ?>
 
-
-           
             <?php echo the_content_limit(20) ?>
            <p class="date-article text-right mb-1">
                 <?php the_date()?>
             </p>
-            <?php
-            
-            wp_link_pages( array(
-                'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wp-bootstrap-starter' ),
-                'after' => '</div>',
-            ) );
-            ?>
+
             
                 <?php echo affiche_taxonomie_links(get_the_ID(),array('post_tag'),'tags','');?>
             

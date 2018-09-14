@@ -93,6 +93,7 @@ ACF SELECT RUBRIQUES( ANEB, EPTB...)
 MENU
 ----------------------------------------------------------------
 */
+a.menu-icon-newsletter, a.menu-icon-newsletter .dashicons-before::before{color:#C583E7 !important}
 .menu-icon-ressource .wp-menu-name,
 .menu-icon-ressource  .dashicons-before::before,
 .menu-icon-post .wp-menu-name,
@@ -101,7 +102,9 @@ MENU
 .menu-icon-page .wp-menu-name,
 .menu-icon-page .dashicons-before::before{color:hsla(42,33%,55%,1.00) !important}
 /*.taxonomies-menu-item .wp-menu-name,.taxonomies-menu-item .dashicons-before::before {color:hsla(37,76%,55%,1.00) !important}
-*/.toplevel_page_simpledocumentation .wp-menu-name,.toplevel_page_simpledocumentation .dashicons-before::before {color:#00B0F0 !important}
+*/
+a.toplevel_page_simpledocumentation .wp-menu-name,
+a.toplevel_page_simpledocumentation .dashicons-before::before {color:#00B0F0 !important}
 
 
 .taxonomies-menu-item .wp-menu-name, .taxonomies-menu-item .dashicons-before::before {color:#009492 !important}

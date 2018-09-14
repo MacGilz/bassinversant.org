@@ -25,21 +25,21 @@
             echo '</div>';
             
 
-               $rubriques = get_field('rubriques' );
-                
-                echo '<div class="rubriques">';
-                foreach ( $rubriques as $key => $value ) {
-                    echo '<a href="/' . $value->slug . '/" class="rubrique px-1 mr-2 ' . $value->slug . '">' . $value->name . '</a>';
-                }
-                 echo '</div>';
+//               $rubriques = get_field('rubriques' );
+//                
+//                echo '<div class="rubriques">';
+//                foreach ( $rubriques as $key => $value ) {
+//                    echo '<a href="/' . $value->slug . '/" class="rubrique px-1 mr-2 ' . $value->slug . '">' . $value->name . '</a>';
+//                }
+//                 echo '</div>';
 
 ?>
             </div>
 
-
+<?php /*?>
            <p class="date-article text-right mb-1">
                 <?php the_date()?>
-            </p>
+            </p><?php */?>
 
     </article>
         </a>

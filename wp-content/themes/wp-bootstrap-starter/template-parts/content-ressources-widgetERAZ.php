@@ -3,16 +3,11 @@
 <div class="d-flex flex-column col-12">
     <a href="<?php echo get_permalink()  ?>">
     <article id="post-<?php the_ID(); ?>" class="item-ressource ">
-        <?php
-        $enable_vc = get_post_meta( get_the_ID(), '_wpb_vc_js_status', true );
-        if ( !$enable_vc ) {
-            ?>
+
         <header class="entry-header">
             <?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
         </header>
-        <!-- .entry-header -->
-        <?php } ?>
-            
+
             <div class="d-flex justify-content-between">
         <?php 
      $genre = '';
@@ -37,10 +32,10 @@
             </div>
 
 
-           <p class="date-article text-right mb-1">
+<?php /*?>           <p class="date-article text-right mb-1">
                 <?php the_date()?>
             </p>
-
+<?php */?>
     </article>
         </a>
     <!-- #post-## -->

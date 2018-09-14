@@ -115,7 +115,6 @@ endif;
 </aside>
     </div>
 
-   
 
 </article> <!-- #post-## -->
 

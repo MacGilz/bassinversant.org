@@ -57,7 +57,7 @@ add_action( 'init', 'create_post_ressources' );
 function ressources_register_taxonomies() {
 	
 		$taxonomies = array(
-            array(
+/*            array(
 				'slug'         => 'categories_ressources',
 				'single_name'  => 'Catégorie',
 				'plural_name'  => 'Catégories',
@@ -66,6 +66,16 @@ function ressources_register_taxonomies() {
                 'new'          => 'Nouvelle',
                 'hierarchical' => false,
                 'menu_name'    => 'Catégorie ressource',
+			),
+            */
+            array(
+				'slug'         => 'mots_cles',
+				'single_name'  => 'Mot clé',
+				'plural_name'  => 'Mots clés',
+				'post_type'    => 'type',
+                'new'          => 'Nouveau',
+                'hierarchical' => false,
+                'menu_name'    => 'Mots clés',
 			),
             
             array(
@@ -177,25 +187,32 @@ function ressources_register_taxonomies() {
 // Fonction de recuperation des ressources 
 // paramètres ( slug catégorie; nombre de posts,nopagination,format,Rubriques ACF - si nul tous, showcategories, monthago, resume (bool),limit_resume(int),tag_liste(bool) )
 
-// REMPLACER PAR get_archives_ressources !!!!
+
+
+
+
+
+// utilisé en accueil
 function get_last_ressources(
     $cat_ressources = '',
     $postperpage = 3,
     $nopagination = false, // sur false pour que posts_per_page fonctionne
-    $format = "liste", //ou widget,liste-home-sous-site
+    $format = "widget", //ou widget,liste-home-sous-site
     $acf_rubriques = '',
     $showcategories = false,
     $monthago = '3 month ago', // pour les tetes de rubrique
     $resume = false,
     $limit_resume = '',
     $tag_liste = false,
-    $typePost=false) {
+    $typePost=false,
+    $sticky=true) {
 
 
     $args = array(
         'post_type' => 'ressource',
         'posts_per_page' => $postperpage,
         'nopaging' => $nopagination,
+        //'post__in' => get_option( 'sticky_posts' ),
          );
         
             // si page archives
