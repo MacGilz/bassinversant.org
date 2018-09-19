@@ -62,7 +62,7 @@ body {
   font-size: 0.9rem;
   margin: 0;
   -webkit-font-smoothing: auto;
-  line-height: 1.333rem;
+  line-height: 1.2rem;
   font-family: 'Ubuntu', sans-serif;
   color: #5C5C5B;
 }
@@ -344,7 +344,7 @@ body.buddypress article.page > .entry-header .entry-title{
 .type-page h4{
     color:#7F7F7F
 }
-/*carouche bleu*/
+/*cartouche bleu*/
 .type-page h5{
     font-size: 0.9rem;
     line-height: 1rem;
@@ -396,7 +396,27 @@ p.nopost{color:#009492 }
 # FX
 --------------------------------------------------------------*/
 .ombre-bottom {
-	box-shadow: 0 10px 8px -2px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 10px 8px -2px rgba(0, 0, 0, 0.10);
+}
+.ombre-bottom-light {
+	box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.04);
+}
+
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /* Bounce In */
@@ -530,7 +550,7 @@ button.btn-initfilter{background-color:#009492;color:#FFF}
 
 #header-searchform{padding-top: 0.2rem;padding-bottom: 0.2rem}
 #header-searchform label {margin: 0}
-#header-searchform input.search-field {height: 0.9rem;font-size:0.9rem;color:#A2A2A2 !important}
+#header-searchform input.search-field {height: 1rem;font-size:0.9rem;color:#A2A2A2 !important}
 #header-searchform input.search-field.form-control {
 box-shadow: none!important;}
 
@@ -584,6 +604,8 @@ box-shadow: none!important;}
 # Navigation
 --------------------------------------------------------------*/
 header#masthead {
+    position: relative;
+    z-index: 2000
 }
 
 .navbar-brand > a:visited, .navbar-brand > a:hover {
@@ -737,27 +759,27 @@ a[href $='.odt']:hover::before, a[href $='.odt']:focus::before
 ## Menus
 --------------------------------------------------------------*/
 #topheader{
-        /*border-bottom: thin solid #CDCDCD;*/
-    background-color:#F0F0F0;
+    background-color: #FFF;
+   /* border-bottom: thin dotted #C1C1C1;*/
 }
-#bandeau {height: 80px}
+#bandeau {height: 90px}
 #barrenavigation {
     top: 32px;
-    height: 32px;
+    height: 36px;
     background-color: #00ACE9;
-    z-index: 999;
+    z-index: 99999;
 /*    border-bottom: 1px solid #00ACE9;
     border-top: 1px solid #00ACE9;*/
 }
 .navbar-brand{
-   padding: 1rem 0 0rem 0 !important
+   padding-top: 20px !important
 }
 
 /*LOGOS*/
 .letter_logoversant {fill:#fff;stroke:#00b0f0;stroke-miterlimit:5;stroke-width:0.35px}
 
 #bandeau .logo-bassinversant-svg{
-    max-width: 320px; float: left;margin:0 0 2rem}
+    max-width: 320px; float: left;margin:0 0 0 -10px}
 #footer-widget .logo-bassinversant-svg{
     max-width: 320px; float: left;margin:0 0 2rem -10px}
 
@@ -786,8 +808,8 @@ stroke:#2A3867;
     fill: #FFFFFF
 }
 #footer-widget svg.logo-bassinversant-svg .letter_logoversant{fill:#00ACE9;stroke:#FFF;stroke-miterlimit:5;stroke-width:0.45px}
-/*==LOGO ANEB SVG MENU==*/
 
+/*==LOGO ANEB SVG MENU==*/
 /* permettre au logo de sortir de son conteneur menu*/
 .mega_main_menu > .menu_holder > .menu_inner > ul > li .item_link .link_text > *{
       max-width: 120% !important;max-height: 130% !important
@@ -798,7 +820,7 @@ mega_main_menu.primary > .menu_holder > .menu_inner > ul > li.current-menu-item 
 #menu-item-234 img{
     max-width: 120%;
     width: 90px !important;
-    margin-top: -17px;
+    margin-top: -14px;
     margin-left: -20px;
     height: 100px
 
@@ -818,14 +840,20 @@ mega_main_menu.primary > .menu_holder > .menu_inner > ul > li.current-menu-item 
 .mega_main_menu > .menu_holder > .menu_inner > ul > li {border-left-color: none !important}
 
 
-/* 468= prmziva ; 501 = ressources; 612= annuaire */
+/* 468= prmziva ; 501 = ressources; 612= annuaire 
+840 =themes  841 = projets  842 = espaces dediés */
+
+#barrenavigation .navbar {  background-color: #FFF !important;
+    border-bottom: 1px solid #00ACE9 !important;
+    border-top: 1px solid #00ACE9 !important; }
 .menu-item-501 a,
 .menu-item-468 a,
 .menu-item-612 a,
-.menu-item-655 a{
+.menu-item-655 a,
+.menu-item-840 a,
+.menu-item-841 a,
+.menu-item-842 a{
     background-color: #FFF !important;
-    border-bottom: 1px solid #00ACE9 !important;
-    border-top: 1px solid #00ACE9 !important;
 
 }
 
@@ -833,8 +861,7 @@ mega_main_menu.primary > .menu_holder > .menu_inner > ul > li.current-menu-item 
 a.item_link::after,span.item_link::after{color:#FFF !important}
 /* maintient les bords au rollhover*/
 .mega_main_menu.primary > .menu_holder > .menu_inner > ul > li:hover > .item_link{
-    border-bottom: 1px solid #00ACE9 !important;
-    border-top: 1px solid #00ACE9 !important;
+
 
 }
 /* .default_dropdown.default_style.drop_to_right.submenu_default_width.columns1 a.item_link.disable_icon
@@ -845,13 +872,19 @@ a.item_link::after,span.item_link::after{color:#FFF !important}
 
 li#menu-item-501 a span.link_content span.link_text,
 li#menu-item-468 a span.link_content span.link_text,
-li#menu-item-612 a span.link_content span.link_text{
+li#menu-item-612 a span.link_content span.link_text,
+li#menu-item-840 a span.link_content span.link_text,
+li#menu-item-841 a span.link_content span.link_text,
+li#menu-item-842 a span.link_content span.link_text{
 color:#00ACE9
 }
 
 li#menu-item-501 a:hover span.link_content span.link_text,
 li#menu-item-468 a:hover span.link_content span.link_text,
-li#menu-item-612 a:hover span.link_content span.link_text{
+li#menu-item-612 a:hover span.link_content span.link_text,
+li#menu-item-840 a:hover span.link_content span.link_text,
+li#menu-item-841 a:hover span.link_content span.link_text,
+li#menu-item-842 a:hover span.link_content span.link_text{
 color:#2A3867
 }
 
@@ -922,7 +955,7 @@ li#menu-item-281 .mega_dropdown > li > a{
 
 .button-primary,#signup_submit{
     padding: 4px 12px;
-    background-color: #293D64;
+    background-color: #5C5C5B;
     color: #FFF
 }
 .button-primary i{
@@ -944,7 +977,9 @@ li#menu-item-281 .mega_dropdown > li > a{
     text-transform: uppercase;
 }
 
-a.button-archives-actus{background-color: #2A3867;color: #FFF;padding:4px 8px;margin-bottom: 25px }
+a.button-archives-actus{
+    background-color: #2A3867;color: #FFF;padding:6px 8px;margin-bottom: 25px;
+font-size: 1.2rem}
 
 
 #toTop {
@@ -1075,15 +1110,14 @@ color: #009492;
 # BOX & ZONES
 --------------------------------------------------------------*/
 
-
 .backgrounfullwith-light {
-    background-color: #E1F3FC   !important ;
-    padding: 2rem 0
+    background-color: #ECF7FC;
+    z-index: 5
 }
 
 .backgrounfullwith-primary {
     background-color: #00ACE9;
-    padding: 3rem 0  3.5rem
+    padding: 0 0  3.5rem
 }
 
 @media only screen and (min-width: 961px) {
@@ -1114,6 +1148,36 @@ color: #009492;
 #bandeau .connexion a.name:hover *,#bandeau .connexion a.name:focus *{
     color:#B73764
 }
+
+
+
+@media (max-width: 576px) { 
+    
+    .mmm_fullwidth_container{background-color: transparent !important}
+    .mega_main_menu {width: 100% !important}
+    #bandeau {height: 45px}
+    #bandeau .connexion {
+    margin-top: -12px;
+    min-width: 180px;
+    font-size: 0.8rem;
+
+}
+.navbar-brand{
+   padding-top: 10px !important
+}
+    
+/*==LOGO ANEB SVG MENU==*/
+
+#menu-item-234 img{
+
+    width: 90px !important;
+    margin-top: -14px;
+    margin-left: 5px;
+    height: 100px
+
+}
+}
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -1319,6 +1383,8 @@ a.tag-cloud-link:focus{
 .item-ressource .taxonomies{
     color:#3C3C3C;
 }
+.ressource .taxonomies{color:#7F7F7F;font-weight: 600;font-style: italic;margin-bottom:0.6rem}
+
 .widget-ressources img.img-titre{max-width: 260px}
 .widget-ressources h3{font-size: 1.1rem !important;line-height: 1.1rem; margin-bottom: 0.2rem;color:#293D64 }
 
@@ -1326,7 +1392,7 @@ a.tag-cloud-link:focus{
 .widget-ressources .date_insert p, 
 .widget-ressources .taxonomies,
 .items-ressources  p.date-article
-{ font-size: 0.8rem;margin: 0}
+{ font-size: 0.8rem;margin: 0;color: #7F7F7F}
 
 .infosgenre{
     color:#5C5C5B;
@@ -1363,11 +1429,12 @@ a.tag-cloud-link:focus{
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+#content{
+ z-index: 1;
+}
 #content.site-content {
- 
   padding-top: 2.75rem;
 }
-
 .sticky .entry-title::before {
   content: '\f08d';
   font-family: "Font Awesome\ 5 Free";
@@ -1392,6 +1459,27 @@ a.tag-cloud-link:focus{
 /***/
 
 
+#caroussel-actus{
+    height: 330px;
+    background-color:#F3F3F3}
+#caroussel-actus .carousel-inner p{margin-bottom: 1rem}
+#caroussel-actus ul.carousel-indicators{
+    margin-top: 1rem;
+    margin-bottom: 0.2rem
+
+}
+#caroussel-actus ul.carousel-indicators li{
+    background-color: #2A3867
+}
+
+#caroussel-actus ul.carousel-indicators li.active{
+    background-color: #97C6C6
+}
+#caroussel-actus .carousel-control-next,#caroussel-actus .carousel-control-prev{
+    top:88%;width:8%
+}
+.carousel-control-next-icon {background-image:  url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#00ACE9' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")}
+.carousel-control-prev-icon {background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#00ACE9' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")}
 
 .single .byline,
 .group-blog .byline {
@@ -1479,6 +1567,11 @@ border-width: 25px 35px 0 35px;
 border-color: #00ACE9 transparent transparent transparent;
 margin: -1px auto
 }
+.triangle.secondary{
+border-color: #ECF7FC transparent transparent transparent;
+
+}
+
 .cartouches-rubrique .logo-rubrique img{height: 50px;margin: auto}
 
 /*--------------------------------------------------------------
@@ -1510,6 +1603,20 @@ margin: -1px auto
 {
     color: #42803B;
     border-bottom-color: #42803B;
+}
+
+.epage #liste-actualites h2,
+.epage #liste-ressources h2
+{
+    color: #B73764;
+    border-bottom-color: #B73764;
+}
+
+.rezeau #liste-actualites h2,
+.rezeau #liste-ressources h2
+{
+    color: #F7CD00;
+    border-bottom-color: #F7CD00;
 }
 
 
@@ -1553,16 +1660,16 @@ margin: -1px auto
     padding: 0; list-style: none
 }
 
-.items-actualites-archives .categorie-actu,
-p.categorie-actu
-{color:#7F7F7F;font-style: italic}
+.items-actualites-archives .categorie,
+p.categorie
+{color:#009492;font-style: italic;text-align: right}
 
-.items-actualites-archives .categorie-actu
+.items-actualites-archives .categorie
 {margin: 0.8rem 0;}
-p.categorie-actu
+p.categorie
 {margin:0;}
 
-.items-actualites-archives .categorie-actu > span {font-weight: 600}
+.items-actualites-archives .categorie > span {font-weight: 600}
 
 #liste-actualites .rubriques a.rubrique,
 .items-ressources .rubriques a.rubrique,
@@ -1576,14 +1683,14 @@ p.categorie-actu
  {
     background-color:#F3F3F3;
     padding: 0.3rem 0.5rem;
-    color: #009492;
+    color: #7F7F7F;
 }
 
 .thematiques a.thematique,
 a.categories_ressources,
 .categories-ressources a{
     font-size: 0.9rem;
-    color: #009492;
+    color: #7F7F7F;
 }
 
 .evportrait .thematiques a.thematique,
@@ -1610,7 +1717,7 @@ a.categories_ressources,
 
 /*couleurs rubriques*/
 a.rubrique{
-    padding:0 0.2rem;
+    padding:2px 4px;
 }
 .item-ressource .rubriques .aneb,
  a.rubrique.aneb{
@@ -2053,6 +2160,11 @@ body:not(.theme-preset-active) footer#colophon,
 .copyright a, footer#colophon a {
   color: inherit;
 }
+#footer-newsletter-form p, #footer-newsletter-form h4 {
+    color: #FFF;
+    margin-bottom: 0.5rem    
+}
+
 
 @media screen and (max-width: 767px) {
   #masthead .navbar-nav > li > a {

@@ -9,9 +9,23 @@
                     
                     
                         <div class="col-12 col-md-4">
+                        
+                        
                         <a href="<?php echo esc_url( home_url( '/' )); ?>">
                            <?php  include "logo-svg.php" ?>                            
                         </a> 
+                            
+                            
+                        <div id="footer-newsletter-form"> 
+                            
+                        <?php if(!is_user_logged_in()) : ?>
+                        <h4>Inscription à notre infolettre</h4>
+                         <p>Recevez des informations sur l'activité du site</p>
+                         <?php echo mailster_form( 1 ); ?>
+                         <?php endif; ?>    
+                        </div>
+                        
+                            
                         <?php dynamic_sidebar( 'footer-3' ); ?>
                           
                     </div>

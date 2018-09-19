@@ -187,11 +187,6 @@ function ressources_register_taxonomies() {
 // Fonction de recuperation des ressources 
 // paramètres ( slug catégorie; nombre de posts,nopagination,format,Rubriques ACF - si nul tous, showcategories, monthago, resume (bool),limit_resume(int),tag_liste(bool) )
 
-
-
-
-
-
 // utilisé en accueil
 function get_last_ressources(
     $cat_ressources = '',
@@ -203,9 +198,7 @@ function get_last_ressources(
     $monthago = '3 month ago', // pour les tetes de rubrique
     $resume = false,
     $limit_resume = '',
-    $tag_liste = false,
-    $typePost=false,
-    $sticky=true) {
+    $sticky=false) {
 
 
     $args = array(
@@ -216,10 +209,7 @@ function get_last_ressources(
          );
         
             // si page archives
-    if ( $format == 'archives' ) {     
-
-    } else {
-
+    if ( $format != 'archives' ) {     
         //si page actualité
 
          $args += [ 
@@ -231,33 +221,58 @@ function get_last_ressources(
         )
           , ];
     }
-        
+
+
     
-            //arguments de requete WP_Query si aneb  id 177  on prend toutes les rubriques ( eptb, epage...)
-        if ( $acf_rubriques != '177' ) {
-            $args += [
-                'meta_query' => array(
-                    'relation' => 'AND',
-                    array(
+    $rubriques=array(); // stockage de la recherche sur rubrique
+     if ( $acf_rubriques != '177' ) {
+                   $rubriques= array(
                         'key' => 'rubriques',
                         'value' => $acf_rubriques,
                         'type' => 'INT',
                         'compare' => 'LIKE'
-                    ),
+                    );
+        } 
+
+    
+        if ($sticky ) {         
+            $args += [
+                'meta_query' => array(
+                    'relation' => 'AND',
+                    array(
+                        'key' => 'sticky',
+                        'value' => 1,
+                        'type' => 'INT',
+                        'compare' => '='
+                    ),              
+                    $rubriques,
                     
                 ),
+                
             ];
-        } else {
-
+        }  else {
+            
+             $args += [
+                'meta_query' => array(
+                    'relation' => 'AND',
+                    $rubriques,
+                ),
+                
+            ];
         }
-      $args[] = array(
+    
+    
+            //arguments de requete WP_Query si aneb  id 177  on prend toutes les rubriques ( eptb, epage...)
+
+    
+      $args += [array(
         'orderby' => 'date',
-        'order' => 'DESC' );
+        'order' => 'DESC' )];
 
 
     $query = new WP_Query( $args );
     ##print_r($query);
-    ## echo "Last SQL-Query: {$query->request}";
+    ##  echo "Last SQL-Query: {$query->request}";
     //
     if ( $query->have_posts() ) {
 

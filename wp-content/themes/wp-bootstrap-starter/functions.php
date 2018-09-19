@@ -1,4 +1,3 @@
-
 <?php
 
 
@@ -14,11 +13,8 @@
 
 */
 
-//error_reporting( E_ALL );
-//ini_set( 'display_errors', 1 );
-
-// Populate select field using filter
-add_filter('acf/load_field/name=bp_group', 'acf_load_bp_groups');
+error_reporting( E_ALL );
+ini_set( 'display_errors', 1 );
 
 
 if ( !function_exists( 'wp_bootstrap_starter_setup' ) ):
@@ -170,7 +166,7 @@ function wp_bootstrap_starter_scripts() {
     // load AItheme styles
     // load WP Bootstrap Starter styles
     wp_enqueue_style( 'wp-bootstrap-starter-style', get_stylesheet_uri() );
-   // wp_enqueue_style( 'hover-style-css', get_template_directory_uri() . '/css/hover.css' );
+    // wp_enqueue_style( 'hover-style-css', get_template_directory_uri() . '/css/hover.css' );
 
     if ( get_theme_mod( 'theme_option_setting' ) && get_theme_mod( 'theme_option_setting' ) !== 'default' ) {
         wp_enqueue_style( 'wp-bootstrap-starter-' . get_theme_mod( 'theme_option_setting' ), get_template_directory_uri() . '/inc/assets/css/presets/theme-option/' . get_theme_mod( 'theme_option_setting' ) . '.css', false, '' );
@@ -212,14 +208,14 @@ function wp_bootstrap_starter_scripts() {
     wp_enqueue_script( 'jquery' );
 
     // Internet Explorer HTML5 support
-/*    wp_enqueue_script( 'html5hiv', get_template_directory_uri() . '/inc/assets/js/html5.js', array(), '3.7.0', false );
-    wp_script_add_data( 'html5hiv', 'conditional', 'lt IE 9' );
-*/
+    /*    wp_enqueue_script( 'html5hiv', get_template_directory_uri() . '/inc/assets/js/html5.js', array(), '3.7.0', false );
+        wp_script_add_data( 'html5hiv', 'conditional', 'lt IE 9' );
+    */
     // load bootstrap js
     wp_enqueue_script( 'wp-bootstrap-starter-popper', get_template_directory_uri() . '/inc/assets/js/popper.min.js', array(), '', true );
     wp_enqueue_script( 'wp-bootstrap-starter-bootstrapjs', get_template_directory_uri() . '/inc/assets/js/bootstrap.min.js', array(), '', true );
     wp_enqueue_script( 'wp-bootstrap-starter-themejs', get_template_directory_uri() . '/inc/assets/js/theme-script.min.js', array(), '', true );
-    
+
     wp_enqueue_script( 'wp-bootstrap-starter-skip-link-focus-fix', get_template_directory_uri() . '/inc/assets/js/skip-link-focus-fix.min.js', array(), '20151215', true );
 
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -231,19 +227,19 @@ add_action( 'wp_enqueue_scripts', 'wp_bootstrap_starter_scripts' );
 
 function conditionnal_enqueue() {
     // boostrap datepicker  (archives actu 404; ) ou archive-ressource
-  if ( in_array( get_queried_object_id(), array( 404 ) ) || is_post_type_archive('ressource') ) {
-   
-    wp_enqueue_style( 'bootstrap-datepicker', get_template_directory_uri() . '/bootstrap-datepicker/css/bootstrap-datepicker3.min.css' );
-      
-   wp_enqueue_script( 'bootstrap-datepicker', get_template_directory_uri() . '/bootstrap-datepicker/js/bootstrap-datepicker.min.js', array(), '', true );
-   
-    wp_enqueue_script( 'bootstrap-datepickerjs', get_template_directory_uri() . '/bootstrap-datepicker/locales/bootstrap-datepicker.fr.min.js',array(), '', true );
-        }
-    
+    if ( in_array( get_queried_object_id(), array( 404 ) ) || is_post_type_archive( 'ressource' ) ) {
+
+        wp_enqueue_style( 'bootstrap-datepicker', get_template_directory_uri() . '/bootstrap-datepicker/css/bootstrap-datepicker3.min.css' );
+
+        wp_enqueue_script( 'bootstrap-datepicker', get_template_directory_uri() . '/bootstrap-datepicker/js/bootstrap-datepicker.min.js', array(), '', true );
+
+        wp_enqueue_script( 'bootstrap-datepickerjs', get_template_directory_uri() . '/bootstrap-datepicker/locales/bootstrap-datepicker.fr.min.js', array(), '', true );
+    }
+
 
 }
 
-add_action('wp_enqueue_scripts', 'conditionnal_enqueue');
+add_action( 'wp_enqueue_scripts', 'conditionnal_enqueue' );
 
 
 
@@ -310,22 +306,21 @@ function the_breadcrumb() {
 
 
         if ( is_single() ) {
-            
-             if (is_singular( 'ressource' )){
-                
-              echo '<li class="item-cat "><a class="bread-cat " href="/ressources" title="Les ressources Bassin-versant ANEB">Les ressources</a></li>';
-                
+
+            if ( is_singular( 'ressource' ) ) {
+
+                echo '<li class="item-cat "><a class="bread-cat " href="/ressources" title="Les ressources Bassin-versant ANEB">Les ressources</a></li>';
+
+            } else {
+                // Single post (n'affiche que la première categorie)
+
+                echo '<li class="item-cat item-cat-' . $category[ 0 ]->term_id . ' item-cat-' . $category[ 0 ]->category_nicename . '"><a class="bread-cat bread-cat-' . $category[ 0 ]->term_id . ' bread-cat-' . $category[ 0 ]->category_nicename . '" href="' . get_category_link( $category[ 0 ]->term_id ) . '" title="' . $category[ 0 ]->cat_name . '">' . $category[ 0 ]->cat_name . '</a></li>';
+
+                echo '<li class="separator separator-' . $category[ 0 ]->term_id . '"> ' . $separator . ' </li>';
+
+                echo '<li class="item-current item-' . $post->ID . '"><em class="bread-current bread-' . $post->ID . '" title="' . get_the_title() . '">' . texte_limit( get_the_title(), 70 ) . '</em></li>';
+
             }
-else {
-            // Single post (n'affiche que la première categorie)
-
-            echo '<li class="item-cat item-cat-' . $category[ 0 ]->term_id . ' item-cat-' . $category[ 0 ]->category_nicename . '"><a class="bread-cat bread-cat-' . $category[ 0 ]->term_id . ' bread-cat-' . $category[ 0 ]->category_nicename . '" href="' . get_category_link( $category[ 0 ]->term_id ) . '" title="' . $category[ 0 ]->cat_name . '">' . $category[ 0 ]->cat_name . '</a></li>';
-
-            echo '<li class="separator separator-' . $category[ 0 ]->term_id . '"> ' . $separator . ' </li>';
-
-            echo '<li class="item-current item-' . $post->ID . '"><em class="bread-current bread-' . $post->ID . '" title="' . get_the_title() . '">' . texte_limit( get_the_title(), 70 ) . '</em></li>';
-
-}
 
         } else if ( is_category() ) {
 
@@ -370,7 +365,7 @@ else {
             } else {
 
                 // Just display current page if not parents
-             //   echo '<li class="item-current item-' . $post->ID . '"><em class="bread-current bread-' . $post->ID . '"> ' . get_the_title() . '</em></li>';
+                //   echo '<li class="item-current item-' . $post->ID . '"><em class="bread-current bread-' . $post->ID . '"> ' . get_the_title() . '</em></li>';
 
             }
 
@@ -576,22 +571,23 @@ function affiche_date_event( $in, $out ) {
 }
 // customise tag cloud widget
 add_filter( 'widget_tag_cloud_args', 'all_tag_cloud_widget_parameters' );
+
 function all_tag_cloud_widget_parameters() {
     $args = array(
-        'smallest' => 1, 
-        'largest' => 1.333, 
-        'unit' =>'rem', 
-//        'number' => '',
-//        'format' => 'flat', 
-        'separator' => " | ", 
-        'orderby' => 'name', 
+        'smallest' => 1,
+        'largest' => 1.333,
+        'unit' => 'rem',
+        //        'number' => '',
+        //        'format' => 'flat', 
+        'separator' => " | ",
+        'orderby' => 'name',
         'order' => 'ASC',
-//        'exclude' => '', 
-//        'include' => '', 
-//        'link' => 'view', 
-        'taxonomy' =>'post_tag', 
-     //   'post_type' => '', 
-     //   'echo' => false //retrait titre
+        //        'exclude' => '', 
+        //        'include' => '', 
+        //        'link' => 'view', 
+        'taxonomy' => 'post_tag',
+        //   'post_type' => '', 
+        //   'echo' => false //retrait titre
     );
     return $args;
 }
@@ -617,39 +613,39 @@ function texte_limit( $texte, $max_char ) {
 }
 
 
-function the_content_limit($limit) {
-    
-  $content = explode(' ', get_the_content(), $limit);
-  if (count($content)>=$limit) {
-    array_pop($content);
-    $content = implode(" ",$content).'...';
-  } else {
-    $content = implode(" ",$content);
-  }	
-  $content = preg_replace('/\[.+\]/','', $content);
-  $content = apply_filters('the_content', $content); 
-  $content = str_replace(']]>', ']]&gt;', $content);
-  return wp_strip_all_tags($content);
+function the_content_limit( $limit ) {
+
+    $content = explode( ' ', get_the_content(), $limit );
+    if ( count( $content ) >= $limit ) {
+        array_pop( $content );
+        $content = implode( " ", $content ) . '...';
+    } else {
+        $content = implode( " ", $content );
+    }
+    $content = preg_replace( '/\[.+\]/', '', $content );
+    $content = apply_filters( 'the_content', $content );
+    $content = str_replace( ']]>', ']]&gt;', $content );
+    return wp_strip_all_tags( $content );
 }
 
-if( function_exists('acf_add_options_page') ) {
-	
-	acf_add_options_page(array(
-		'page_title' 	=> 'Configurations',
-		'menu_title'	=> 'Configurations',
-		'menu_slug' 	=> 'config-actus',
-		'capability'	=> 'manage_options',
-		'redirect'		=> false
-	));
-	
-	
-/*	sub page
-acf_add_options_sub_page(array(
-		'page_title' 	=> 'Theme Footer Settings',
-		'menu_title'	=> 'Footer',
-		'parent_slug'	=> 'theme-general-settings',
-	));*/
-	
+if ( function_exists( 'acf_add_options_page' ) ) {
+
+    acf_add_options_page( array(
+        'page_title' => 'Configurations',
+        'menu_title' => 'Configurations',
+        'menu_slug' => 'config-actus',
+        'capability' => 'manage_options',
+        'redirect' => false
+    ) );
+
+
+    /*	sub page
+    acf_add_options_sub_page(array(
+    		'page_title' 	=> 'Theme Footer Settings',
+    		'menu_title'	=> 'Footer',
+    		'parent_slug'	=> 'theme-general-settings',
+    	));*/
+
 }
 
 function get_tag_posts(
@@ -664,69 +660,68 @@ function get_tag_posts(
     $thumbBoxClass = "w-100",
     $showcategories = false, // affiche  reseau, fil de l'eau...
     $tagslugs = '',
-    $bootstrapclass='col-12',
-    $typePost=false // affichage du type ressources ou actu
-    )
-{  
+    $bootstrapclass = 'col-12',
+    $typePost = false // affichage du type ressources ou actu
+) {
 
-        $args = array(
+    $args = array(
         'post_type' => $post_type,
         'posts_per_page' => $postperpage,
-        'posts_per_archive_page' => $postperpage, 
+        'posts_per_archive_page' => $postperpage,
         'nopaging' => $nopagination,
         'tag' => $tagslugs, // ('tag1,tag2)   
         'orderby' => 'date',
         'order' => 'DESC' );
 
 
-    $query = new WP_Query( $args ); 
+    $query = new WP_Query( $args );
     //print_r($query);
     //
 
 
-if ( $query->have_posts() ) {
-        
-        
- ($query->found_posts > 1 ) ? print '<div class="col-12 foundpost">'.$query->found_posts.' contenus trouvés.</div>': print '<div class="col-12 foundpost">'.$query->found_posts.' contenu trouvé.</div>';
-    
-  $col_Actus='  <div class="col-12 col-sm-6">
+    if ( $query->have_posts() ) {
+
+
+        ( $query->found_posts > 1 ) ? print '<div class="col-12 foundpost">' . $query->found_posts . ' contenus trouvés.</div>' : print '<div class="col-12 foundpost">' . $query->found_posts . ' contenu trouvé.</div>';
+
+        $col_Actus = '  <div class="col-12 col-sm-6">
       <div class="row" id="liste-actualites">
         <div class="col-12">
         <h2>Actualités</h2>
           </div>';
-        
-$col_Ressources='  <div class="col-12 col-sm-6">
+
+        $col_Ressources = '  <div class="col-12 col-sm-6">
       <div class="row" id="liste-ressources">
         <div class="col-12">
         <h2>Ressources</h2>
-          </div>';      
-    
+          </div>';
+
         while ( $query->have_posts() ) {
 
             $query->the_post();
-            switch(get_post_type()){
+            switch ( get_post_type() ) {
                 case 'post':
                     ob_start();
-                    include(locate_template('template-parts/content-actualite-'.$format.'.php')); 
-                    $col_Actus.= ob_get_clean();
-                break;
+                    include( locate_template( 'template-parts/content-actualite-' . $format . '.php' ) );
+                    $col_Actus .= ob_get_clean();
+                    break;
                 case 'ressource':
                     ob_start();
-                    include(locate_template('template-parts/content-ressource-'.$format.'.php')); 
-                     $col_Ressources.=ob_get_clean();
-                break;
-                    
+                    include( locate_template( 'template-parts/content-ressource-' . $format . '.php' ) );
+                    $col_Ressources .= ob_get_clean();
+                    break;
+
                 default:
-                break;
+                    break;
             }
 
         }
-    $col_Actus.='      </div>
+        $col_Actus .= '      </div>
   </div>';
-$col_Ressources.='      </div>
+        $col_Ressources .= '      </div>
   </div>';
-            
-echo $col_Actus.$col_Ressources;
+
+        echo $col_Actus . $col_Ressources;
 
     }
     wp_reset_query();
@@ -734,50 +729,50 @@ echo $col_Actus.$col_Ressources;
 }
 // Fonction de recuperation des actualités 
 // paramètres ( slug catégorie: term_id; sticky:bool,nombre de posts; pagination:bool; format;Rubrique ACF - si nul tous;thumb w, thumb height, thumbbox class; showcataegories:bool;date_in;date_out;$tagslugs:xx,xx; )
+
 function get_post_actualites(
     $cat_actu = '',
-    $stickyOnly = false,
-    $postperpage = 1,
+    $stickyOnly = true,
+    $postperpage = 0,
     $nopagination = false,
-    $format = "portrait", //ou paysage ou archives
+    $format = "portrait", //ou compact,paysage,archives
     $acf_rubriques = '',
     $thumbW = 360,
     $thumbH = 250,
     $thumbBoxClass = "w-100",
     $showcategories = false, // affiche  reseau, fil de l'eau...
-    $date_in='', // pour archives
-    $date_out='', // pour archives
+    $date_in = '', // pour archives
+    $date_out = '', // pour archives
     $thematique = '',
     $tagslugs = '',
-    $bootstrapclass='col-12') //liste à virgule
+    $bootstrapclass = 'col-12' ) //liste à virgule
 {
 
     //geré par la page options ACF
-    $monthago=get_field('nombre_unites_duree_actus', 'option').' '.get_field('unite_duree_actus', 'option').' ago';
-    
+    $monthago = get_field( 'nombre_unites_duree_actus', 'option' ) . ' ' . get_field( 'unite_duree_actus', 'option' ) . ' ago';
+
     if ( $postperpage == 0 )$postperpage = ''; //  0 == tout
 
     //traitement des dates de recherches, on separe le mois de l'année
-    if(!empty($date_in)){
-    // si date in entrée
-    $date_in = '01/'.$date_in;
-    list($day_in, $month_in, $year_in) = explode("/",$date_in);
-        
-    //si date out pas entrée on prend date_in
-      if(empty($date_out)){ 
-          //$day_out=$day_in;
-          $month_out=$month_in;
-          $year_out=$year_in;
+    if ( !empty( $date_in ) ) {
+        // si date in entrée
+        $date_in = '01/' . $date_in;
+        list( $day_in, $month_in, $year_in ) = explode( "/", $date_in );
 
-      } else
-      {
-             $date_out = '01/'.$date_out;
-             list($day_out, $month_out, $year_out) = explode("/",$date_out); 
-      }
+        //si date out pas entrée on prend date_in
+        if ( empty( $date_out ) ) {
+            //$day_out=$day_in;
+            $month_out = $month_in;
+            $year_out = $year_in;
+
+        } else {
+            $date_out = '01/' . $date_out;
+            list( $day_out, $month_out, $year_out ) = explode( "/", $date_out );
+        }
     }
-    
-/************/
-   
+
+    /************/
+
     $args = array(
 
         'posts_per_page' => $postperpage,
@@ -787,76 +782,69 @@ function get_post_actualites(
     );
 
     // si page archives
-    if ( $format ==='archives' ) {
+    if ( $format === 'archives' ) {
 
-        $args += [ 
-            
+        $args += [
+
             'meta_query' => array(
-            'relation' => 'AND',
-            array(
-                'key' => 'rubriques',
-                'value' => $acf_rubriques,
-                'type' => 'INT',
-                'compare' => 'LIKE'
-            ),
-            array(
-                'key' => 'categorie_actu',
-                'value' => $cat_actu,
-                'compare' => 'LIKE',
-                'type' => 'INT'
-            ),
-            array(
-                'key' => 'thematiques',
-                'value' => $thematique,
-                'type' => 'INT',
-                'compare' => 'LIKE'
-            ),
-            
+                'relation' => 'AND',
+                array(
+                    'key' => 'rubriques',
+                    'value' => $acf_rubriques,
+                    'type' => 'INT',
+                    'compare' => 'LIKE'
+                ),
+                array(
+                    'key' => 'categorie_actu',
+                    'value' => $cat_actu,
+                    'compare' => 'LIKE',
+                    'type' => 'INT'
+                ),
+                array(
+                    'key' => 'thematiques',
+                    'value' => $thematique,
+                    'type' => 'INT',
+                    'compare' => 'LIKE'
+                ),
 
-        ), ];
-    // si pas de filtrage sur date
-            if(!empty($year_in) && !empty($year_out)){
-               $args += [ 'date_query' => array(
-                        array(
-                        'after'     => array(
-                        'year'  => $year_in,
+
+            ),
+        ];
+
+
+        // si pas de filtrage sur date
+        if ( !empty( $year_in ) && !empty( $year_out ) ) {
+            $args += [ 'date_query' => array(
+                array(
+                    'after' => array(
+                        'year' => $year_in,
                         'month' => $month_in,
-                        ),
-                        'before'    => array(
-                        'year'  => $year_out,
+                    ),
+                    'before' => array(
+                        'year' => $year_out,
                         'month' => $month_out,
                     ),
                     'inclusive' => true,
-                        )
-                    )
-                         , ];
-            }
-             else {
+                )
+            ), ];
+        } else {
 
-                $args += [ 
-                        'date_query' => array(
+
+            $args += [
+                'date_query' => array(
                     array(
                         'column' => 'post_date_gmt',
                         'before' => $monthago,
                     ),
-                )
-                  , ];
+                ),
+            ];
 
-                }
+        }
 
     } else {
 
         //si page actualité
 
-         $args += [ 
-                'date_query' => array(
-            array(
-                'column' => 'post_date_gmt',
-                'after' => $monthago,
-            ),
-        )
-          , ];
-        
         //arguments de requete WP_Query si aneb id 177  on prend toutes les rubriques ( eptb, epage...)
         if ( $acf_rubriques != '177' ) {
             $args += [
@@ -878,11 +866,10 @@ function get_post_actualites(
                 ),
             ];
         } else {
-            
+
             $args += [
                 'meta_query' => array(
                     'relation' => 'AND',
-
                     array(
                         'key' => 'categorie_actu',
                         'value' => $cat_actu,
@@ -892,67 +879,188 @@ function get_post_actualites(
 
                 ),
             ];
-
-
         }
 
     }
 
 
     if ( $stickyOnly ) {
+
         $sticky = get_option( 'sticky_posts' ); // array tous les articles mise en avant  
         $args += [ 'post__in' => $sticky ];
 
     } else {
+
+        $args += [
+            'date_query' => array(
+                array(
+                    'column' => 'post_date_gmt',
+                    'after' => $monthago,
+                ),
+            ),
+        ];
         $args += [ 'ignore_sticky_posts' => 1 ];
     }
 
-    $args += [ 
+    $args += [
         array(
-        'orderby' => 'date',
-        'order' => 'DESC' )
-        ];
-        
+            'orderby' => 'date',
+            'order' => 'DESC' )
+    ];
 
-## AJOUTER CONDITION NO ARCHIVES !!!!
-    
-    
-/***********/
-    
-   ##print_r( $args );
+
+    ## AJOUTER CONDITION NO ARCHIVES !!!!
+
+
+    /***********/
+
+    #print_r( $args );
 
     $query = new WP_Query( $args );
 
- ##echo $query->request;
-
+    ##echo $query->request;
+    ##echo $query->found_posts;
     // habillage format    
-    switch ($format){
-            case 'archives':
+    switch ( $format ) {
+        case 'archives':
 
             //nb actus
             $nbActus = $query->found_posts;
-            $nbActus > 1 ? print '<div class="col-12"><div class="nombre_posts text-center">' . $nbActus . ' actualités</div></div>': print '<div class="col-12"><div class="nombre_posts col-12 text-center">'.$nbActus . ' actualité</div></div>';
+            $nbActus > 1 ? print '<div class="col-12"><div class="nombre_posts text-center">' . $nbActus . ' actualités</div></div>': print '<div class="col-12"><div class="nombre_posts col-12 text-center">' . $nbActus . ' actualité</div></div>';
             break;
             default:
             break;
     }
-    
+
+
+    $i = 1;
 
     if ( $query->have_posts() ) {
 
         while ( $query->have_posts() ) {
 
             $query->the_post();
-            
-            include(locate_template('template-parts/content-actualite-'.$format.'.php')); // permet de recuperer les variables
 
+            include( locate_template( 'template-parts/content-actualite-' . $format . '.php' ) ); // permet de recuperer les variables
+
+            $i++;
         }
-    } else{
-        
+    } else {
+
         echo '<div class="mx-auto"><p class="nopost text-center"><i class="fas fa-exclamation"></i> <br>Aucune actualité dans cette rubrique pour le moment</p></div>';
     }
+
     wp_reset_query();
+    wp_reset_postdata();
 }
+
+
+function get_actus_carrousel(
+    $stickyOnly = true,
+    $posts_per_page=3,
+    $acf_rubriques = '',
+    $thumbW = 360,
+    $thumbH = 250
+) 
+{
+    $args = array(
+
+        'post_type' => 'post',
+        'posts_per_page' =>$posts_per_page,
+        'ignore_sticky_posts' => true,
+        'post__in' =>get_option( 'sticky_posts' ),
+        //par defaut les sticky post sont toujours ajoutés au debut de chaque requete, qu'elle les reclame ou non !
+       
+    );
+
+
+            //arguments de requete WP_Query si aneb id 177  on prend toutes les rubriques ( eptb, epage...)
+        if ( $acf_rubriques != '177' ) {
+            $args += [
+                'meta_query' => array(
+                    'relation' => 'AND',
+                    array(  
+                        'key' => 'rubriques',
+                        'value' => $acf_rubriques,
+                        'type' => 'INT',
+                        'compare' => 'LIKE'
+                    ),
+                   
+
+                ),
+            ];
+        } 
+
+    $args += [
+        array(
+            'orderby' => 'date',
+            'order' => 'DESC' )
+    ];
+
+
+    /***********/
+
+    //print_r( $args );
+
+    $caroussel_query = new WP_Query( $args );
+
+    ##echo $caroussel_query->request;
+    ##echo '<br>' . $caroussel_query->found_posts . '<br>';
+
+    $indicators='<ul class="carousel-indicators">';
+   
+    $i = 0;
+    $carousselclass = '';
+    $slides='';
+
+    if ( $caroussel_query->have_posts() ) {
+
+        while ( $caroussel_query->have_posts() ) {
+            
+           
+            $caroussel_query->the_post();
+
+            ( $i == 0 ) ? $carousselclass = ' active ': $carousselclass = '';
+            
+            if($caroussel_query->found_posts>1){
+            $indicators.='<li data-target="#caroussel-actus" data-slide-to="'.$i.'" class="'.$carousselclass.'"></li>';}
+            
+            ob_start();
+            include(locate_template('template-parts/content-actualite-caroussel-sm.php')); // permet de recuperer les variables
+            $slides .= ob_get_clean();
+            
+            $i++;
+        }
+        
+        
+    } else {
+
+        echo '<div class="mx-auto"><p class="nopost text-center"><i class="fas fa-exclamation"></i> <br>Aucune actualité dans cette rubrique pour le moment</p></div>';
+    }
+    
+       $indicators.='
+       </ul>';
+      $caroussel=$indicators.'
+                <div class="carousel-inner">'.
+          $slides.'
+                </div>';
+    
+if($caroussel_query->found_posts>1){
+  $caroussel.='<a class="carousel-control-prev" href="#caroussel-actus" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#caroussel-actus" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>';
+}
+    
+    return $caroussel;
+
+    wp_reset_query();
+    wp_reset_postdata();
+}
+
+
 
 // Affichage custom taxonomies  dans les posts  !! et get_the_tag_list XXXX:!!!
 function affiche_taxonomie_links( $post_id = '', $arrayslugs = array(), $class = '', $before = '', $after = '', $sep = ' ' ) {
@@ -963,15 +1071,19 @@ function affiche_taxonomie_links( $post_id = '', $arrayslugs = array(), $class =
 
     // init counter
     $i = 1;
-    $vue = '<div class="' . $class . '" >' . $before;
+  
 
     if ( count( $terms ) > 0 ) {
 
+        $vue = '<div class="' . $class . '" >' . $before;
         foreach ( $terms as $term ) {
             $term_link = get_term_link( $term, $arrayslugs );
+            
+           
+            
             if ( is_wp_error( $term_link ) )
-                continue;
-            $vue .= '<a href="/tag/'.$term->slug.'" class="' . $term->taxonomy . '">' . $term->name . '</a>';
+            continue;
+            $vue .= '<a href="/tag/' . $term->slug . '" class="' . $term->taxonomy . '">' . $term->name . '</a>';
             //  ajout separateur
             $vue .= ( $i < count( $terms ) ) ? $sep : "";
             //  compteur
@@ -979,6 +1091,7 @@ function affiche_taxonomie_links( $post_id = '', $arrayslugs = array(), $class =
 
         }
         $vue .= '</div>';
+        
         return $vue;
     }
 
@@ -988,73 +1101,68 @@ add_action( 'init', 'affiche_taxonomie_links' );
 
 
 
-function affiche_rubriques($rubriques) {
-               if(!empty($rubriques)){
-               $view='';
-               foreach ( $rubriques as $key => $value ) {
-                        $view .='<a href="/'.$value->slug.'" class="rubrique hvr-sweep-to-right '.$value->slug.' mr-2">'. $value->name .'</a>';
-                    }
-                   return $view;
-               }
+function affiche_rubriques( $rubriques ) {
+    if ( !empty( $rubriques ) ) {
+        $view = '';
+        foreach ( $rubriques as $key => $value ) {
+            $view .= '<a href="/' . $value->slug . '" class="rubrique hvr-sweep-to-right ' . $value->slug . ' mr-2">' . $value->name . '</a>';
+        }
+        return $view;
+    }
 }
 
-function affiche_type_content($type){
-     $infos="";
-    switch ($type) {  
+function affiche_type_content( $type ) {
+    $infos = "";
+    switch ( $type ) {
         case 'ressource':
-        $infos="Ressource";
-        break;
+            $infos = "Ressource";
+            break;
         case 'post':
-        $infos="Actualité";
-        break;
+            $infos = "Actualité";
+            break;
         case 'attachment':
-        $infos="Fichier média";
-        break;
-        default :
-        $infos="Page";
-        break;
+            $infos = "Fichier média";
+            break;
+        default:
+            $infos = "Page";
+            break;
     }
-    
+
     return $infos;
 }
 
 /*===============
 SEARCH & FILTER FORM
 ================*/
-function search_form_filter($input_object, $sfid)
-{
-    
+function search_form_filter( $input_object, $sfid ) {
 
-	if(($input_object['type']=='select'))
-	{
-        $input_object['attributes']['class'] = 'form-control form-control-sm';
+
+    if ( ( $input_object[ 'type' ] == 'select' ) ) {
+        $input_object[ 'attributes' ][ 'class' ] = 'form-control form-control-sm';
         return $input_object;
-	}  
-    
-	if($input_object['name']=='_sf_search')
-	{
-		$input_object['attributes']['class'] = 'form-control form-control-sm';
+    }
+
+    if ( $input_object[ 'name' ] == '_sf_search' ) {
+        $input_object[ 'attributes' ][ 'class' ] = 'form-control form-control-sm';
         return $input_object;
-	}	
-   	if($input_object['type']=='submit')
-	{
-		$input_object['attributes']['class'] = 'btn btn-primary';
+    }
+    if ( $input_object[ 'type' ] == 'submit' ) {
+        $input_object[ 'attributes' ][ 'class' ] = 'btn btn-primary';
         return $input_object;
-	}
+    }
 
 }
 //add_filter('sf_input_object_pre', 'search_form_filter', 10, 2);
 
 // recherche seulement dans les pdf
 function filter_function_name( $query_args, $sfid ) {
-print_r($query_args);
-	if($sfid==526)
-	{
-		//modify $query_args here before returning it
-		$query_args['post_mime_type'] = array('NULL','application/pdf','image/jpg');
-	}
-	
-	return $query_args;
+    print_r( $query_args );
+    if ( $sfid == 526 ) {
+        //modify $query_args here before returning it
+        $query_args[ 'post_mime_type' ] = array( 'NULL', 'application/pdf', 'image/jpg' );
+    }
+
+    return $query_args;
 }
 //add_filter( 'sf_edit_query_args', 'filter_function_name', 20, 2 );
 
@@ -1083,26 +1191,28 @@ BUDDY PRESS
 
 // Permet de recupere les groupes dans acf ( declarer un champ et uiliser sont slug ci-dessous ex : bp_group)
 function acf_load_bp_groups( $field ) {
-  // Reset choices
-  $field['choices'] = array();
-  $user_id = get_current_user_id();
-  $groups = array();
-  if ( bp_has_groups('user_id=' . $user_id) ) :
-    while ( bp_groups() ) : bp_the_group(); 
+    // Reset choices
+    $field[ 'choices' ] = array();
+    $user_id = get_current_user_id();
+    $groups = array();
+    if ( bp_has_groups( 'user_id=' . $user_id ) ):
+        while ( bp_groups() ): bp_the_group();
     $groups[] = bp_get_group_name() . '_' . bp_get_group_id();
-    endwhile; 
-  endif;
-  
-  // Populate choices
-  foreach( $groups as $group ) {
-      $groupvalues = explode('_', $group);
-    $field['choices'][ $groupvalues[1] ] = $groupvalues[0];
-  }
-  
-  // Return choices
-  return $field;
-  
+    endwhile;
+    endif;
+
+    // Populate choices
+    foreach ( $groups as $group ) {
+        $groupvalues = explode( '_', $group );
+        $field[ 'choices' ][ $groupvalues[ 1 ] ] = $groupvalues[ 0 ];
+    }
+
+    // Return choices
+    return $field;
+
 }
+// Populate select field using filter
+add_filter( 'acf/load_field/name=bp_group', 'acf_load_bp_groups' );
 
 
 //Types de groupes
@@ -1112,7 +1222,7 @@ function my_bp_custom_group_types() {
             'name' => 'Structures',
             'singular_name' => 'Structure'
         ),
- 
+
         // New parameters as of BP 2.7.
         'has_directory' => 'structures',
         'show_in_create_screen' => true,
@@ -1125,11 +1235,11 @@ add_action( 'bp_groups_register_group_types', 'my_bp_custom_group_types' );
 
 
 // Role par defaut
-add_filter('pre_option_default_role', function($default_role){
+add_filter( 'pre_option_default_role', function ( $default_role ) {
     // You can also add conditional tags here and return whatever
     return 'subscriber'; // This is changed
     return $default_role; // This allows default
-});
+} );
 
 // add order options to members loop
 function ch_member_order_options() {
@@ -1211,133 +1321,147 @@ function exclude_by_role( $exclude_roles ) {
 }
 
 
-    
- // CHAMPS CUSTOM BuddyPress Groups   
+
+// CHAMPS CUSTOM BuddyPress Groups   
 //it's important to check if the Groups component is active
-if( bp_is_active( 'groups' ) ) :
+if ( bp_is_active( 'groups' ) ):
 
-class bpgmq_feature_group {
- 
-    public function __construct() {
-        $this->setup_hooks();
-    }
- 
-    private function setup_hooks() {
-        // in Group Administration screen, you add a new metabox to display a checkbox to featured the displayed group
-        add_action( 'bp_groups_admin_meta_boxes', array( $this, 'admin_ui_edit_featured' ) );
-        // Once the group is saved you store a groupmeta in db, the one you will search for in your group meta query
-        add_action( 'bp_group_admin_edit_after',  array( $this, 'admin_ui_save_featured'), 10, 1 );
-    }
- 
-    /**
-     *  Declaration de la metabox
-     */
-    public function admin_ui_edit_featured() {
-        add_meta_box( 
-            'bpgmq_feature_group_mb', 
-            __( 'Adresse' ), 
-            array( &$this, 'admin_ui_metabox_adresse'), 
-            get_current_screen()->id, 
-            'normal', // position dnas l'editeur 
-            'high' //priorite haute, au dessus du texte
-        );
+    class bpgmq_feature_group {
 
-    }
- 
-    /**
-     * Displays the meta box
-     */
-    public function admin_ui_metabox_adresse( $item = false ) {
-        if( empty( $item ) )
-            return;
- 
-        // Requete recupération des valeurs
-        $is_featured = groups_get_groupmeta( $item->id, '_rue' );
-        $meta_ville = groups_get_groupmeta( $item->id, '_ville' );
-        $meta_cp = groups_get_groupmeta( $item->id, '_cp' );
-        $meta_site = groups_get_groupmeta( $item->id, '_site' );
-        $meta_tel = groups_get_groupmeta( $item->id, '_tel' );
-        ?>
+        public
+        function __construct() {
+            $this->setup_hooks();
+        }
+
+        private
+        function setup_hooks() {
+            // in Group Administration screen, you add a new metabox to display a checkbox to featured the displayed group
+            add_action( 'bp_groups_admin_meta_boxes', array( $this, 'admin_ui_edit_featured' ) );
+            // Once the group is saved you store a groupmeta in db, the one you will search for in your group meta query
+            add_action( 'bp_group_admin_edit_after', array( $this, 'admin_ui_save_featured' ), 10, 1 );
+        }
+
+        /**
+         *  Declaration de la metabox
+         */
+        public
+        function admin_ui_edit_featured() {
+            add_meta_box(
+                'bpgmq_feature_group_mb',
+                __( 'Adresse' ),
+                array( & $this, 'admin_ui_metabox_adresse' ),
+                get_current_screen()->id,
+                'normal', // position dnas l'editeur 
+                'high' //priorite haute, au dessus du texte
+            );
+
+        }
+
+        /**
+         * Displays the meta box
+         */
+        public
+        function admin_ui_metabox_adresse( $item = false ) {
+            if ( empty( $item ) )
+                return;
+
+            // Requete recupération des valeurs
+            $is_featured = groups_get_groupmeta( $item->id, '_rue' );
+            $meta_ville = groups_get_groupmeta( $item->id, '_ville' );
+            $meta_cp = groups_get_groupmeta( $item->id, '_cp' );
+            $meta_site = groups_get_groupmeta( $item->id, '_site' );
+            $meta_tel = groups_get_groupmeta( $item->id, '_tel' );
+            ?>
             <p>
-                <label><?php _e( 'Adresse' );?>
-                <input type="text" style="width:100%"  id="group_rue" name="group_rue" value="<?php echo  $is_featured ;?>" > 
+                <label>
+                    <?php _e( 'Adresse' );?>
+                    <input type="text" style="width:100%" id="group_rue" name="group_rue" value="<?php echo  $is_featured ;?>">
                 </label>
             </p>
-            <p><label><?php _e( 'Ville' );?></label>
-                <input type="text" id="group_ville" name="group_ville" value="<?php echo  $meta_ville ;?>" > 
-            </p>
-            <p><label><?php _e( 'Code postal' );?></label>
-                <input type="text" id="group_cp" name="group_cp" value="<?php echo  $meta_cp ;?>" > 
+            <p>
+                <label>
+                    <?php _e( 'Ville' );?>
+                </label>
+                <input type="text" id="group_ville" name="group_ville" value="<?php echo  $meta_ville ;?>">
             </p>
             <p>
-                <label><?php _e( 'Téléphone' );?></label>
-                <input type="text"  id="group_tel" name="group_tel" value="<?php echo  $meta_tel ;?>" > 
-                
+                <label>
+                    <?php _e( 'Code postal' );?>
+                </label>
+                <input type="text" id="group_cp" name="group_cp" value="<?php echo  $meta_cp ;?>">
             </p>
             <p>
-                <label><?php _e( 'Url site web' );?> (sans protocole)
-                <input type="text" style="width:100%" id="group_site" name="group_site" value="<?php echo  $meta_site ;?>" > 
+                <label>
+                    <?php _e( 'Téléphone' );?>
+                </label>
+                <input type="text" id="group_tel" name="group_tel" value="<?php echo  $meta_tel ;?>">
+
+            </p>
+            <p>
+                <label>
+                    <?php _e( 'Url site web' );?> (sans protocole)
+                    <input type="text" style="width:100%" id="group_site" name="group_site" value="<?php echo  $meta_site ;?>">
                 </label>
             </p>
-        <?php
-        // sbpgmq-featured-cbassure que le contenu du formulaire proviens bien du site !
-        wp_nonce_field( 'bpgmq_featured_save_' . $item->id, 'bpgmq_featured_admin' );
-    }
- 
-    function admin_ui_save_featured( $group_id = 0 ) {
-        if ( 'POST' !== strtoupper( $_SERVER['REQUEST_METHOD'] ) || empty( $group_id ) )
-            return false;
- 
-        check_admin_referer( 'bpgmq_featured_save_' . $group_id, 'bpgmq_featured_admin' );
-         
+            <?php
+            // sbpgmq-featured-cbassure que le contenu du formulaire proviens bien du site !
+            wp_nonce_field( 'bpgmq_featured_save_' . $item->id, 'bpgmq_featured_admin' );
+        }
+
+        function admin_ui_save_featured( $group_id = 0 ) {
+            if ( 'POST' !== strtoupper( $_SERVER[ 'REQUEST_METHOD' ] ) || empty( $group_id ) )
+                return false;
+
+            check_admin_referer( 'bpgmq_featured_save_' . $group_id, 'bpgmq_featured_admin' );
 
 
-           // Sauvegarde des valeurs formulaire
-        $adresse = !empty( $_POST['group_rue'] ) ? $_POST['group_rue'] : '';
-        $ville = !empty( $_POST['group_ville'] ) ? $_POST['group_ville'] : '';
-        $cp = !empty( $_POST['group_cp'] ) ? $_POST['group_cp'] : '';
-        $site = !empty( $_POST['group_site'] ) ? $_POST['group_site'] : '';
-        $telephone = !empty( $_POST['group_tel'] ) ? $_POST['group_tel'] : '';
-        
-        if( !empty( $adresse ))
-            groups_update_groupmeta( $group_id, '_rue', $adresse );
-        if( !empty( $ville ) )
-            groups_update_groupmeta( $group_id, '_ville',  $ville);
-         if( !empty( $cp ) )
-            groups_update_groupmeta( $group_id, '_cp',  $cp);
-         if( !empty( $site ) )
-            groups_update_groupmeta( $group_id, '_site',  $site);
-        if( !empty( $telephone ) )
-            groups_update_groupmeta( $group_id, '_tel',  $telephone);
+
+            // Sauvegarde des valeurs formulaire
+            $adresse = !empty( $_POST[ 'group_rue' ] ) ? $_POST[ 'group_rue' ] : '';
+            $ville = !empty( $_POST[ 'group_ville' ] ) ? $_POST[ 'group_ville' ] : '';
+            $cp = !empty( $_POST[ 'group_cp' ] ) ? $_POST[ 'group_cp' ] : '';
+            $site = !empty( $_POST[ 'group_site' ] ) ? $_POST[ 'group_site' ] : '';
+            $telephone = !empty( $_POST[ 'group_tel' ] ) ? $_POST[ 'group_tel' ] : '';
+
+            if ( !empty( $adresse ) )
+                groups_update_groupmeta( $group_id, '_rue', $adresse );
+            if ( !empty( $ville ) )
+                groups_update_groupmeta( $group_id, '_ville', $ville );
+            if ( !empty( $cp ) )
+                groups_update_groupmeta( $group_id, '_cp', $cp );
+            if ( !empty( $site ) )
+                groups_update_groupmeta( $group_id, '_site', $site );
+            if ( !empty( $telephone ) )
+                groups_update_groupmeta( $group_id, '_tel', $telephone );
+        }
+
     }
- 
-}
-         
+
 /**
 
  * Using bp_is_active() in this case is not needed
  * But i think it's a good practice to use this kind of check
  */
 function bpgmq_feature_group() {
-    if( bp_is_active( 'groups') )
+    if ( bp_is_active( 'groups' ) )
         return new BPGMQ_Feature_Group();
 }
- 
+
 add_action( 'bp_init', 'bpgmq_feature_group' );
 endif;
 
 /*changer la taille des avatars groupe*/
-if ( ! defined( 'BP_AVATAR_THUMB_WIDTH' ) )
-	define( 'BP_AVATAR_THUMB_WIDTH', 80 ); 
+if ( !defined( 'BP_AVATAR_THUMB_WIDTH' ) )
+    define( 'BP_AVATAR_THUMB_WIDTH', 80 );
 
-if ( ! defined( 'BP_AVATAR_THUMB_HEIGHT' ) )
-	define( 'BP_AVATAR_THUMB_HEIGHT', 55 ); 
+if ( !defined( 'BP_AVATAR_THUMB_HEIGHT' ) )
+    define( 'BP_AVATAR_THUMB_HEIGHT', 55 );
 
-if ( ! defined( 'BP_AVATAR_FULL_WIDTH' ) )
-	define( 'BP_AVATAR_FULL_WIDTH', 520 ); 
+if ( !defined( 'BP_AVATAR_FULL_WIDTH' ) )
+    define( 'BP_AVATAR_FULL_WIDTH', 520 );
 
-if ( ! defined( 'BP_AVATAR_FULL_HEIGHT' ) )
-	define( 'BP_AVATAR_FULL_HEIGHT', 360 ); 
+if ( !defined( 'BP_AVATAR_FULL_HEIGHT' ) )
+    define( 'BP_AVATAR_FULL_HEIGHT', 360 );
 
 
 
@@ -1425,4 +1549,3 @@ if ( !current_user_can( 'edit_users' ) ) {
     add_filter( 'pre_option_update_core', create_function( '$a', "return null;" ) );
 
 }
-

@@ -34,7 +34,7 @@
                 
                 echo '<div class="rubriques">';
                 foreach ( $rubriques as $key => $value ) {
-                    echo '<a href="/' . $value->slug . '/" class="rubrique p-1 ml-2 ' . $value->slug . '">' . $value->name . '</a>';
+                    echo '<a href="/' . $value->slug . '/" class="rubrique  ml-2 ' . $value->slug . '">' . $value->name . '</a>';
                 }
                  echo '</div>';
              
@@ -43,22 +43,28 @@
             </div>
 
 <div>
- <?php if (!empty(get_field( 'categorie' ))>0 ):
-echo '<div class="categories-ressources mt-1 mb-2 mx-0 align-self-end">';
-$categorie = get_field('categorie');
+    
+    
+ <?php 
+    
+    if (!empty( get_field( 'thematiques' ) ) > 0 ):
+             echo '<div class="thematiques mb-3">';
+            $thematiques = get_field( 'thematiques' );
 
-$i=1;    
-foreach ($categorie  as $key => $value ) {
+            $i = 1;
             
-    $catinfos = get_term_by( 'id', $value, 'categories_ressources' );
-    if($i>1) echo '<span class="mx-1 sep"> | </span>';
-    echo '<a class="categorie" href="'.get_term_link($catinfos->term_id,'categories_ressources').'" title="'.$catinfos->name.'">'. $catinfos->name .'</a>';
+            foreach ( $thematiques as $key => $value ) {
+                if ( $i > 1 )echo '<span class="mx-1 sep"> | </span>';
+                echo '<a class="thematique" href="' . get_term_link( $value->slug, 'thematiques' ) . '" title="' . $value->name . '">' . $value->name . '</a>';
 
-$i ++;
-}
+                $i++;
+            }
+            
 echo '</div>';
 else : echo '<hr>';
 endif;
+    
+
 
 
     ?>
@@ -66,7 +72,8 @@ endif;
  </div>
 
            
-            <?php echo the_content_limit(30) ?>
+            <?php// echo the_content_limit(30) ?>
+            
            <p class="date-article text-right mb-1">
                 <?php the_date()?>
             </p>

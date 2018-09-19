@@ -1,4 +1,4 @@
-<div class="content-fluid backgrounfullwith-light">
+<div class="content-fluid backgrounfullwith-light py-5" >
 
     <div class="container">
         <div class="row">
@@ -16,10 +16,10 @@
                     <img src="/wp-content/uploads/2018/07/ressources-logo.svg" class="img-titre mb-2" alt="Ressources">
 
                     <?php 
-              echo get_last_ressources('',3,false,'widget',false,false,25);
+              echo get_last_ressources('',3,false,'widget','',false,false,'','',true);
               ?>
                 </div>
-               
+ 
             </div>
         </div>
         <div class="row">
@@ -37,9 +37,13 @@
 </div>
 <div class="content-fluid backgrounfullwith-primary entrezcommunautee_home">
     <div class="container">
+                <div class="col-12 mb-4">
+            <div class="triangle secondary"></div>
+
+        </div>
         <div class="row">
             <div class="col-12">
-                <h2 class="text-center h2reveal" data-sr="enter top">Entrez dans la #communauté</h2>
+                <h2 class="text-center h2reveal" data-sr="enter top">Entrez dans la #commun<span style="color:#2A3867">eau</span>té</h2>
             </div>
             
         </div>
@@ -85,7 +89,7 @@
  <div class="row">
     
         <div class="col-12 col-md-4 cartouches-rubrique my-4" id="home-rub-1"> 
-            <a href="<?php  echo get_field('lien_cartouche_1') ?>">
+            <a href="<?php  echo get_field('lien_cartouche_1') ?>" class="hvr-grow">
                     <div class="logo-rubrique mx-auto mb-3  reveal">
                     <img src="<?php  echo get_field('image_cartouche_1') ?>" class="d-block" alt="<?php  echo get_field('alt_image_cartouche_1') ?>" />
                     </div>
@@ -97,7 +101,7 @@
     
      
         <div class="col-12 col-md-4 cartouches-rubrique my-4" id="home-rub-2">
-            <a href="<?php  echo get_field('lien_cartouche_2') ?>">
+            <a href="<?php  echo get_field('lien_cartouche_2') ?>" class="hvr-grow">
                     <div class="logo-rubrique mx-auto mb-3  reveal">
                     <img src="<?php  echo get_field('image_cartouche_2') ?>" class="d-block" alt="<?php  echo get_field('alt_image_cartouche_2') ?>" />               
                     </div>
@@ -108,7 +112,7 @@
         </div>   
      
             <div class="col-12 col-md-4 cartouches-rubrique my-4" id="home-rub-3">
-            <a href="<?php  echo get_field('lien_cartouche_3') ?>">
+            <a href="<?php  echo get_field('lien_cartouche_3') ?>" class="hvr-grow">
                     <div class="logo-rubrique mx-auto mb-3  reveal">
                     <img src="<?php  echo get_field('image_cartouche_3') ?>" class="d-block" alt="<?php  echo get_field('alt_image_cartouche_3') ?>" />               
                     </div>
@@ -121,45 +125,14 @@
     
 </div>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <?php
-    $enable_vc = get_post_meta( get_the_ID(), '_wpb_vc_js_status', true );
-    if ( !$enable_vc ) {
-        ?>
-    <header class="entry-header">
-
-    </header>
-    <!-- .entry-header -->
-    <?php } ?>
-
     <div class="entry-content">
         <?php
         the_content();
 
-        wp_link_pages( array(
-            'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wp-bootstrap-starter' ),
-            'after' => '</div>',
-        ) );
         ?>
     </div>
-    <!-- .entry-content -->
 
-    <?php if ( get_edit_post_link() && !$enable_vc ) : ?>
-    <footer class="entry-footer">
-        <?php
-        edit_post_link(
-            sprintf(
-                /* translators: %s: Name of current post */
-                esc_html__( 'Edit %s', 'wp-bootstrap-starter' ),
-                the_title( '<span class="screen-reader-text">"', '"</span>', false )
-            ),
-            '<span class="edit-link">',
-            '</span>'
-        );
-        ?>
 
-    </footer>
-    <!-- .entry-footer -->
-    <?php endif; ?>
 </article> <!-- #post-## -->
 
 </div> <!-- .row -->
@@ -176,7 +149,7 @@
           wait: '0.5s',
           viewFactor : 0.15,
           duration   : 800,
-          distance   : "100px",
+          distance   : "80px",
           scale      : 0.8,
         }
 

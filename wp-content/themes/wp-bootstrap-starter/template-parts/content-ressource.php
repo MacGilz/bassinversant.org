@@ -23,7 +23,7 @@
             wp_bootstrap_starter_posted_on();
             echo '</div>';
   
-            echo affiche_taxonomie_links($post->ID,array('categories_ressources'),'thematiques','Dans : ')  ;  ?>
+            echo affiche_taxonomie_links($post->ID,array('thematiques'),'thematiques','Dans : ')  ;  ?>
        
 		</div><!-- .entry-meta -->
         
@@ -55,11 +55,6 @@
             
 		<?php
 			the_content();
-        
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wp-bootstrap-starter' ),
-				'after'  => '</div>',
-			) );
 		?>       
         <div>   
             <p class="tags">

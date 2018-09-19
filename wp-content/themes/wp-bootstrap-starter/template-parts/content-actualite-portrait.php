@@ -4,12 +4,13 @@
 
         <header>
             
-            
+ 
             <?php   
             
            if($showcategories){
-             $categorie_actu= get_field('categorie_actu');      
-                echo '<p class="categorie-actu">'.$categorie_actu->name.'</p>';
+             $categorie_actu= get_field('categorie');   
+               if(isset($categorie_actu[0]->name))
+                echo '<p class="categorie">'.$categorie_actu[0]->name.'</p>';
                 
             }
             
@@ -80,16 +81,16 @@
 
                     <?php   
       // affichage rubriques si aneb ( qui affiche tout) - pas besoin si autres puisqu'on est dans la rubrique
-            if ( $acf_rubriques == '177' ):
-                  if ( get_field( 'rubriques' ) ):
-                            echo '<div class="rubriques d-flex flex-row justify-content-end">';
-                    $rubriques = get_field( 'rubriques' );
-                    foreach ( $rubriques as $key => $value ) {
-                        echo '<a href="/'. $value->slug .'/" class="rubrique px-1 mr-2 ' . $value->slug . '">' . $value->name . '</a>';
-                    }
-                    echo '</div>';
-                    endif;
-            endif; // end si aneb
+//            if ( $acf_rubriques == '177' ):
+//                  if ( get_field( 'rubriques' ) ):
+//                            echo '<div class="rubriques d-flex flex-row justify-content-end">';
+//                    $rubriques = get_field( 'rubriques' );
+//                    foreach ( $rubriques as $key => $value ) {
+//                        echo '<a href="/'. $value->slug .'/" class="rubrique px-1 mr-2 ' . $value->slug . '">' . $value->name . '</a>';
+//                    }
+//                    echo '</div>';
+//                    endif;
+//            endif; 
             ?>
 
 

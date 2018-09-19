@@ -3,10 +3,10 @@
 <file name="404.php" server="bv.kingbee.ovh" local="131801726927517824" remote="131801726400000000" Dst="2" />
 <file name="comments.php" server="bv.kingbee.ovh" local="131757995106408390" remote="131794482600000000" Dst="2" />
 <file name="custom-editor-style.css" server="bv.kingbee.ovh" local="131757995105361142" remote="131794482600000000" Dst="2" />
-<file name="footer-widget.php" server="bv.kingbee.ovh" local="131794034499802109" remote="131794482600000000" Dst="2" />
+<file name="footer-widget.php" server="bv.kingbee.ovh" local="131817387716466965" remote="131817387600000000" Dst="2" />
 <file name="footer.php" server="bv.kingbee.ovh" local="131806298219875923" remote="131806297800000000" Dst="2" />
-<file name="functions.php" server="bv.kingbee.ovh" local="131814192920875520" remote="131814192600000000" Dst="2" />
-<file name="header.php" server="bv.kingbee.ovh" local="131809587401792454" remote="131810648400000000" Dst="2" />
+<file name="functions.php" server="bv.kingbee.ovh" local="131818157052476420" remote="131818156800000000" Dst="2" />
+<file name="header.php" server="bv.kingbee.ovh" local="131818160747538302" remote="131818160400000000" Dst="2" />
 <file name="index.php" server="bv.kingbee.ovh" local="131811339953171001" remote="131811339600000000" Dst="2" />
 <file name="page.php" server="bv.kingbee.ovh" local="131813419874282322" remote="131813419800000000" Dst="2" />
 <file name="readme.txt" server="bv.kingbee.ovh" local="131757995156873413" remote="131794482600000000" Dst="2" />
@@ -17,9 +17,9 @@
 <file name="sidebar.php" server="bv.kingbee.ovh" local="131812087762657460" remote="131812087800000000" Dst="2" />
 <file name="single-attachment.php" server="bv.kingbee.ovh" local="131806303101060819" remote="131806303200000000" Dst="2" />
 <file name="single.php" server="bv.kingbee.ovh" local="131813427694015287" remote="131813427600000000" Dst="2" />
-<file name="style.css" server="bv.kingbee.ovh" local="131814278215078002" remote="131814277800000000" Dst="2" />
+<file name="style.css" server="bv.kingbee.ovh" local="131818163038430020" remote="131818162800000000" Dst="2" />
 <file name="woocommerce.php" server="bv.kingbee.ovh" local="131757995169589404" remote="131757712200000000" Dst="2" />
-<file name="sous-site-landing-page.php" server="bv.kingbee.ovh" local="131814276965708155" remote="131814276600000000" Dst="2" />
+<file name="sous-site-landing-page.php" server="bv.kingbee.ovh" local="131817565399248864" remote="131817565200000000" Dst="2" />
 <file name="single-ressource.php" server="bv.kingbee.ovh" local="131813433004461052" remote="131813433000000000" Dst="2" />
 <file name="logo-svg.php" server="bv.kingbee.ovh" local="131790790763775175" remote="131794482600000000" Dst="2" />
 <file name="logo-ANEB-svg.php" server="bv.kingbee.ovh" local="131767660254963106" remote="131794482600000000" Dst="2" />
